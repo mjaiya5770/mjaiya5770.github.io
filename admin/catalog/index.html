@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Admin - Honest Penny</title>
+<style>
+:root{--brand:#1d6ff2;--ink:#1c2333;--muted:#64748b;--border:#e5eaf3;--radius:10px}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;color:var(--ink);background:#f6f8fc;line-height:1.5}
+.wrap{max-width:1000px;margin:0 auto;padding:24px 16px}
+h1{margin-bottom:6px}h2{margin:26px 0 12px;font-size:1.15rem}
+.card{background:#fff;border:1px solid var(--border);border-radius:var(--radius);padding:20px;margin-bottom:16px}
+label{display:block;font-weight:600;font-size:.88rem;margin:12px 0 4px}
+input[type=text],input[type=url],input[type=date],input[type=password],select,textarea{width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:8px;font-size:.95rem}
+textarea{min-height:70px;resize:vertical}
+.row{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+@media(max-width:640px){.row{grid-template-columns:1fr}}
+.btn{border:0;cursor:pointer;font-weight:700;padding:11px 20px;border-radius:8px;background:var(--brand);color:#fff;font-size:.95rem;margin-top:14px}
+.btn:hover{filter:brightness(.92)}
+.btn-danger{background:#dc2626}.btn-secondary{background:#e2e8f0;color:var(--ink)}
+.status{margin:12px 0;padding:12px 14px;border-radius:8px;font-size:.92rem;display:none}
+.status.ok{display:block;background:#e8f7f0;color:#0b7a4b}
+.status.err{display:block;background:#fdecec;color:#b91c1c}
+table{width:100%;border-collapse:collapse;font-size:.88rem}
+th,td{text-align:left;padding:9px 8px;border-bottom:1px solid var(--border);vertical-align:top}
+th{color:var(--muted);font-size:.78rem;text-transform:uppercase;letter-spacing:.4px}
+td .actions{white-space:nowrap}
+.small{font-size:.82rem;color:var(--muted)}
+.hidden{display:none!important}
+.checkbox-row{display:flex;align-items:center;gap:8px;margin-top:12px}
+.checkbox-row input{width:auto}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>Honest Penny Admin</h1>
+  <p class="small">Manage coupons and stores. Changes commit to the repo and trigger a redeploy.</p>
+
+  <div id="status" class="status"></div>
+
+  <!-- Login -->
+  <div class="card" id="login-card">
+    <h2>Sign in</h2>
+    <label for="password">Admin password</label>
+    <input type="password" id="password" autocomplete="current-password">
+    <button class="btn" id="login-btn">Sign in</button>
+  </div>
+
+  <!-- Main panel -->
+  <div id="panel" class="hidden">
+    <div class="card">
+      <h2 id="form-title">Add coupon</h2>
+      <input type="hidden" id="f-id">
+      <div class="row">
+        <div>
+          <label for="f-store">Store</label>
+          <select id="f-store"></select>
+        </div>
+        <div>
+          <label for="f-new-store">...or new store name</label>
+          <input type="text" id="f-new-store" placeholder="e.g. Costco">
+        </div>
+      </div>
+      <div class="row">
+        <div>
+          <label for="f-type">Type</label>
+          <select id="f-type"><option value="code">Code</option><option value="deal">Deal</option></select>
+        </div>
+        <div>
+          <label for="f-code">Code (for type=code)</label>
+          <input type="text" id="f-code" placeholder="e.g. SAVE20">
+        </div>
+      </div>
+      <label for="f-title">Title</label>
+      <input type="text" id="f-title" placeholder="e.g. 20% off sitewide">
+      <label for="f-desc">Description</label>
+      <textarea id="f-desc" placeholder="One or two sentences, plain English."></textarea>
+      <div class="row">
+        <div>
+          <label for="f-category">Category</label>
+          <input type="text" id="f-category" placeholder="e.g. Fashion">
+        </div>
+        <div>
+          <label for="f-expires">Expires (optional)</label>
+          <input type="date" id="f-expires">
+        </div>
+      </div>
+      <label for="f-url">Retailer URL</label>
+      <input type="url" id="f-url" placeholder="https://...">
+      <h2>Product deal (optional)</h2>
+      <p class="small">Fill these to render this coupon as a product card with an image.</p>
+      <div class="row">
+        <div>
+          <label for="f-product-name">Product name</label>
+          <input type="text" id="f-product-name" placeholder="e.g. Air Zoom Pegasus 41">
+        </div>
+        <div>
+          <label for="f-product-image">Product image URL</label>
+          <input type="url" id="f-product-image" placeholder="https://...">
+        </div>
+      </div>
+      <div class="checkbox-row">
+        <input type="checkbox" id="f-featured"><label for="f-featured" style="margin:0">Featured (front page)</label>
+      </div>
+      <button class="btn" id="save-btn">Save coupon</button>
+      <button class="btn btn-secondary" id="clear-btn">Clear form</button>
+    </div>
+
+    <div class="card">
+      <h2>Existing coupons (<span id="count">0</span>)</h2>
+      <div style="overflow-x:auto">
+      <table>
+        <thead><tr><th>Store</th><th>Title</th><th>Type</th><th>Verified</th><th>Expires</th><th></th></tr></thead>
+        <tbody id="coupon-table"></tbody>
+      </table>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+(function(){
+  "use strict";
+  var token = sessionStorage.getItem("cc_admin_token") || "";
+  var stores = [];
+
+  function $(id){ return document.getElementById(id); }
+  function status(msg, ok){
+    var el = $("status");
+    el.textContent = msg;
+    el.className = "status " + (ok ? "ok" : "err");
+  }
+  function api(action, extra, method){
+    var body = Object.assign({action: action, token: token}, extra || {});
+    return fetch("/api/admin", {
+      method: method || "POST",
+      headers: {"Content-Type": "application/json"},
+      body: JSON.stringify(body)
+    }).then(function(r){ return r.json().then(function(j){ return {http: r.status, json: j}; }); });
+  }
+  function esc(s){
+    return String(s == null ? "" : s).replace(/[&<>"']/g, function(c){
+      return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c];
+    });
+  }
+
+  $("login-btn").addEventListener("click", function(){
+    api("login", {password: $("password").value}).then(function(res){
+      if (res.json.token) {
+        token = res.json.token;
+        sessionStorage.setItem("cc_admin_token", token);
+        $("login-card").classList.add("hidden");
+        $("panel").classList.remove("hidden");
+        loadList();
+      } else {
+        status("Login failed: " + (res.json.error || "unknown error"), false);
+      }
+    }).catch(function(){ status("Network error during login.", false); });
+  });
+
+  function loadList(){
+    fetch("/api/admin?token=" + encodeURIComponent(token)).then(function(r){ return r.json(); })
+      .then(function(data){
+        if (data.error) { status("Could not load: " + data.error, false); return; }
+        stores = data.stores || [];
+        var sel = $("f-store");
+        sel.innerHTML = "";
+        stores.slice().sort(function(a,b){ return a.name.localeCompare(b.name); }).forEach(function(s){
+          var o = document.createElement("option");
+          o.value = s.slug; o.textContent = s.name; o.dataset.name = s.name;
+          sel.appendChild(o);
+        });
+        var rows = (data.coupons || []).map(function(c){
+          return "<tr><td>" + esc(c.store) + "</td><td>" + esc(c.title) +
+            (c.product_name ? "<br><span class='small'>&#128722; " + esc(c.product_name) + "</span>" : "") + "</td>" +
+            "<td>" + esc(c.type) + (c.featured ? " &#11088;" : "") + "</td>" +
+            "<td>" + esc(c.verified_date || "") + "</td><td>" + esc(c.expires || "ongoing") + "</td>" +
+            "<td class='actions'><button class='btn btn-secondary' data-edit='" + esc(c.id) + "'>Edit</button> " +
+            "<button class='btn btn-danger' data-del='" + esc(c.id) + "'>Delete</button></td></tr>";
+        }).join("");
+        $("coupon-table").innerHTML = rows || "<tr><td colspan='6'>No coupons yet.</td></tr>";
+        $("count").textContent = (data.coupons || []).length;
+        if (data.github_mode === false) {
+          status("Note: GitHub is not configured - changes save to local data/ only.", true);
+        }
+      }).catch(function(){ status("Network error loading coupons.", false); });
+  }
+
+  function collectForm(){
+    var sel = $("f-store");
+    var storeName = sel.options[sel.selectedIndex] ? sel.options[sel.selectedIndex].dataset.name : "";
+    return {
+      store: storeName, store_slug: sel.value,
+      new_store: $("f-new-store").value.trim(),
+      type: $("f-type").value, code: $("f-code").value.trim(),
+      title: $("f-title").value.trim(), description: $("f-desc").value.trim(),
+      category: $("f-category").value.trim(), url: $("f-url").value.trim(),
+      expires: $("f-expires").value || null,
+      featured: $("f-featured").checked,
+      product_name: $("f-product-name").value.trim() || null,
+      product_image_url: $("f-product-image").value.trim() || null
+    };
+  }
+
+  $("save-btn").addEventListener("click", function(){
+    var id = $("f-id").value || null;
+    api("save", {coupon: collectForm(), new_store: $("f-new-store").value.trim(), id: id})
+      .then(function(res){
+        var j = res.json;
+        if (j.ok) {
+          var msg = "Saved (" + j.id + ").";
+          if (j.warning) msg += " " + j.warning;
+          if (j.deploy) msg += " " + j.deploy;
+          status(msg, true);
+          clearForm(); loadList();
+        } else {
+          status("Save failed: " + (j.error || "unknown") +
+            (j.detail ? " - " + JSON.stringify(j.detail) : ""), false);
+        }
+      }).catch(function(){ status("Network error saving.", false); });
+  });
+
+  $("clear-btn").addEventListener("click", clearForm);
+  function clearForm(){
+    ["f-id","f-new-store","f-code","f-title","f-desc","f-category","f-url",
+     "f-expires","f-product-name","f-product-image"].forEach(function(id){ $(id).value = ""; });
+    $("f-type").value = "code"; $("f-featured").checked = false;
+    $("form-title").textContent = "Add coupon";
+  }
+
+  $("coupon-table").addEventListener("click", function(e){
+    var t = e.target;
+    if (t.dataset.edit) {
+      fetch("/api/admin?token=" + encodeURIComponent(token)).then(function(r){ return r.json(); })
+        .then(function(data){
+          var c = (data.coupons || []).filter(function(x){ return x.id === t.dataset.edit; })[0];
+          if (!c) return;
+          $("f-id").value = c.id;
+          $("f-store").value = c.store_slug || "";
+          $("f-type").value = c.type || "code";
+          $("f-code").value = c.code || "";
+          $("f-title").value = c.title || "";
+          $("f-desc").value = c.description || "";
+          $("f-category").value = c.category || "";
+          $("f-url").value = c.url || "";
+          $("f-expires").value = c.expires || "";
+          $("f-featured").checked = !!c.featured;
+          $("f-product-name").value = c.product_name || "";
+          $("f-product-image").value = c.product_image_url || "";
+          $("form-title").textContent = "Edit coupon " + c.id;
+          window.scrollTo(0, 0);
+        });
+    } else if (t.dataset.del) {
+      if (!confirm("Delete coupon " + t.dataset.del + "?")) return;
+      api("delete", {id: t.dataset.del}).then(function(res){
+        if (res.json.ok) { status("Deleted.", true); loadList(); }
+        else status("Delete failed: " + (res.json.error || "unknown"), false);
+      });
+    }
+  });
+
+  if (token) {
+    $("login-card").classList.add("hidden");
+    $("panel").classList.remove("hidden");
+    loadList();
+  }
+})();
+</script>
+</body>
+</html>

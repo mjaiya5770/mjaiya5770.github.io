@@ -371,6 +371,30 @@ button{
   background:var(--cocoa,#4a372f);
   color:#fff;
 }
+.badge-sponsored{
+  background:var(--gold,#c9a227);
+  color:#fff;
+  letter-spacing:.04em;
+  text-transform:uppercase;
+}
+/* Business onboarding wizard + admin console */
+.wiz-dots{display:flex;flex-wrap:wrap;gap:.5rem;margin-bottom:1rem}
+.wiz-dot{font-size:.8rem;padding:.3rem .7rem;border-radius:999px;background:var(--cream-dark,#f6e9dd);color:var(--cocoa,#4a372f)}
+.wiz-dot.active{background:var(--coral,#ff6f61);color:#fff;font-weight:700}
+.tab-row{display:flex;flex-wrap:wrap;gap:.5rem;margin-bottom:1.5rem}
+.tab{border:1px solid var(--cream-dark,#e8d9c8);background:var(--cream,#fffaf3);color:var(--cocoa,#4a372f);
+  padding:.55rem 1.1rem;border-radius:999px;cursor:pointer;font-weight:600;font-size:.9rem;text-decoration:none}
+.tab.active{background:var(--coral,#ff6f61);border-color:var(--coral,#ff6f61);color:#fff}
+.stat-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:1rem;margin-bottom:1.5rem}
+.stat-card{background:var(--cream,#fffaf3);border:1px solid var(--cream-dark,#e8d9c8);
+  border-radius:1rem;padding:1.25rem}
+.stat-card h3{margin:0 0 .25rem;font-size:.95rem}
+.stat-num{font-size:1.8rem;font-weight:800;margin:.25rem 0}
+.admin-table{width:100%;border-collapse:collapse;font-size:.9rem;background:var(--cream,#fffaf3);
+  border-radius:1rem;overflow:hidden}
+.admin-table th,.admin-table td{padding:.7rem .8rem;text-align:left;border-bottom:1px solid var(--cream-dark,#e8d9c8);vertical-align:top}
+.admin-table th{font-size:.75rem;text-transform:uppercase;letter-spacing:.05em}
+.admin-table tr:last-child td{border-bottom:none}
 .card h3{
   margin:0;
   color:var(--ink,#332722);
@@ -1491,6 +1515,7 @@ input[type=email]:focus,
       <a href="/">Home</a>
       <a href="/stores/">Stores</a>
       <a href="/categories/">Categories</a>
+      <a href="/local/">Local</a>
       <a href="/tools/">Tools</a>
       <a href="/pro/">Pro</a>
       <a href="/about/">About</a>
@@ -1511,7 +1536,7 @@ if(a){a.textContent="Account";a.href="/account/";}}}).catch(function(){});
 </header>
 <!-- AD-SLOT: header leaderboard (Mediavine / AdSense TODO - paste ad code here) -->
 <main>
-<section class="hero"><div class="wrap"><h1>Honest Penny Pro</h1><p>For serious savers: unlimited AI deal hunting, early-morning deal emails, and zero ads.</p></div></section><section class="section"><div class="wrap"><div class="steps"><div class="step"><div class="n">Free</div><h3>Honest Penny</h3><p>Everything you use today, free forever.</p><ul><li>All verified coupons &amp; deals</li><li>5 AI Deal Finder searches/day</li><li>Weekly newsletter</li></ul><p><a class="btn btn-secondary" href="/">Keep browsing free</a></p></div><div class="step"><div class="n">$5</div><h3>Pro</h3><p><strong>$5/month</strong> or <strong>$48/year</strong> (save 20%).</p><ul><li>Unlimited AI Deal Finder searches</li><li>Unlimited Penny AI chats</li><li>Early-morning deal emails for your chosen stores</li><li>Ad-free browsing</li><li>Piggybank savings tracker</li><li>Cancel anytime</li></ul><p><button class="btn" data-plan="monthly">Get Penny Pro — $5/mo</button></p><p><button class="btn btn-secondary" data-plan="yearly">Go yearly — $48/yr</button></p><p class="sub" id="pro-note"></p></div></div></div></section>
+<section class="hero"><div class="wrap"><h1>Honest Penny Pro</h1><p>For serious savers: unlimited AI deal hunting, early-morning deal emails, and zero ads.</p></div></section><section class="section"><div class="wrap"><div class="steps"><div class="step"><div class="n">Free</div><h3>Honest Penny</h3><p>Everything you use today, free forever.</p><ul><li>All verified coupons &amp; deals</li><li>5 AI Deal Finder searches/day</li><li>Weekly newsletter</li></ul><p><a class="btn btn-secondary" href="/">Keep browsing free</a></p></div><div class="step"><div class="n">$5</div><h3>Pro</h3><p><strong>$5/month</strong> or <strong>$48/year</strong> (save 20%).</p><ul><li>Unlimited AI Deal Finder searches</li><li>Unlimited Penny AI chats</li><li>Early-morning deal emails for your chosen stores</li><li>Ad-free browsing — sponsored local placements are hidden for Pro members</li><li>Piggybank savings tracker</li><li>Cancel anytime</li></ul><p><button class="btn" data-plan="monthly">Get Penny Pro — $5/mo</button></p><p><button class="btn btn-secondary" data-plan="yearly">Go yearly — $48/yr</button></p><p class="sub" id="pro-note"></p></div></div></div></section>
 </main>
 <footer class="site-footer">
   <div class="wrap">

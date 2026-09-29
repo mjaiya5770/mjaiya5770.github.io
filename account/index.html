@@ -371,6 +371,30 @@ button{
   background:var(--cocoa,#4a372f);
   color:#fff;
 }
+.badge-sponsored{
+  background:var(--gold,#c9a227);
+  color:#fff;
+  letter-spacing:.04em;
+  text-transform:uppercase;
+}
+/* Business onboarding wizard + admin console */
+.wiz-dots{display:flex;flex-wrap:wrap;gap:.5rem;margin-bottom:1rem}
+.wiz-dot{font-size:.8rem;padding:.3rem .7rem;border-radius:999px;background:var(--cream-dark,#f6e9dd);color:var(--cocoa,#4a372f)}
+.wiz-dot.active{background:var(--coral,#ff6f61);color:#fff;font-weight:700}
+.tab-row{display:flex;flex-wrap:wrap;gap:.5rem;margin-bottom:1.5rem}
+.tab{border:1px solid var(--cream-dark,#e8d9c8);background:var(--cream,#fffaf3);color:var(--cocoa,#4a372f);
+  padding:.55rem 1.1rem;border-radius:999px;cursor:pointer;font-weight:600;font-size:.9rem;text-decoration:none}
+.tab.active{background:var(--coral,#ff6f61);border-color:var(--coral,#ff6f61);color:#fff}
+.stat-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:1rem;margin-bottom:1.5rem}
+.stat-card{background:var(--cream,#fffaf3);border:1px solid var(--cream-dark,#e8d9c8);
+  border-radius:1rem;padding:1.25rem}
+.stat-card h3{margin:0 0 .25rem;font-size:.95rem}
+.stat-num{font-size:1.8rem;font-weight:800;margin:.25rem 0}
+.admin-table{width:100%;border-collapse:collapse;font-size:.9rem;background:var(--cream,#fffaf3);
+  border-radius:1rem;overflow:hidden}
+.admin-table th,.admin-table td{padding:.7rem .8rem;text-align:left;border-bottom:1px solid var(--cream-dark,#e8d9c8);vertical-align:top}
+.admin-table th{font-size:.75rem;text-transform:uppercase;letter-spacing:.05em}
+.admin-table tr:last-child td{border-bottom:none}
 .card h3{
   margin:0;
   color:var(--ink,#332722);
@@ -1491,6 +1515,7 @@ input[type=email]:focus,
       <a href="/">Home</a>
       <a href="/stores/">Stores</a>
       <a href="/categories/">Categories</a>
+      <a href="/local/">Local</a>
       <a href="/tools/">Tools</a>
       <a href="/pro/">Pro</a>
       <a href="/about/">About</a>
@@ -1511,7 +1536,7 @@ if(a){a.textContent="Account";a.href="/account/";}}}).catch(function(){});
 </header>
 <!-- AD-SLOT: header leaderboard (Mediavine / AdSense TODO - paste ad code here) -->
 <main>
-<section class="hero"><div class="wrap"><h1>My account</h1><p id="acct-email" class="sub">Loading&hellip;</p></div></section><section class="section"><div class="wrap"><div class="acct-grid"><div class="acct-card"><h2>Penny Pro</h2><p id="pro-status">Checking&hellip;</p><p id="pro-cta"></p></div><div class="acct-card"><h2>&#128231; Morning deal emails</h2><p class="sub">Pick your stores and we&apos;ll email their newest verified deals early each morning.</p><label class="store-pick"><input type="checkbox" id="digest-toggle"> <strong>Email me morning deals</strong></label><div class="store-grid"><label class="store-pick"><input type="checkbox" name="store" value="nike"> Nike</label><label class="store-pick"><input type="checkbox" name="store" value="adidas"> Adidas</label><label class="store-pick"><input type="checkbox" name="store" value="shein"> Shein</label><label class="store-pick"><input type="checkbox" name="store" value="sephora"> Sephora</label><label class="store-pick"><input type="checkbox" name="store" value="ulta"> Ulta Beauty</label><label class="store-pick"><input type="checkbox" name="store" value="doordash"> DoorDash</label><label class="store-pick"><input type="checkbox" name="store" value="uber-eats"> Uber Eats</label><label class="store-pick"><input type="checkbox" name="store" value="dominos"> Domino&#x27;s</label><label class="store-pick"><input type="checkbox" name="store" value="best-buy"> Best Buy</label><label class="store-pick"><input type="checkbox" name="store" value="ebay"> eBay</label><label class="store-pick"><input type="checkbox" name="store" value="target"> Target</label><label class="store-pick"><input type="checkbox" name="store" value="walmart"> Walmart</label><label class="store-pick"><input type="checkbox" name="store" value="temu"> Temu</label><label class="store-pick"><input type="checkbox" name="store" value="macys"> Macy&#x27;s</label><label class="store-pick"><input type="checkbox" name="store" value="kohls"> Kohl&#x27;s</label><label class="store-pick"><input type="checkbox" name="store" value="chewy"> Chewy</label><label class="store-pick"><input type="checkbox" name="store" value="wayfair"> Wayfair</label><label class="store-pick"><input type="checkbox" name="store" value="home-depot"> The Home Depot</label></div><p><button class="btn" id="prefs-save">Save preferences</button> <span class="sub" id="prefs-note" role="status"></span></p></div><div class="acct-card"><h2>&#128176; My piggybank</h2><div id="piggy-stats"><p class="sub">Loading your savings activity&hellip;</p></div><p class="sub">Every coupon you claim or mark useful lands here.</p></div><div class="acct-card"><h2>Sign out</h2><p><button class="btn btn-secondary" id="logout-btn">Log out</button></p></div></div></div></section>
+<section class="hero"><div class="wrap"><h1>My account</h1><p id="acct-email" class="sub">Loading&hellip;</p></div></section><section class="section"><div class="wrap"><div class="acct-grid"><div class="acct-card"><h2>Penny Pro</h2><p id="pro-status">Checking&hellip;</p><p id="pro-cta"></p></div><div class="acct-card"><h2>&#128231; Morning deal emails</h2><p class="sub">Pick your stores and we&apos;ll email their newest verified deals early each morning.</p><label class="store-pick"><input type="checkbox" id="digest-toggle"> <strong>Email me morning deals</strong></label><div class="store-grid"><label class="store-pick"><input type="checkbox" name="store" value="nike"> Nike</label><label class="store-pick"><input type="checkbox" name="store" value="adidas"> Adidas</label><label class="store-pick"><input type="checkbox" name="store" value="shein"> Shein</label><label class="store-pick"><input type="checkbox" name="store" value="sephora"> Sephora</label><label class="store-pick"><input type="checkbox" name="store" value="ulta"> Ulta Beauty</label><label class="store-pick"><input type="checkbox" name="store" value="doordash"> DoorDash</label><label class="store-pick"><input type="checkbox" name="store" value="uber-eats"> Uber Eats</label><label class="store-pick"><input type="checkbox" name="store" value="dominos"> Domino&#x27;s</label><label class="store-pick"><input type="checkbox" name="store" value="best-buy"> Best Buy</label><label class="store-pick"><input type="checkbox" name="store" value="ebay"> eBay</label><label class="store-pick"><input type="checkbox" name="store" value="target"> Target</label><label class="store-pick"><input type="checkbox" name="store" value="walmart"> Walmart</label><label class="store-pick"><input type="checkbox" name="store" value="temu"> Temu</label><label class="store-pick"><input type="checkbox" name="store" value="macys"> Macy&#x27;s</label><label class="store-pick"><input type="checkbox" name="store" value="kohls"> Kohl&#x27;s</label><label class="store-pick"><input type="checkbox" name="store" value="chewy"> Chewy</label><label class="store-pick"><input type="checkbox" name="store" value="wayfair"> Wayfair</label><label class="store-pick"><input type="checkbox" name="store" value="home-depot"> The Home Depot</label></div><p><button class="btn" id="prefs-save">Save preferences</button> <span class="sub" id="prefs-note" role="status"></span></p></div><div class="acct-card"><h2>&#128176; My piggybank</h2><div id="piggy-stats"><p class="sub">Loading your savings activity&hellip;</p></div><p class="sub">Every coupon you claim or mark useful lands here.</p></div><div class="acct-card"><h2>&#127970; For business</h2><p class="sub">Turn this account into a business account and advertise your deals locally or website-wide.</p><p><a class="btn" href="/business/">Go to business hub</a></p></div><div class="acct-card"><h2>Sign out</h2><p><button class="btn btn-secondary" id="logout-btn">Log out</button></p></div></div></div></section>
 </main>
 <footer class="site-footer">
   <div class="wrap">

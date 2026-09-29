@@ -371,6 +371,30 @@ button{
   background:var(--cocoa,#4a372f);
   color:#fff;
 }
+.badge-sponsored{
+  background:var(--gold,#c9a227);
+  color:#fff;
+  letter-spacing:.04em;
+  text-transform:uppercase;
+}
+/* Business onboarding wizard + admin console */
+.wiz-dots{display:flex;flex-wrap:wrap;gap:.5rem;margin-bottom:1rem}
+.wiz-dot{font-size:.8rem;padding:.3rem .7rem;border-radius:999px;background:var(--cream-dark,#f6e9dd);color:var(--cocoa,#4a372f)}
+.wiz-dot.active{background:var(--coral,#ff6f61);color:#fff;font-weight:700}
+.tab-row{display:flex;flex-wrap:wrap;gap:.5rem;margin-bottom:1.5rem}
+.tab{border:1px solid var(--cream-dark,#e8d9c8);background:var(--cream,#fffaf3);color:var(--cocoa,#4a372f);
+  padding:.55rem 1.1rem;border-radius:999px;cursor:pointer;font-weight:600;font-size:.9rem;text-decoration:none}
+.tab.active{background:var(--coral,#ff6f61);border-color:var(--coral,#ff6f61);color:#fff}
+.stat-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:1rem;margin-bottom:1.5rem}
+.stat-card{background:var(--cream,#fffaf3);border:1px solid var(--cream-dark,#e8d9c8);
+  border-radius:1rem;padding:1.25rem}
+.stat-card h3{margin:0 0 .25rem;font-size:.95rem}
+.stat-num{font-size:1.8rem;font-weight:800;margin:.25rem 0}
+.admin-table{width:100%;border-collapse:collapse;font-size:.9rem;background:var(--cream,#fffaf3);
+  border-radius:1rem;overflow:hidden}
+.admin-table th,.admin-table td{padding:.7rem .8rem;text-align:left;border-bottom:1px solid var(--cream-dark,#e8d9c8);vertical-align:top}
+.admin-table th{font-size:.75rem;text-transform:uppercase;letter-spacing:.05em}
+.admin-table tr:last-child td{border-bottom:none}
 .card h3{
   margin:0;
   color:var(--ink,#332722);
@@ -1491,6 +1515,7 @@ input[type=email]:focus,
       <a href="/">Home</a>
       <a href="/stores/">Stores</a>
       <a href="/categories/">Categories</a>
+      <a href="/local/">Local</a>
       <a href="/tools/">Tools</a>
       <a href="/pro/">Pro</a>
       <a href="/about/">About</a>
@@ -1611,7 +1636,7 @@ if(a){a.textContent="Account";a.href="/account/";}}}).catch(function(){});
 <article class="card" data-search="Wayfair The Big Furniture Sale: up to 50% off Up to 50% off in The Big Furniture Sale. From the wayfair.com homepage banner.  " data-cid="wayfair-04" data-store-slug="wayfair" data-verified="2026-09-29"><div class="card-top"><span class="store-name">Wayfair</span><span class="badge-group"><span class="badge badge-deal">Deal</span></span><button class="bell-btn" data-follow="wayfair" data-store-name="Wayfair" aria-label="Follow Wayfair for deal alerts" title="Alert me about new Wayfair coupons">&#128276;</button></div><h3>The Big Furniture Sale: up to 50% off</h3><p>Up to 50% off in The Big Furniture Sale. From the wayfair.com homepage banner.</p><div class="card-meta"><span class="verified">&#10003; Verified Sep 29, 2026</span><span class="expiry">Ongoing</span></div><div class="card-action"><a class="btn btn-green" href="/go/wayfair-04/" target="_blank" rel="nofollow sponsored noopener">Get Deal &rarr;</a></div><div class="vote-row" data-vote-row><span class="vote-q">Did this code work for you?</span><button class="vote-btn" data-vote="yes" data-cid="wayfair-04">Yep, saved me money!</button><button class="vote-btn" data-vote="no" data-cid="wayfair-04">Nope, it's a dud</button><button class="used-btn" data-cid="wayfair-04" data-store="Wayfair" data-title="The Big Furniture Sale: up to 50% off" title="Log this to My Savings">&#10003; I used this</button><span class="vote-result" id="vr-wayfair-04">…</span></div></article>
 <article class="card" data-search="The Home Depot Special Buy of the Day: today-only deals Today-only deals that reset daily at 3 AM ET. From Home Depot&#x27;s official Special Buy of the Day page.  " data-cid="home-depot-05" data-store-slug="home-depot" data-verified="2026-09-29"><div class="card-top"><span class="store-name">The Home Depot</span><span class="badge-group"><span class="badge badge-deal">Deal</span></span><button class="bell-btn" data-follow="home-depot" data-store-name="The Home Depot" aria-label="Follow The Home Depot for deal alerts" title="Alert me about new The Home Depot coupons">&#128276;</button></div><h3>Special Buy of the Day: today-only deals</h3><p>Today-only deals that reset daily at 3 AM ET. From Home Depot&#x27;s official Special Buy of the Day page.</p><div class="card-meta"><span class="verified">&#10003; Verified Sep 29, 2026</span><span class="expiry">Ongoing</span></div><div class="card-action"><a class="btn btn-green" href="/go/home-depot-05/" target="_blank" rel="nofollow sponsored noopener">Get Deal &rarr;</a></div><div class="vote-row" data-vote-row><span class="vote-q">Did this code work for you?</span><button class="vote-btn" data-vote="yes" data-cid="home-depot-05">Yep, saved me money!</button><button class="vote-btn" data-vote="no" data-cid="home-depot-05">Nope, it's a dud</button><button class="used-btn" data-cid="home-depot-05" data-store="The Home Depot" data-title="Special Buy of the Day: today-only deals" title="Log this to My Savings">&#10003; I used this</button><span class="vote-result" id="vr-home-depot-05">…</span></div></article>
 <article class="card" data-search="The Home Depot LG Signature Appliances rebate: up to $3,000 back on 2+ appliance bundles Save up to an extra $3,000 when you bundle 2 or more LG Signature Appliances. Purchase window September 17 – November 3, 2026; can combine with other manufacturer rebates. From Home Depot&#x27;s Rebate Center.  " data-cid="home-depot-06" data-store-slug="home-depot" data-verified="2026-09-29"><div class="card-top"><span class="store-name">The Home Depot</span><span class="badge-group"><span class="badge badge-deal">Deal</span></span><button class="bell-btn" data-follow="home-depot" data-store-name="The Home Depot" aria-label="Follow The Home Depot for deal alerts" title="Alert me about new The Home Depot coupons">&#128276;</button></div><h3>LG Signature Appliances rebate: up to $3,000 back on 2+ appliance bundles</h3><p>Save up to an extra $3,000 when you bundle 2 or more LG Signature Appliances. Purchase window September 17 – November 3, 2026; can combine with other manufacturer rebates. From Home Depot&#x27;s Rebate Center.</p><div class="card-meta"><span class="verified">&#10003; Verified Sep 29, 2026</span><span class="expiry">Ends Nov 03, 2026</span></div><div class="card-action"><a class="btn btn-green" href="/go/home-depot-06/" target="_blank" rel="nofollow sponsored noopener">Get Deal &rarr;</a></div><div class="vote-row" data-vote-row><span class="vote-q">Did this code work for you?</span><button class="vote-btn" data-vote="yes" data-cid="home-depot-06">Yep, saved me money!</button><button class="vote-btn" data-vote="no" data-cid="home-depot-06">Nope, it's a dud</button><button class="used-btn" data-cid="home-depot-06" data-store="The Home Depot" data-title="LG Signature Appliances rebate: up to $3,000 back on 2+ appliance bundles" title="Log this to My Savings">&#10003; I used this</button><span class="vote-result" id="vr-home-depot-06">…</span></div></article>
-<article class="card" data-search="The Home Depot 10% off select home decor when you sign up for emails Sign up for emails and save 10% on select home decor items. Standing offer shown site-wide on homedepot.com.  " data-cid="home-depot-07" data-store-slug="home-depot" data-verified="2026-09-29"><div class="card-top"><span class="store-name">The Home Depot</span><span class="badge-group"><span class="badge badge-deal">Deal</span></span><button class="bell-btn" data-follow="home-depot" data-store-name="The Home Depot" aria-label="Follow The Home Depot for deal alerts" title="Alert me about new The Home Depot coupons">&#128276;</button></div><h3>10% off select home decor when you sign up for emails</h3><p>Sign up for emails and save 10% on select home decor items. Standing offer shown site-wide on homedepot.com.</p><div class="card-meta"><span class="verified">&#10003; Verified Sep 29, 2026</span><span class="expiry">Ongoing</span></div><div class="card-action"><a class="btn btn-green" href="/go/home-depot-07/" target="_blank" rel="nofollow sponsored noopener">Get Deal &rarr;</a></div><div class="vote-row" data-vote-row><span class="vote-q">Did this code work for you?</span><button class="vote-btn" data-vote="yes" data-cid="home-depot-07">Yep, saved me money!</button><button class="vote-btn" data-vote="no" data-cid="home-depot-07">Nope, it's a dud</button><button class="used-btn" data-cid="home-depot-07" data-store="The Home Depot" data-title="10% off select home decor when you sign up for emails" title="Log this to My Savings">&#10003; I used this</button><span class="vote-result" id="vr-home-depot-07">…</span></div></article></div><!-- AD-SLOT: in-feed (Mediavine / AdSense TODO - paste ad code here) --></div></section><section class="section"><div class="wrap"><h2>Top stores</h2><p class="sub">Browse offers by retailer.</p><div class="store-grid"><a class="store-tile" href="/stores/adidas/">Adidas<small>3 offers</small></a>
+<article class="card" data-search="The Home Depot 10% off select home decor when you sign up for emails Sign up for emails and save 10% on select home decor items. Standing offer shown site-wide on homedepot.com.  " data-cid="home-depot-07" data-store-slug="home-depot" data-verified="2026-09-29"><div class="card-top"><span class="store-name">The Home Depot</span><span class="badge-group"><span class="badge badge-deal">Deal</span></span><button class="bell-btn" data-follow="home-depot" data-store-name="The Home Depot" aria-label="Follow The Home Depot for deal alerts" title="Alert me about new The Home Depot coupons">&#128276;</button></div><h3>10% off select home decor when you sign up for emails</h3><p>Sign up for emails and save 10% on select home decor items. Standing offer shown site-wide on homedepot.com.</p><div class="card-meta"><span class="verified">&#10003; Verified Sep 29, 2026</span><span class="expiry">Ongoing</span></div><div class="card-action"><a class="btn btn-green" href="/go/home-depot-07/" target="_blank" rel="nofollow sponsored noopener">Get Deal &rarr;</a></div><div class="vote-row" data-vote-row><span class="vote-q">Did this code work for you?</span><button class="vote-btn" data-vote="yes" data-cid="home-depot-07">Yep, saved me money!</button><button class="vote-btn" data-vote="no" data-cid="home-depot-07">Nope, it's a dud</button><button class="used-btn" data-cid="home-depot-07" data-store="The Home Depot" data-title="10% off select home decor when you sign up for emails" title="Log this to My Savings">&#10003; I used this</button><span class="vote-result" id="vr-home-depot-07">…</span></div></article></div><!-- AD-SLOT: in-feed (Mediavine / AdSense TODO - paste ad code here) --></div></section><section class="section" id="sponsored-section" hidden><div class="wrap"><h2>Local deals near you</h2><p class="sub">Sponsored offers from local businesses on Honest Penny. <a href="/business/">Own a business? Advertise here</a>.</p><div class="grid" id="sponsored-grid"></div></div></section><section class="section"><div class="wrap"><h2>Top stores</h2><p class="sub">Browse offers by retailer.</p><div class="store-grid"><a class="store-tile" href="/stores/adidas/">Adidas<small>3 offers</small></a>
 <a class="store-tile" href="/stores/best-buy/">Best Buy<small>6 offers</small></a>
 <a class="store-tile" href="/stores/chewy/">Chewy<small>6 offers</small></a>
 <a class="store-tile" href="/stores/dominos/">Domino&#x27;s<small>7 offers</small></a>
@@ -2238,6 +2263,41 @@ if(!isSubscriber()){
       });
     });
   });
+  // Sponsored local deals: never rendered for Penny Pro members (ad-free perk).
+  (function(){
+    var sec=document.getElementById('sponsored-section');
+    if(!sec) return;
+    function esc(s){return String(s).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;");}
+    function render(listings){
+      if(!listings||!listings.length) return;
+      var grid=document.getElementById('sponsored-grid');
+      grid.innerHTML=listings.slice(0,3).map(function(l){
+        var codeBtn=l.code?'<button class="copy-btn" data-code="'+esc(l.code)+'">Copy</button>':'';
+        return '<div class="card"><span class="badge badge-sponsored">Sponsored</span>'
+          +'<h3>'+esc(l.title)+'</h3>'
+          +'<p class="sub">'+esc(l.business)+(l.city?' &middot; '+esc(l.city):'')+'</p>'
+          +(l.description?'<p>'+esc(l.description)+'</p>':'')
+          +(l.code?'<p><code>'+esc(l.code)+'</code> '+codeBtn+'</p>':'')
+          +'</div>';
+      }).join('');
+      grid.querySelectorAll('.copy-btn').forEach(function(btn){
+        btn.addEventListener('click', function(){
+          navigator.clipboard.writeText(btn.dataset.code).then(function(){
+            btn.textContent='Copied!';setTimeout(function(){btn.textContent='Copy';},1500);
+          });
+        });
+      });
+      sec.hidden=false;
+    }
+    function loadAds(){
+      fetch("/api/local?tier=sitewide").then(function(r){return r.json();})
+        .then(function(j){render(j.listings);}).catch(function(){});
+    }
+    fetch("/api/me").then(function(r){return r.json();}).then(function(me){
+      if(me&&me.logged_in&&me.is_pro) return; // Pro = ad-free
+      loadAds();
+    }).catch(loadAds);
+  })();
 })();
 </script>
 <script>
