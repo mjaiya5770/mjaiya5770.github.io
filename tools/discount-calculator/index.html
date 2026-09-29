@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Discount Calculator - Final Price &amp; Savings - CouponCove</title>
+<meta name="description" content="Free discount calculator: enter price and % or $ off to see your final price and total saved. Includes reverse mode.">
+<link rel="canonical" href="https://coupon-cove.vercel.app/tools/discount-calculator/">
+<meta property="og:title" content="Discount Calculator - Final Price &amp; Savings - CouponCove">
+<meta property="og:description" content="Free discount calculator: enter price and % or $ off to see your final price and total saved. Includes reverse mode.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://coupon-cove.vercel.app/assets/logo.webp">
+<meta property="og:image:alt" content="Penny the piggy bank holding a golden coupon - CouponCove">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://coupon-cove.vercel.app/assets/logo.webp">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32.png">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<link rel="manifest" href="/manifest.json">
+<meta name="theme-color" content="#FF7B6B">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500;600;700&display=swap" rel="stylesheet">
+<script>try{if(localStorage.getItem("cc_theme")==='"dark"')document.documentElement.dataset.theme="dark";}catch(e){}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "How much will I save with this coupon?", "acceptedAnswer": {"@type": "Answer", "text": "Enter the original price and the discount to see your final price and total savings instantly."}}, {"@type": "Question", "name": "What does 'reverse mode' do?", "acceptedAnswer": {"@type": "Answer", "text": "If you know the sale price and the original price, reverse mode tells you the discount percentage."}}, {"@type": "Question", "name": "Are the calculations exact?", "acceptedAnswer": {"@type": "Answer", "text": "Yes for the discount itself. Your final total at checkout may differ slightly due to tax and shipping."}}]}</script>
+<style>
+:root{
+  --brand:#FF7B6B; --brand-dark:#E85D4C; --accent:#2FBF9B;
+  --ink:#4A3728; --muted:#9A7B5F; --bg:#FFF8F0; --card:#FFFFFF;
+  --border:#F5E6D3; --radius:22px;
+}
+[data-theme="dark"]{
+  --brand:#FF9B8B; --brand-dark:#FF7B6B; --accent:#4FD8B4;
+  --ink:#F7EBDD; --muted:#C9A98A; --bg:#2A1F18; --card:#3A2C22;
+  --border:#4E3B2C;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:"Quicksand",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  color:var(--ink);background:var(--bg);line-height:1.55;-webkit-font-smoothing:antialiased}
+a{color:var(--brand);text-decoration:none}
+a:hover{text-decoration:underline}
+.wrap{max-width:1080px;margin:0 auto;padding:0 16px}
+/* header */
+.site-header{background:#fff;border-bottom:1px solid var(--border);position:sticky;top:0;z-index:50}
+.site-header .wrap{display:flex;align-items:center;gap:16px;height:60px}
+.logo{font-size:1.35rem;font-weight:800;color:var(--ink)}
+.logo span{color:var(--brand)}
+.logo img{display:block;height:44px;width:auto;border-radius:12px}
+.btn-get-penny{display:inline-block;background:#FF7B6B;color:#4A3728!important;font-weight:800;
+  border-radius:999px;padding:8px 20px;box-shadow:0 3px 0 #E85D4C;white-space:nowrap}
+.btn-get-penny:hover{text-decoration:none;transform:translateY(-1px)}
+.btn-get-penny:active{transform:translateY(2px);box-shadow:none}
+@media (max-width:760px){.btn-get-penny{display:none}}
+.nav{display:flex;gap:14px;margin-left:auto;font-size:.95rem;font-weight:600}
+.nav a{color:var(--ink)}
+.nav a:hover{color:var(--brand);text-decoration:none}
+/* hero */
+.hero{background:linear-gradient(135deg,#FFE3D3 0%,#FFD2B8 55%,#FFC4A8 100%);color:#4A3728;padding:52px 0 46px;border-radius:0 0 36px 36px}
+.hero h1{font-size:2.1rem;line-height:1.2;margin-bottom:10px;font-weight:700}
+.hero p{opacity:.85;max-width:640px;margin-bottom:18px;font-weight:600}
+.searchbar{display:flex;max-width:560px;background:#fff;border-radius:999px;overflow:hidden;box-shadow:0 8px 24px rgba(232,93,76,.22);border:3px solid #fff}
+.searchbar input{flex:1;border:0;padding:14px 22px;font-size:1rem;outline:none;font-family:inherit;color:#4A3728}
+.searchbar button{border:0;background:var(--brand);color:#fff;font-weight:700;padding:0 28px;cursor:pointer;font-size:1rem;font-family:inherit}
+.searchbar button:hover{background:var(--brand-dark)}
+/* sections */
+.section{padding:34px 0}
+.section h2{font-size:1.4rem;margin-bottom:6px}
+.section .sub{color:var(--muted);margin-bottom:18px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:16px}
+/* coupon card */
+.card{background:var(--card);border:2px solid var(--border);border-radius:var(--radius);padding:20px;
+  display:flex;flex-direction:column;gap:10px;box-shadow:0 4px 14px rgba(232,93,76,.08);transition:transform .15s ease,box-shadow .15s ease}
+.card:hover{transform:translateY(-3px);box-shadow:0 10px 24px rgba(232,93,76,.14)}
+.card-top{display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.store-name{font-weight:800;font-size:.85rem;text-transform:uppercase;letter-spacing:.4px;color:var(--brand-dark)}
+.badge{font-size:.72rem;font-weight:700;padding:3px 9px;border-radius:999px}
+.badge-featured{background:#fff4d6;color:#8a5a00;border:1px solid #f0d98a}
+.badge-code{background:#FFE4DC;color:#C24E3A}
+.badge-deal{background:#DFF7EC;color:#0F7A52}
+.card h3{font-size:1.08rem;line-height:1.35}
+.card p{color:var(--muted);font-size:.93rem}
+.card-meta{display:flex;flex-wrap:wrap;gap:10px;font-size:.8rem;color:var(--muted);margin-top:auto}
+.verified{color:#0b7a4b;font-weight:600}
+.card-action{margin-top:6px;display:flex;gap:10px;align-items:center;flex-wrap:wrap}
+.btn{display:inline-block;border:0;cursor:pointer;font-weight:700;font-size:.95rem;font-family:inherit;
+  padding:12px 26px;border-radius:999px;background:var(--brand);color:#fff;text-align:center;
+  box-shadow:0 3px 0 var(--brand-dark);transition:transform .1s ease,box-shadow .1s ease}
+.btn:hover{background:var(--brand-dark);text-decoration:none;color:#fff}
+.btn:active{transform:translateY(2px);box-shadow:none}
+.btn-green{background:var(--accent);box-shadow:0 3px 0 #1F9E80}
+.btn-green:hover{background:#1F9E80}
+.btn-outline{background:#fff;color:var(--brand-dark);border:2px solid var(--brand);box-shadow:none}
+.code-reveal{display:none;align-items:center;gap:8px;flex-wrap:wrap}
+.code-reveal.open{display:flex}
+.code-box{font-family:ui-monospace,Menlo,monospace;font-weight:800;font-size:1.05rem;letter-spacing:1px;
+  background:#FFF3E8;border:2px dashed var(--brand);border-radius:12px;padding:8px 14px;color:#4A3728}
+.copy-btn{border:1px solid var(--border);background:#fff;border-radius:8px;padding:8px 12px;cursor:pointer;font-weight:600}
+/* store grid */
+.store-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:12px}
+.store-tile{background:#fff;border:1px solid var(--border);border-radius:12px;padding:16px 10px;text-align:center;font-weight:700;color:var(--ink)}
+.store-tile:hover{border-color:var(--brand);text-decoration:none;color:var(--brand)}
+.store-tile small{display:block;font-weight:400;color:var(--muted);font-size:.78rem;margin-top:4px}
+/* categories */
+.cat-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:12px}
+.cat-tile{background:#fff;border:1px solid var(--border);border-radius:12px;padding:18px;text-align:center;font-weight:700;color:var(--ink)}
+.cat-tile:hover{border-color:var(--brand);color:var(--brand);text-decoration:none}
+/* how it works / faq */
+.steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px}
+.step{background:#fff;border:1px solid var(--border);border-radius:var(--radius);padding:20px}
+.step .n{font-size:1.6rem;font-weight:800;color:var(--brand)}
+.faq-item{background:#fff;border:1px solid var(--border);border-radius:12px;padding:16px 18px;margin-bottom:10px}
+.faq-item h3{font-size:1rem;margin-bottom:6px}
+.faq-item p{color:var(--muted);font-size:.93rem}
+/* prose pages */
+.prose{background:#fff;border:1px solid var(--border);border-radius:var(--radius);padding:28px;max-width:800px}
+.prose h2{margin:22px 0 8px;font-size:1.2rem}
+.prose p,.prose li{color:var(--muted);margin-bottom:10px}
+.prose ul{padding-left:22px}
+/* footer - cozy night */
+.site-footer{background:#2A1F18;color:#E8D5C0;margin-top:40px;padding:36px 0 24px;font-size:.9rem}
+.site-footer a{color:#FFB59B}
+.footer-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:24px;margin-bottom:24px}
+.site-footer h4{color:#FFF3E8;margin-bottom:10px;font-size:.95rem}
+.newsletter input{width:100%;padding:10px 12px;border-radius:12px;border:1px solid #4E3B2C;background:#3A2C22;color:#FFF3E8;margin-bottom:8px;font-family:inherit}
+.newsletter button{width:100%;padding:10px;border:0;border-radius:999px;background:var(--brand);color:#fff;font-weight:700;cursor:pointer;font-family:inherit;box-shadow:0 3px 0 var(--brand-dark)}
+.fineprint{border-top:1px solid #4E3B2C;padding-top:16px;color:#C9A98A;font-size:.8rem}
+.updated-stamp{display:inline-block;background:#DFF7EC;color:#0F7A52;font-weight:700;font-size:.82rem;
+  padding:5px 12px;border-radius:999px;margin-bottom:14px}
+@media (max-width:600px){.hero h1{font-size:1.55rem}.nav{font-size:.85rem;gap:10px}}
+</style>
+</head>
+<body>
+<header class="site-header">
+  <div class="wrap">
+    <a class="logo" href="/" aria-label="CouponCove home"><img src="/assets/logo.webp" alt="CouponCove - Penny the piggy bank" height="44"></a>
+    <nav class="nav" aria-label="Main">
+      <a href="/">Home</a>
+      <a href="/stores/">Stores</a>
+      <a href="/categories/">Categories</a>
+      <a href="/tools/">Tools</a>
+      <a href="/about/">About</a>
+      <a class="btn-get-penny" href="/extension/">&#128055; Get Penny</a>
+      <button id="theme-toggle" aria-label="Toggle dark mode" title="Toggle dark mode">&#127769;</button>
+    </nav>
+  </div>
+</header>
+<!-- AD-SLOT: header leaderboard (Mediavine / AdSense TODO - paste ad code here) -->
+<main>
+<section class="section"><div class="wrap"><h1>Discount Calculator</h1><p class="sub">See your real final price before you buy.</p><div class="prose"><div id="calc"><div class="row"><div><label for="c-price">Original price ($)</label><input type="number" id="c-price" min="0" step="0.01" placeholder="120.00"></div><div><label for="c-mode">Discount type</label><select id="c-mode"><option value="pct">% off</option><option value="amt">$ off</option><option value="rev">Reverse: sale price &rarr; % off</option></select></div></div><div id="c-disc-wrap"><label for="c-disc">Discount</label><input type="number" id="c-disc" min="0" step="0.01" placeholder="20"></div><div id="c-sale-wrap" style="display:none"><label for="c-sale">Sale price ($)</label><input type="number" id="c-sale" min="0" step="0.01" placeholder="84.00"></div><button class="btn" id="c-go" style="margin-top:14px">Calculate</button><div id="c-out" style="margin-top:18px;font-size:1.15rem"></div></div><h2>Frequently asked questions</h2><div class="faq-item"><h3>How much will I save with this coupon?</h3><p>Enter the original price and the discount to see your final price and total savings instantly.</p></div>
+<div class="faq-item"><h3>What does &#x27;reverse mode&#x27; do?</h3><p>If you know the sale price and the original price, reverse mode tells you the discount percentage.</p></div>
+<div class="faq-item"><h3>Are the calculations exact?</h3><p>Yes for the discount itself. Your final total at checkout may differ slightly due to tax and shipping.</p></div></div></div></section>
+</main>
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <h4>CouponCove</h4>
+        <p><img src="/assets/icon.webp" alt="" width="48" height="48" style="border-radius:14px;margin-bottom:8px"><br>
+        Verified coupon codes and deals for the stores you love, updated daily.</p>
+      </div>
+      <div>
+        <h4>Explore</h4>
+        <p><a href="/stores/">All stores</a><br><a href="/categories/">Categories</a><br><a href="/about/">About us</a></p>
+      </div>
+      <div>
+        <h4>Get it everywhere</h4>
+        <p><a href="/extension/">Browser extension</a><br><a href="/widget/">Blog widget</a><br><a href="/refer/">Refer a friend</a><br><a href="/email/">Newsletter</a></p>
+      </div>
+      <div>
+        <h4>Trust</h4>
+        <p><a href="/disclosure/">Affiliate disclosure</a><br><a href="/privacy/">Privacy policy</a></p>
+      </div>
+      <div class="newsletter">
+        <h4>Get fresh coupons</h4>
+        <!-- Unified newsletter signup: POSTs to /api/subscribe.py (source=footer).
+             When Beehiiv is wired, api/subscribe.py forwards there too. -->
+        <form class="cc-subscribe" data-source="footer" action="#" method="post">
+          <input type="email" name="email" placeholder="you@email.com" aria-label="Email address" required>
+          <button type="submit">Notify me</button>
+        </form>
+      </div>
+    </div>
+    <div class="fineprint">
+      &copy; 2026 CouponCove. Coupon codes are verified at time of publication; retailers may change or end offers at any time.
+      <a href="/disclosure/">Affiliate disclosure</a>.
+    </div>
+  </div>
+</footer>
+<style>
+/* ---------- CouponCove widgets ---------- */
+.product-card img{width:100%;border-radius:10px;aspect-ratio:16/10;object-fit:cover;background:#eef2f7}
+.product-name{font-weight:700}
+.rail{display:flex;gap:14px;overflow-x:auto;padding:4px 2px 14px;scroll-snap-type:x mandatory}
+.rail .card{min-width:270px;max-width:300px;scroll-snap-align:start}
+.countdown{font-weight:700;color:#b91c1c;font-size:.85rem}
+/* vote row */
+.vote-row{display:flex;align-items:center;gap:8px;font-size:.82rem;color:var(--muted);
+  border-top:1px dashed var(--border);padding-top:10px;flex-wrap:wrap}
+.vote-q{font-weight:600}
+.vote-btn{border:1px solid var(--border);background:#fff;border-radius:999px;
+  padding:4px 14px;cursor:pointer;font-weight:600;font-size:.82rem}
+.vote-btn:hover{border-color:var(--brand);color:var(--brand)}
+.vote-btn.voted-yes{background:#e8f7f0;border-color:#00b578;color:#0b7a4b}
+.vote-btn.voted-no{background:#fdecec;border-color:#dc2626;color:#b91c1c}
+.vote-result{font-size:.8rem}
+/* bell / follow */
+.bell-btn{border:1px solid var(--border);background:#fff;border-radius:999px;cursor:pointer;
+  font-size:.95rem;padding:2px 9px;line-height:1.6}
+.bell-btn:hover{border-color:var(--brand)}
+.bell-btn.following{background:#fff4d6;border-color:#f0d98a}
+.new-badge{display:inline-block;background:#dc2626;color:#fff;font-size:.72rem;font-weight:800;
+  padding:2px 9px;border-radius:999px;margin-left:8px;vertical-align:middle}
+/* toast */
+#cc-toast{position:fixed;left:50%;bottom:26px;transform:translateX(-50%) translateY(20px);
+  background:#101828;color:#fff;padding:12px 20px;border-radius:999px;font-size:.9rem;font-weight:600;
+  opacity:0;pointer-events:none;transition:all .25s;z-index:3000;max-width:92vw;text-align:center}
+#cc-toast.show{opacity:1;transform:translateX(-50%) translateY(0)}
+/* alert banner */
+#cc-alert-banner{display:none;background:#fff4d6;border:1px solid #f0d98a;color:#6b4a00;
+  border-radius:12px;padding:12px 16px;margin:16px auto 0;max-width:1080px;font-size:.92rem}
+#cc-alert-banner.show{display:block}
+/* follow popover */
+#cc-follow-pop{position:fixed;z-index:2500;background:#fff;border:1px solid var(--border);
+  border-radius:14px;box-shadow:0 16px 48px rgba(16,24,40,.22);padding:18px;width:min(320px,calc(100vw - 32px));display:none}
+#cc-follow-pop.show{display:block}
+#cc-follow-pop h4{margin-bottom:6px}
+#cc-follow-pop input{width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:8px;margin:8px 0}
+/* deal finder */
+#df-fab{position:fixed;right:18px;bottom:18px;z-index:1000;border:0;cursor:pointer;
+  background:var(--brand);color:#fff;font-weight:700;font-size:.95rem;padding:13px 20px;border-radius:999px;
+  box-shadow:0 8px 24px rgba(232,93,76,.4)}
+#df-panel{position:fixed;right:18px;bottom:76px;z-index:1000;width:min(360px,calc(100vw - 36px));
+  background:#fff;border:1px solid var(--border);border-radius:16px;
+  box-shadow:0 16px 48px rgba(16,24,40,.22);display:none;flex-direction:column;overflow:hidden}
+#df-panel.open{display:flex}
+#df-head{background:linear-gradient(135deg,#FF8A76,#FFB36B);color:#4A3728;padding:12px 16px;
+  font-weight:700;display:flex;justify-content:space-between;align-items:center}
+#df-head button{background:none;border:0;color:#4A3728;font-size:1.1rem;cursor:pointer}
+#df-msgs{padding:14px;display:flex;flex-direction:column;gap:10px;max-height:320px;overflow-y:auto}
+.df-msg{background:#FBEFE3;border-radius:14px;padding:9px 12px;font-size:.9rem}
+.df-msg.ai{background:#FFF3E8;border:1px dashed var(--brand)}
+.df-mini{border:1px solid var(--border);border-radius:10px;padding:10px 12px;background:#fff;margin-top:6px}
+.df-mini .s{font-size:.75rem;font-weight:800;text-transform:uppercase;color:var(--brand-dark);letter-spacing:.4px}
+.df-mini .t{font-weight:700;margin:2px 0}
+.df-mini .r{font-size:.85rem;color:var(--muted)}
+#df-form{display:flex;border-top:1px solid var(--border)}
+#df-form input{flex:1;border:0;padding:12px 14px;font-size:.92rem;outline:none;min-width:0}
+#df-form button{border:0;background:var(--accent);color:#fff;font-weight:700;padding:0 18px;cursor:pointer}
+/* popup */
+#cc-popup-overlay{position:fixed;inset:0;background:rgba(16,24,40,.55);z-index:2000;display:none;
+  align-items:center;justify-content:center;padding:16px}
+#cc-popup-overlay.show{display:flex}
+#cc-popup{background:#fff;border-radius:18px;max-width:420px;width:100%;padding:26px;position:relative;
+  box-shadow:0 24px 64px rgba(0,0,0,.3);text-align:center;max-height:92vh;overflow-y:auto}
+#cc-popup-close{position:absolute;top:10px;right:14px;border:0;background:none;font-size:1.4rem;cursor:pointer;color:var(--muted)}
+#cc-popup .code-box{display:inline-block;margin:10px 0}
+#cc-popup form{margin-top:12px}
+#cc-popup input[type=email]{width:100%;padding:11px 12px;border:1px solid var(--border);border-radius:10px;margin-bottom:8px;font-size:.95rem}
+#cc-popup .fine{font-size:.78rem;color:var(--muted);margin-top:10px}
+/* theme toggle */
+#theme-toggle{border:1px solid var(--border);background:var(--card);border-radius:999px;cursor:pointer;
+  font-size:1rem;padding:3px 10px;color:var(--ink)}
+/* dark mode */
+[data-theme="dark"]{--ink:#e9eef6;--muted:#9fb0c7;--bg:#0e1524;--card:#162032;--border:#24344f}
+[data-theme="dark"] .site-header{background:#111a2c}
+[data-theme="dark"] .hero{background:linear-gradient(135deg,#123a7a,#3a2470)}
+[data-theme="dark"] .card,[data-theme="dark"] .store-tile,[data-theme="dark"] .cat-tile,
+[data-theme="dark"] .step,[data-theme="dark"] .faq-item,[data-theme="dark"] .prose{background:#162032}
+[data-theme="dark"] .nav a{color:var(--ink)}
+[data-theme="dark"] .code-box{background:#1b2a4a}
+[data-theme="dark"] .searchbar input{background:#0e1524;color:var(--ink)}
+[data-theme="dark"] #df-panel{background:#162032}
+[data-theme="dark"] .df-msg{background:#1e2c46;color:var(--ink)}
+[data-theme="dark"] .df-mini{background:#162032}
+[data-theme="dark"] #df-form input{background:#0e1524;color:var(--ink)}
+[data-theme="dark"] .vote-btn,[data-theme="dark"] .bell-btn,[data-theme="dark"] .copy-btn{background:#1e2c46;color:var(--ink)}
+[data-theme="dark"] #cc-follow-pop,[data-theme="dark"] #cc-popup{background:#162032;color:var(--ink)}
+[data-theme="dark"] #cc-follow-pop input,[data-theme="dark"] #cc-popup input[type=email]{background:#0e1524;color:var(--ink)}
+[data-theme="dark"] .site-footer{background:#0a0f1c}
+</style>
+<script>window.CC_INDEX=[{"id": "doordash-01", "store": "DoorDash", "title": "15% off your first order"}, {"id": "doordash-02", "store": "DoorDash", "title": "30% off first grocery or retail order"}, {"id": "doordash-03", "store": "DoorDash", "title": "DashPass: free 30-day trial, $0 delivery fees"}, {"id": "uber-eats-01", "store": "Uber Eats", "title": "$10 off your first order of $20+"}, {"id": "uber-eats-02", "store": "Uber Eats", "title": "Uber One: $0 delivery fees + up to 10% off"}, {"id": "uber-eats-03", "store": "Uber Eats", "title": "Save up to 60% on your first 2 orders"}, {"id": "dominos-01", "store": "Domino's", "title": "20% off your online order"}, {"id": "dominos-02", "store": "Domino's", "title": "2+ large 2-topping pizzas for $12.99 each"}, {"id": "dominos-03", "store": "Domino's", "title": "Piece of the Pie Rewards: earn points toward free pizza"}, {"id": "temu-01", "store": "Temu", "title": "30% off $39+ orders for new users"}, {"id": "temu-02", "store": "Temu", "title": "Up to 10% off your order"}, {"id": "temu-03", "store": "Temu", "title": "Free shipping on almost all orders"}, {"id": "temu-04", "store": "Temu", "title": "Up to 90% off Lightning Deals"}, {"id": "nike-01", "store": "Nike", "title": "Sale: Up to 50% Off"}, {"id": "nike-02", "store": "Nike", "title": "Last Chance Clearance: Up to 50% Off"}, {"id": "nike-03", "store": "Nike", "title": "10% Off for Students, Military & First Responders"}, {"id": "adidas-01", "store": "Adidas", "title": "Fall Kick Off Sale: Up to 60% Off"}, {"id": "adidas-02", "store": "Adidas", "title": "Free Shipping for adiClub Members"}, {"id": "sephora-01", "store": "Sephora", "title": "Sale Section: Up to 60% Off Beauty"}, {"id": "sephora-02", "store": "Sephora", "title": "Free Standard Shipping: Beauty Insider Always, Guests on $50+"}, {"id": "sephora-03", "store": "Sephora", "title": "Auto-Replenish: 5% Off Every Order, Up to 30%"}, {"id": "ulta-01", "store": "Ulta Beauty", "title": "15% Off Fragrance"}, {"id": "ulta-02", "store": "Ulta Beauty", "title": "Brow Sale: Up to 50% Off"}, {"id": "ulta-03", "store": "Ulta Beauty", "title": "10% Off When You Sign Up for Text Alerts"}, {"id": "shein-01", "store": "Shein", "title": "20% Off Orders $50+"}, {"id": "shein-02", "store": "Shein", "title": "15% Off Your Next Purchase"}, {"id": "shein-03", "store": "Shein", "title": "Up to 50% Off 300K+ Top Sellers"}, {"id": "best-buy-01", "store": "Best Buy", "title": "Up to 60% Off 48-Hour Flash Sale"}, {"id": "best-buy-02", "store": "Best Buy", "title": "30% Off or More on Member Deals"}, {"id": "best-buy-03", "store": "Best Buy", "title": "Free $5 Gift Card with Orders Over $420"}, {"id": "target-01", "store": "Target", "title": "Circle Deal Days: Up to 40% Off"}, {"id": "target-02", "store": "Target", "title": "15% Off First Purchase for New Circle Members"}, {"id": "target-03", "store": "Target", "title": "Free Shipping on $35+ Orders"}, {"id": "walmart-01", "store": "Walmart", "title": "New customers: $10 off $35+ pickup or delivery"}, {"id": "walmart-02", "store": "Walmart", "title": "Walmart Photo: Extra 25% Off $20+ Orders"}, {"id": "walmart-03", "store": "Walmart", "title": "Free 2-Day Shipping on $35+ Orders"}, {"id": "ebay-01", "store": "eBay", "title": "15% Off Select Handbags"}, {"id": "ebay-02", "store": "eBay", "title": "20% off select items (up to $350 off)"}, {"id": "ebay-03", "store": "eBay", "title": "eBay Daily Deals: Up to 60% Off"}, {"id": "macys-01", "store": "Macy's", "title": "Extra 30% Off Best of the Season Sale"}, {"id": "macys-02", "store": "Macy's", "title": "Up to 85% Off Fine Jewelry Sale"}, {"id": "macys-03", "store": "Macy's", "title": "Free Shipping on Orders $39+ for Star Rewards"}, {"id": "macys-04", "store": "Macy's", "title": "$20 Star Money for Every $100 Spent"}, {"id": "kohls-01", "store": "Kohl's", "title": "Customer Appreciation Event: Extra 15-30% Off"}, {"id": "kohls-02", "store": "Kohl's", "title": "Redeem Kohl's Cash Sept 28 - Oct 4"}, {"id": "kohls-03", "store": "Kohl's", "title": "$10 Off $50+ Toys for Rewards Members"}, {"id": "kohls-04", "store": "Kohl's", "title": "Free Shipping on Orders $49+"}, {"id": "chewy-01", "store": "Chewy", "title": "$20 eGift Card on First $49+ Order"}, {"id": "chewy-02", "store": "Chewy", "title": "$5 Off First Chewy App Order"}, {"id": "chewy-03", "store": "Chewy", "title": "20% Off First Pharmacy Order"}, {"id": "chewy-04", "store": "Chewy", "title": "35% Off First Autoship + 5% Off Future Orders"}, {"id": "chewy-05", "store": "Chewy", "title": "Free 1-3 Day Shipping on Orders $49+"}, {"id": "wayfair-01", "store": "Wayfair", "title": "Up to 70% Off Furniture & Home Deals"}, {"id": "wayfair-02", "store": "Wayfair", "title": "Free Shipping on Orders Over $35"}, {"id": "wayfair-03", "store": "Wayfair", "title": "App-Exclusive Savings & Deal Alerts"}, {"id": "home-depot-01", "store": "The Home Depot", "title": "Up to 50% Off Fall Decor & Renovation"}, {"id": "home-depot-02", "store": "The Home Depot", "title": "10% Military Discount"}, {"id": "home-depot-03", "store": "The Home Depot", "title": "Up to 40% Off Tools - Special Buys"}, {"id": "home-depot-04", "store": "The Home Depot", "title": "Free Delivery on Orders $45+"}];window.CC_NEWNESS={"doordash": ["2026-09-28", "2026-09-28", "2026-09-28"], "uber-eats": ["2026-09-28", "2026-09-28", "2026-09-28"], "dominos": ["2026-09-28", "2026-09-28", "2026-09-28"], "temu": ["2026-09-28", "2026-09-28", "2026-09-28", "2026-09-28"], "nike": ["2026-09-28", "2026-09-28", "2026-09-28"], "adidas": ["2026-09-28", "2026-09-28"], "sephora": ["2026-09-28", "2026-09-28", "2026-09-28"], "ulta": ["2026-09-28", "2026-09-28", "2026-09-28"], "shein": ["2026-09-28", "2026-09-28", "2026-09-28"], "best-buy": ["2026-09-28", "2026-09-28", "2026-09-28"], "target": ["2026-09-28", "2026-09-28", "2026-09-28"], "walmart": ["2026-09-28", "2026-09-28", "2026-09-28"], "ebay": ["2026-09-28", "2026-09-28", "2026-09-28"], "macys": ["2026-09-28", "2026-09-28", "2026-09-28", "2026-09-28"], "kohls": ["2026-09-28", "2026-09-28", "2026-09-28", "2026-09-28"], "chewy": ["2026-09-28", "2026-09-28", "2026-09-28", "2026-09-28", "2026-09-28"], "wayfair": ["2026-09-28", "2026-09-28", "2026-09-28"], "home-depot": ["2026-09-28", "2026-09-28", "2026-09-28", "2026-09-28"]};</script>
+<style>
+.cc-subscribe{display:flex;gap:8px;flex-wrap:wrap}
+.cc-subscribe input[type=email]{flex:1;min-width:180px;padding:11px 14px;border:1px solid var(--border);
+  border-radius:10px;font-size:.95rem}
+.cc-sub-thanks{font-weight:700;color:#0b7a4b}
+.sub-lock{position:relative}
+.sub-lock .lock-veil{position:absolute;inset:0;background:rgba(255,255,255,.88);
+  backdrop-filter:blur(3px);-webkit-backdrop-filter:blur(3px);border-radius:12px;
+  display:flex;flex-direction:column;align-items:center;justify-content:center;
+  gap:8px;padding:18px;text-align:center;z-index:5}
+[data-theme="dark"] .sub-lock .lock-veil{background:rgba(14,21,36,.9)}
+.lock-veil .cc-subscribe{max-width:320px;width:100%}
+.badge-subonly{background:#ede9fe;color:#5b21b6;border:1px solid #c4b5fd}
+.badge-early{background:#fef3c7;color:#92400e;border:1px solid #fcd34d}
+</style>
+<div id="cc-alert-banner" role="status"></div>
+<div id="cc-follow-pop" role="dialog" aria-label="Follow store"><h4>Follow <span class="pop-store-name"></span></h4><p style="font-size:.88rem;color:var(--muted)">Get an alert here when new coupons drop.</p><form class="cc-subscribe" data-source="follow_popover" action="#" method="post"><input type="email" placeholder="you@email.com" aria-label="Email for deal alerts" required><button class="btn" type="submit" style="width:100%;margin-top:4px">Alert me</button></form><button class="btn btn-secondary pop-close" style="width:100%;margin-top:8px">Not now</button></div>
+<div id="cc-toast" role="status"></div>
+<button id="df-fab" aria-label="Open AI Deal Finder">\u2728 Deal Finder</button>
+<div id="df-panel" role="dialog" aria-label="AI Deal Finder">
+  <div id="df-head"><span>AI Deal Finder</span><button id="df-close" aria-label="Close">\u2715</button></div>
+  <div id="df-msgs"><div class="df-msg ai">Tell me what you\u2019re shopping for \u2014 I\u2019ll find the best current coupons for you.</div></div>
+  <form id="df-form"><input id="df-input" type="text" placeholder="e.g. running shoes under $100" aria-label="Describe what you want" autocomplete="off"><button type="submit">Send</button></form>
+</div>
+<div id="cc-popup-overlay" role="dialog" aria-label="Featured coupon">
+  <div id="cc-popup">
+    <button id="cc-popup-close" aria-label="Dismiss">\u00d7</button>
+    <div class="store-name">DoorDash</div>
+    <h3>\U0001f525 Today\u2019s featured deal</h3>
+    <p><strong>15% off your first order</strong></p>
+    <p>New DoorDash users save 15% on their first order of $15 or more (up to $10 off) through September 30, 2026. Excludes taxes, fees, tip, and alcohol.</p>
+    <a class="btn btn-green" href="/go/doordash-01/" target="_blank" rel="nofollow sponsored noopener">Get This Deal &rarr;</a>
+    <!-- TODO: unified newsletter signup - posts to /api/subscribe.py.
+         When an email provider (Beehiiv) is wired, api/subscribe.py forwards there too. -->
+    <form class="cc-subscribe" data-source="popup" action="#" method="post">
+      <input type="email" name="email" placeholder="you@email.com" aria-label="Email for daily deals" required>
+      <button class="btn" type="submit" style="width:100%">Email me daily deals</button>
+    </form>
+    <p class="fine">One email a day. Unsubscribe anytime. We never sell your address.</p>
+  </div>
+</div>
+<script>
+(function(){
+"use strict";
+function $(s,r){return (r||document).querySelector(s);}
+function $all(s,r){return Array.prototype.slice.call((r||document).querySelectorAll(s));}
+function esc(s){return String(s==null?"":s).replace(/[&<>"']/g,function(c){return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c];});}
+function store(k,v){try{if(v===undefined)return JSON.parse(localStorage.getItem(k));localStorage.setItem(k,JSON.stringify(v));}catch(e){}return null;}
+function toast(msg){var t=$("#cc-toast");if(!t)return;t.textContent=msg;t.classList.add("show");clearTimeout(t._h);t._h=setTimeout(function(){t.classList.remove("show");},2600);}
+
+/* ---------- search filter (home) ---------- */
+var searchInput=$("#coupon-search");
+if(searchInput){searchInput.addEventListener("input",function(){var q=searchInput.value.toLowerCase();
+$all("#coupon-grid .card").forEach(function(card){card.style.display=card.dataset.search.indexOf(q)>-1?"":"none";});});}
+
+/* ---------- show-code reveal ---------- */
+$all(".show-code-btn").forEach(function(btn){btn.addEventListener("click",function(){
+var el=document.getElementById(btn.dataset.target);if(el){el.classList.add("open");btn.style.display="none";}});});
+
+/* ---------- copy + auto-open store ---------- */
+$all(".copy-btn").forEach(function(btn){btn.addEventListener("click",function(){
+var done=function(){btn.textContent="Copied!";toast("Yay! Code copied — Penny opened the store for you!");
+setTimeout(function(){btn.textContent="Copy";},1500);
+var cid=btn.dataset.cid;if(cid){setTimeout(function(){window.open("/go/"+encodeURIComponent(cid)+"/","_blank","noopener");},600);}};
+if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(btn.dataset.code).then(done,done);}
+else{var ta=document.createElement("textarea");ta.value=btn.dataset.code;document.body.appendChild(ta);ta.select();try{document.execCommand("copy");}catch(e){}document.body.removeChild(ta);done();}});});
+
+/* ---------- community voting ---------- */
+var voted=store("cc_voted")||{};
+function paintVotes(counts){
+$all("[data-vote-row]").forEach(function(row){
+var cid=row.closest(".card").dataset.cid;var c=counts[cid];var el=row.querySelector(".vote-result");
+if(!c||!(c.yes+c.no)){el.textContent="Be the first to verify";return;}
+var pct=Math.round(100*c.yes/(c.yes+c.no));el.textContent=pct+"% success \u00b7 "+(c.yes+c.no)+" votes";});}
+function paintVoted(){
+$all(".vote-btn").forEach(function(b){var cid=b.dataset.cid;var v=voted[cid];
+if(v){b.classList.add(v==="yes"?"voted-yes":"voted-no");}});}
+var cids=$all(".card[data-cid]").map(function(c){return c.dataset.cid;});
+if(cids.length){fetch("/api/vote?ids="+encodeURIComponent(cids.join(","))).then(function(r){return r.json();})
+.then(function(counts){paintVotes(counts||{});}).catch(function(){});}
+paintVoted();
+$all(".vote-btn").forEach(function(btn){btn.addEventListener("click",function(){
+var cid=btn.dataset.cid;if(!cid||voted[cid])return;var v=btn.dataset.vote;
+voted[cid]=v;store("cc_voted",voted);paintVoted();
+var row=btn.closest("[data-vote-row]");var el=row?row.querySelector(".vote-result"):null;
+fetch("/api/vote",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({coupon_id:cid,vote:v})})
+.then(function(r){return r.json();}).then(function(c){
+if(el&&c&&(c.yes+c.no)){var pct=Math.round(100*c.yes/(c.yes+c.no));el.textContent=pct+"% success \u00b7 "+(c.yes+c.no)+" votes";}}).catch(function(){});
+toast("Penny thanks you for verifying!");});});
+
+/* ---------- new-since-last-visit + store view tracking ---------- */
+var visits=store("cc_visits")||{};
+var views=store("cc_views")||{};
+var marker=$("#store-marker");
+function newCount(slug,since){var dates=(window.CC_NEWNESS||{})[slug]||[];if(!since)return 0;
+return dates.filter(function(d){return d>since;}).length;}
+if(marker){var slug=marker.dataset.slug;
+var lastVisit=visits[slug];
+var n=newCount(slug,lastVisit);
+if(n>0&&lastVisit){var h=$("#store-title");if(h){var b=document.createElement("span");b.className="new-badge";b.textContent=n+" new";h.appendChild(b);}}
+views[slug]=(views[slug]||0)+1;store("cc_views",views);
+visits[slug]=new Date().toISOString().slice(0,10);store("cc_visits",visits);
+var fb=$("#store-follow-btn");if(fb){syncBell(fb);}}
+$all(".store-tile[data-store-slug]").forEach(function(tile){var s=tile.dataset.storeSlug;
+var cnt=newCount(s,visits[s]);if(cnt>0&&visits[s]){var b=document.createElement("span");b.className="new-badge";b.textContent=cnt+" new";tile.appendChild(b);}});
+
+/* ---------- follow-a-store deal alerts ---------- */
+var follows=store("cc_follows")||{};
+function syncBell(btn){var s=btn.dataset.follow;
+if(follows[s]){btn.classList.add("following");btn.setAttribute("aria-pressed","true");}}
+$all("[data-follow]").forEach(syncBell);
+var pop=$("#cc-follow-pop");
+$all("[data-follow]").forEach(function(btn){btn.addEventListener("click",function(e){e.stopPropagation();
+if(!pop)return;pop.classList.add("show");pop.dataset.slug=btn.dataset.follow;
+pop.querySelector(".pop-store-name").textContent=btn.dataset.storeName||btn.dataset.follow;});});
+if(pop){pop.querySelector(".pop-close").addEventListener("click",function(){pop.classList.remove("show");});
+document.addEventListener("click",function(e){if(!pop.contains(e.target))pop.classList.remove("show");});
+var form=pop.querySelector("form");
+form.addEventListener("submit",function(e){e.preventDefault();
+var slug=pop.dataset.slug;var name=pop.querySelector(".pop-store-name").textContent;
+follows[slug]={name:name,ts:new Date().toISOString().slice(0,10)};store("cc_follows",follows);
+$all('[data-follow="'+slug+'"]').forEach(syncBell);
+toast("\uD83D\uDD14 Following "+name+".");});}
+(function alertBanner(){var banner=$("#cc-alert-banner");if(!banner)return;var bits=[];
+Object.keys(follows).forEach(function(slug){var f=follows[slug];var cnt=newCount(slug,f.ts);
+if(cnt>0)bits.push('<a href="/stores/'+encodeURIComponent(slug)+'/">'+cnt+" new coupon"+(cnt>1?"s":"")+" at "+esc(f.name)+"</a>");});
+if(bits.length){banner.innerHTML="\uD83D\uDD14 Since you followed: "+bits.join(" \u00b7 ")+".";banner.classList.add("show");}})();
+
+/* ---------- picked for you ---------- */
+(function(){var wrap=$("#foryou");if(!wrap)return;
+var top=Object.keys(views).sort(function(a,b){return views[b]-views[a];}).slice(0,3);
+var personal=$("#foryou-personal"),featured=$("#foryou-featured");
+if(top.length){var shown=0;
+$all(".card",personal).forEach(function(card){var keep=top.indexOf(card.dataset.storeSlug)>-1&&shown<6;
+card.style.display=keep?"":"none";if(keep)shown++;});
+if(shown>0){personal.style.display="";featured.style.display="none";
+wrap.querySelector("h2").textContent="Picked for you";}}})();
+
+/* ---------- ending-soon countdowns ---------- */
+function tick(){var now=new Date();
+$all("[data-countdown-to]").forEach(function(el){var to=new Date(el.dataset.countdownTo+"T23:59:59");
+var ms=to-now;if(ms<0){el.textContent="Ending today";return;}
+var d=Math.floor(ms/864e5),h=Math.floor(ms%864e5/36e5),m=Math.floor(ms%36e5/6e4);
+el.textContent="Ends in "+(d>0?d+"d ":"")+h+"h "+m+"m";});}
+tick();setInterval(tick,60000);
+
+/* ---------- dark mode ---------- */
+var themeBtn=$("#theme-toggle");
+function paintTheme(){if(themeBtn)themeBtn.textContent=document.documentElement.dataset.theme==="dark"?"\u2600\uFE0F":"\uD83C\uDF19";}
+if(themeBtn){themeBtn.addEventListener("click",function(){
+var dark=document.documentElement.dataset.theme!=="dark";
+document.documentElement.dataset.theme=dark?"dark":"";store("cc_theme",dark?"dark":"light");paintTheme();});}
+paintTheme();
+
+/* ---------- AI deal finder widget ---------- */
+try{
+var fab=$("#df-fab"),panel=$("#df-panel");
+if(fab&&panel){
+fab.addEventListener("click",function(){panel.classList.toggle("open");});
+$("#df-close").addEventListener("click",function(){panel.classList.remove("open");});
+var form=$("#df-form"),input=$("#df-input"),msgs=$("#df-msgs");
+function addMsg(html,ai){var d=document.createElement("div");d.className="df-msg"+(ai?" ai":"");d.innerHTML=html;msgs.appendChild(d);msgs.scrollTop=msgs.scrollHeight;return d;}
+var idx={};(window.CC_INDEX||[]).forEach(function(c){idx[c.id]=c;});
+form.addEventListener("submit",function(e){e.preventDefault();var q=input.value.trim();if(!q)return;
+addMsg(esc(q),false);input.value="";var thinking=addMsg("Finding deals\u2026",true);
+fetch("/api/deal-finder",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({query:q})})
+.then(function(r){return r.json().then(function(j){return{s:r.status,j:j};});})
+.then(function(res){thinking.remove();
+if(res.s===503||(res.j&&res.j.error)){addMsg("The AI finder is napping \u2014 browse today\u2019s verified deals below.",true);return;}
+var m=(res.j&&res.j.matches)||[];
+if(!m.length){addMsg("Hmm, nothing matched that. Try something broader like \u201Cpizza\u201D or \u201Csneakers\u201D.",true);return;}
+m.forEach(function(mt){var c=idx[mt.id];if(!c)return;
+addMsg('<div class="df-mini"><div class="s">'+esc(c.store)+'</div><div class="t">'+esc(c.title)+'</div><div class="r">'+esc(mt.reason||"")+'</div><a href="/go/'+encodeURIComponent(mt.id)+'/">View deal \u2192</a></div>',true);});})
+.catch(function(){thinking.remove();addMsg("The AI finder is napping \u2014 browse today\u2019s verified deals below.",true);});});
+}}catch(e){}
+
+/* ---------- once-per-day coupon popup ---------- */
+try{
+var overlay=$("#cc-popup-overlay");
+if(overlay){
+var today=new Date().toISOString().slice(0,10);var shown=false;
+function show(){if(shown)return;shown=true;overlay.classList.add("show");}
+function dismiss(){overlay.classList.remove("show");try{localStorage.setItem("cc_popup_day",today);}catch(e){}}
+var lastDay=null;try{lastDay=localStorage.getItem("cc_popup_day");}catch(e){}
+if(lastDay!==today){
+setTimeout(show,25000);
+document.addEventListener("mouseout",function(e){
+if(!e.relatedTarget&&e.clientY<=0&&window.matchMedia&&window.matchMedia("(hover: hover)").matches)show();});
+overlay.querySelector("#cc-popup-close").addEventListener("click",dismiss);
+overlay.addEventListener("click",function(e){if(e.target===overlay)dismiss();});
+var pcode=overlay.querySelector(".popup-show-code");
+if(pcode){pcode.addEventListener("click",function(){
+var r=overlay.querySelector(".popup-code-reveal");if(r){r.classList.add("open");pcode.style.display="none";}});}
+var pcopy=overlay.querySelector(".popup-copy");
+if(pcopy){pcopy.addEventListener("click",function(){
+var code=pcopy.dataset.code;
+var done=function(){pcopy.textContent="Copied!";toast("Code copied \u2014 opening store\u2026");
+setTimeout(function(){window.open(pcopy.dataset.go,"_blank","noopener");},600);};
+if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(code).then(done,done);}else{done();}});}
+}}catch(e){}
+})();
+</script>
+<script>
+(function(){
+"use strict";
+function store(k,v){try{if(v===undefined)return JSON.parse(localStorage.getItem(k));localStorage.setItem(k,JSON.stringify(v));}catch(e){}return null;}
+function esc(s){return String(s==null?"":s).replace(/[&<>"']/g,function(c){return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c];});}
+var EMAIL_RE=/^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+function unlockAll(){
+  document.querySelectorAll("[data-sub-lock]").forEach(function(v){v.remove();});
+  document.querySelectorAll(".card.sub-lock").forEach(function(c){c.classList.remove("sub-lock");});
+}
+
+/* Unified subscribe handler: footer, hero, popup, card locks. */
+document.querySelectorAll("form.cc-subscribe").forEach(function(form){
+  form.addEventListener("submit",function(e){
+    e.preventDefault();
+    var input=form.querySelector('input[type="email"]');
+    var email=(input.value||"").trim().toLowerCase();
+    if(!EMAIL_RE.test(email)){input.focus();input.style.borderColor="#dc2626";return;}
+    var btn=form.querySelector('button[type="submit"]');
+    if(btn){btn.disabled=true;btn.textContent="Joining\u2026";}
+    fetch("/api/subscribe",{method:"POST",headers:{"Content-Type":"application/json"},
+      body:JSON.stringify({email:email,source:form.dataset.source||"unknown",website_url:""})})
+    .then(function(r){return r.json().then(function(j){return{s:r.status,j:j};});})
+    .then(function(res){
+      if(res.s===200&&res.j.ok){
+        store("cc_subscriber",{email:email,ts:Date.now()});
+        form.innerHTML='<span class="cc-sub-thanks">\u2705 You\u2019re in! Watch your inbox Monday for exclusive deals.</span>';
+        unlockAll();
+      }else{
+        form.innerHTML='<span class="cc-sub-thanks">Hmm, that didn\u2019t go through \u2014 please try again.</span>';
+      }
+    })
+    .catch(function(){
+      /* Graceful: API unreachable (static preview) - still flag locally. */
+      store("cc_subscriber",{email:email,ts:Date.now()});
+      form.innerHTML='<span class="cc-sub-thanks">\u2705 You\u2019re in! Watch your inbox Monday for exclusive deals.</span>';
+      unlockAll();
+    });
+  });
+});
+
+/* Subscriber-only + 24h early-access locks. verified_date is YYYY-MM-DD. */
+function isSubscriber(){return !!store("cc_subscriber");}
+function daysSince(ymd){
+  var t=Date.parse(ymd+"T12:00:00");if(isNaN(t))return 99;
+  return (Date.now()-t)/864e5;
+}
+function lockCard(card,headline){
+  if(card.querySelector("[data-sub-lock]"))return;
+  card.classList.add("sub-lock");
+  var veil=document.createElement("div");
+  veil.className="lock-veil";veil.setAttribute("data-sub-lock","");
+  veil.innerHTML='<div style="font-size:1.6rem">\uD83D\uDD12</div><div><strong>'+esc(headline)+'</strong></div>'
+    +'<div style="font-size:.88rem;color:var(--muted)">Subscribers get exclusive deals first. Drop your email to unlock.</div>'
+    +'<form class="cc-subscribe" data-source="card_lock" action="#" method="post">'
+    +'<input type="email" placeholder="you@email.com" aria-label="Email to unlock deals" required>'
+    +'<button class="btn" type="submit">Unlock</button></form>';
+  var action=card.querySelector(".card-action");
+  if(action){action.style.position="relative";action.appendChild(veil);}
+  /* bind the freshly injected form */
+  var form=veil.querySelector("form.cc-subscribe");
+  form.addEventListener("submit",function(e){
+    e.preventDefault();
+    var email=(form.querySelector('input[type="email"]').value||"").trim().toLowerCase();
+    if(!EMAIL_RE.test(email))return;
+    fetch("/api/subscribe",{method:"POST",headers:{"Content-Type":"application/json"},
+      body:JSON.stringify({email:email,source:"card_lock",website_url:""})}).catch(function(){});
+    store("cc_subscriber",{email:email,ts:Date.now()});
+    form.innerHTML='<span class="cc-sub-thanks">\u2705 You\u2019re in! Deals unlocked.</span>';
+    setTimeout(unlockAll,800);
+  });
+}
+if(!isSubscriber()){
+  document.querySelectorAll(".card[data-cid]").forEach(function(card){
+    if(card.dataset.subOnly==="1"){
+      lockCard(card,"Subscribers only");
+    }else if(daysSince(card.dataset.verified||"")<=1){
+      var badge=document.createElement("span");
+      badge.className="badge badge-early";badge.textContent="Subscriber early access";
+      var top=card.querySelector(".card-top");if(top)top.appendChild(badge);
+      lockCard(card,"Hot off the press");
+    }
+  });
+}
+})();
+</script>
+<script>
+(function () {
+  "use strict";
+  var CODE_CHARS = "ABCDEFGHJKLMNPQRSTUVWXYZ23456789";
+
+  function getCode() {
+    var code = null;
+    try {
+      code = localStorage.getItem("cc_refcode");
+      if (!code) {
+        code = "";
+        for (var i = 0; i < 6; i++) code += CODE_CHARS[Math.floor(Math.random() * CODE_CHARS.length)];
+        localStorage.setItem("cc_refcode", code);
+      }
+    } catch (e) { code = "FRIEND"; }
+    return code;
+  }
+
+  function referralLink() {
+    return location.origin + "/?ref=" + encodeURIComponent(getCode());
+  }
+
+  function postEvent(code, event) {
+    try {
+      fetch("/api/referral", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ code: code, event: event })
+      }).catch(function () {});
+    } catch (e) {}
+  }
+
+  /* Called by the Pro signup flow when a paid signup completes. */
+  function creditSignup() {
+    var by = null;
+    try { by = localStorage.getItem("cc_refby"); } catch (e) {}
+    if (by) {
+      postEvent(by, "signup");
+      try { localStorage.removeItem("cc_refby"); } catch (e) {}
+    }
+  }
+
+  function showBanner(ref) {
+    var b = document.createElement("div");
+    b.id = "cc-ref-banner";
+    b.setAttribute("role", "status");
+    b.style.cssText =
+      "position:sticky;top:0;z-index:1200;display:flex;align-items:center;justify-content:center;" +
+      "gap:10px;flex-wrap:wrap;background:linear-gradient(90deg,#FFC94D,#FFB59E);color:#4A3728;" +
+      "font-weight:700;font-size:.92rem;padding:10px 16px;text-align:center;" +
+      "font-family:ui-rounded,'Arial Rounded MT Bold',system-ui,sans-serif;";
+    b.innerHTML =
+      "<span>\uD83D\uDC37 <strong>Your friend sent you!</strong> " +
+      "Take <strong>10% off your first Pro month</strong> \u2014 Penny loves sharers.</span>" +
+      '<a href="/pro/?ref=' + encodeURIComponent(ref) + '" ' +
+      'style="background:#4A3728;color:#FFF8F0;border-radius:999px;padding:7px 18px;' +
+      'text-decoration:none;font-weight:800">Claim my discount</a>' +
+      '<button id="cc-ref-x" aria-label="Dismiss" ' +
+      'style="border:0;background:none;cursor:pointer;font-size:18px;color:#4A3728;font-family:inherit">\u00d7</button>';
+    document.body.insertBefore(b, document.body.firstChild);
+    b.querySelector("#cc-ref-x").addEventListener("click", function () { b.remove(); });
+  }
+
+  function init() {
+    var code = getCode();
+    var ref = "";
+    try {
+      ref = (new URLSearchParams(location.search).get("ref") || "").toUpperCase().replace(/[^A-Z0-9]/g, "");
+    } catch (e) {}
+    if (ref && ref.length >= 4 && ref.length <= 12 && ref !== code) {
+      var seen = null;
+      try { seen = localStorage.getItem("cc_refby"); } catch (e) {}
+      if (!seen) {
+        try { localStorage.setItem("cc_refby", ref); } catch (e) {}
+        postEvent(ref, "visit");
+        showBanner(ref);
+      }
+    }
+    window.CCRef = { code: getCode, link: referralLink, creditSignup: creditSignup };
+  }
+
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", init);
+  } else {
+    init();
+  }
+})();
+</script>
+<script>
+(function(){
+var mode=document.getElementById("c-mode"),dw=document.getElementById("c-disc-wrap"),sw=document.getElementById("c-sale-wrap");
+mode.addEventListener("change",function(){var r=mode.value==="rev";dw.style.display=r?"none":"";sw.style.display=r?"":"none";});
+document.getElementById("c-go").addEventListener("click",function(){
+var p=parseFloat(document.getElementById("c-price").value);var out=document.getElementById("c-out");
+if(!(p>0)){out.textContent="Enter an original price first.";return;}
+var m=mode.value;
+if(m==="rev"){var s=parseFloat(document.getElementById("c-sale").value);
+if(!(s>=0&&s<p)){out.textContent="Sale price must be below the original price.";return;}
+var pct=(1-s/p)*100;out.innerHTML="That's <strong>"+pct.toFixed(1)+"% off</strong> — you save <strong>$"+(p-s).toFixed(2)+"</strong>.";return;}
+var d=parseFloat(document.getElementById("c-disc").value)||0;var save,final;
+if(m==="pct"){save=p*d/100;}else{save=Math.min(d,p);}
+final=p-save;
+out.innerHTML="You pay <strong>$"+final.toFixed(2)+"</strong> — you save <strong>$"+save.toFixed(2)+"</strong>"+(m==="pct"?" ("+d+"% off)":"")+".";});
+})();
+</script>
+<script>
+/* PWA: register service worker for offline reading (silent fail ok) */
+if("serviceWorker" in navigator){navigator.serviceWorker.register("/sw.js").catch(function(){});}
+</script>
+</body>
+</html>

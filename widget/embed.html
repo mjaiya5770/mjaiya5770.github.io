@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CouponCove deals</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:ui-rounded,'Arial Rounded MT Bold',system-ui,sans-serif;
+  background:#FFF8F0;color:#4A3728;font-size:14px}
+.ccw{border:2px solid #FF7B6B;border-radius:22px;overflow:hidden;background:#FFF8F0;max-width:340px}
+.ccw-head{display:flex;align-items:center;gap:10px;padding:12px 14px;
+  background:linear-gradient(135deg,#FFE3D6,#FFF8F0)}
+.ccw-head img{border-radius:10px}
+.ccw-head b{font-size:15px}
+.ccw-head small{color:#8A6A55;font-size:11px}
+.ccw-list{padding:10px 12px}
+.ccw-deal{background:#fff;border:2px solid #F7DCC9;border-radius:16px;padding:10px 12px;margin-bottom:8px}
+.ccw-deal .t{font-weight:800;font-size:13px;line-height:1.35}
+.ccw-deal .m{font-size:11px;color:#8A6A55;margin-top:3px}
+.ccw-deal a{display:inline-block;margin-top:8px;background:#FF7B6B;color:#4A3728;
+  font-weight:800;font-size:12px;padding:7px 14px;border-radius:999px;text-decoration:none}
+.ccw-foot{text-align:center;padding:8px;font-size:11px;color:#8A6A55}
+.ccw-foot a{color:#E85D4C;font-weight:800;text-decoration:none}
+</style>
+</head>
+<body>
+<div class="ccw">
+  <div class="ccw-head">
+    <img src="https://coupon-cove.vercel.app/assets/icon.webp" alt="Penny" width="36" height="36">
+    <div><b id="ccw-title">Today's deals</b><br><small>Verified daily by CouponCove</small></div>
+  </div>
+  <div class="ccw-list" id="ccw-list"><p style="padding:12px;color:#8A6A55">Penny is sniffing out deals&hellip;</p></div>
+  <div class="ccw-foot">Powered by <a href="https://coupon-cove.vercel.app/" target="_blank" rel="noopener">&#128055; CouponCove</a></div>
+</div>
+<script>
+(function(){
+  "use strict";
+  var SITE = "https://coupon-cove.vercel.app";
+  var STORES = [{"slug": "nike", "name": "Nike", "category": "fashion"}, {"slug": "adidas", "name": "Adidas", "category": "fashion"}, {"slug": "shein", "name": "Shein", "category": "fashion"}, {"slug": "sephora", "name": "Sephora", "category": "beauty"}, {"slug": "ulta", "name": "Ulta Beauty", "category": "beauty"}, {"slug": "doordash", "name": "DoorDash", "category": "food-delivery"}, {"slug": "uber-eats", "name": "Uber Eats", "category": "food-delivery"}, {"slug": "dominos", "name": "Domino's", "category": "food-delivery"}, {"slug": "best-buy", "name": "Best Buy", "category": "electronics"}, {"slug": "ebay", "name": "eBay", "category": "electronics"}, {"slug": "target", "name": "Target", "category": "general"}, {"slug": "walmart", "name": "Walmart", "category": "general"}, {"slug": "temu", "name": "Temu", "category": "general"}, {"slug": "macys", "name": "Macy's", "category": "department-stores"}, {"slug": "kohls", "name": "Kohl's", "category": "department-stores"}, {"slug": "chewy", "name": "Chewy", "category": "pets"}, {"slug": "wayfair", "name": "Wayfair", "category": "home-garden"}, {"slug": "home-depot", "name": "The Home Depot", "category": "home-garden"}];
+  var params = new URLSearchParams(location.search);
+  var store = params.get("store") || "";
+  var cat = params.get("category") || "";
+  var bySlug = {};
+  STORES.forEach(function(s){ bySlug[s.slug] = s; });
+  fetch(SITE + "/data/coupons.json", {cache:"no-store"}).then(function(r){return r.json();})
+    .then(function(data){
+      var coupons = (data.coupons || data).filter(function(c){
+        if (store) return c.store_slug === store;
+        if (cat) {
+          var st = null;
+          for (var i = 0; i < STORES.length; i++) if (STORES[i].slug === c.store_slug) st = STORES[i];
+          return st && st.category === cat;
+        }
+        return true;
+      });
+      coupons.sort(function(a,b){
+        var fa = a.featured ? 0 : 1, fb = b.featured ? 0 : 1;
+        if (fa !== fb) return fa - fb;
+        return (b.verified_date || "").localeCompare(a.verified_date || "");
+      });
+      var top = coupons.slice(0, 5);
+      var title = store && bySlug[store] ? bySlug[store].name + " deals" : (cat ? cat + " deals" : "Today's deals");
+      document.getElementById("ccw-title").textContent = title;
+      var list = document.getElementById("ccw-list");
+      if (!top.length) {
+        list.innerHTML = "<p style='padding:12px;color:#8A6A55'>No deals right now \u2014 check back soon!</p>";
+        return;
+      }
+      list.innerHTML = "";
+      top.forEach(function(c){
+        var d = document.createElement("div");
+        d.className = "ccw-deal";
+        var meta = [];
+        if (c.verified_date) meta.push("Verified " + c.verified_date);
+        var t = document.createElement("div"); t.className = "t"; t.textContent = c.title || "Deal";
+        var m = document.createElement("div"); m.className = "m"; m.textContent = meta.join(" \u00b7 ");
+        var a = document.createElement("a");
+        a.href = SITE + "/go/" + c.id + "/";
+        a.target = "_blank"; a.rel = "nofollow sponsored noopener";
+        a.textContent = c.code ? "Reveal code" : "Get deal";
+        d.appendChild(t); d.appendChild(m); d.appendChild(a);
+        list.appendChild(d);
+      });
+    }).catch(function(){
+      document.getElementById("ccw-list").innerHTML =
+        "<p style='padding:12px;color:#8A6A55'>Penny tripped over the wifi. Try again soon!</p>";
+    });
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Redirecting to The Home Depot - CouponCove</title>
+<meta name="robots" content="noindex">
+</head>
+<body>
+<p>Taking you to The Home Depot&hellip; <a id="manual" href="https://www.homedepot.com" rel="nofollow sponsored noopener">click here if you are not redirected</a>.</p>
+<script>
+(function(){
+  // CLICK-TRACKING HOOK: swap console.log for a fetch() to your analytics
+  // endpoint when ready. Payload includes coupon id + timestamp.
+  console.log("coupon_click", { coupon_id: "home-depot-04", ts: Date.now() });
+  window.location.replace("https://www.homedepot.com");
+})();
+</script>
+<noscript><meta http-equiv="refresh" content="0;url=https://www.homedepot.com"></noscript>
+</body>
+</html>
