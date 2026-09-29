@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>CouponCove deals</title>
+<title>Honest Penny deals</title>
 <style>
 *{box-sizing:border-box;margin:0;padding:0}
 body{font-family:ui-rounded,'Arial Rounded MT Bold',system-ui,sans-serif;
@@ -27,16 +27,16 @@ body{font-family:ui-rounded,'Arial Rounded MT Bold',system-ui,sans-serif;
 <body>
 <div class="ccw">
   <div class="ccw-head">
-    <img src="https://coupon-cove.vercel.app/assets/icon.webp" alt="Penny" width="36" height="36">
-    <div><b id="ccw-title">Today's deals</b><br><small>Verified daily by CouponCove</small></div>
+    <img src="https://honest-penny.vercel.app/assets/icon.webp" alt="Penny" width="36" height="36">
+    <div><b id="ccw-title">Today's deals</b><br><small>Verified daily by Honest Penny</small></div>
   </div>
   <div class="ccw-list" id="ccw-list"><p style="padding:12px;color:#8A6A55">Penny is sniffing out deals&hellip;</p></div>
-  <div class="ccw-foot">Powered by <a href="https://coupon-cove.vercel.app/" target="_blank" rel="noopener">&#128055; CouponCove</a></div>
+  <div class="ccw-foot">Powered by <a href="https://honest-penny.vercel.app/" target="_blank" rel="noopener">&#128055; Honest Penny</a></div>
 </div>
 <script>
 (function(){
   "use strict";
-  var SITE = "https://coupon-cove.vercel.app";
+  var SITE = "https://honest-penny.vercel.app";
   var STORES = [{"slug": "nike", "name": "Nike", "category": "fashion"}, {"slug": "adidas", "name": "Adidas", "category": "fashion"}, {"slug": "shein", "name": "Shein", "category": "fashion"}, {"slug": "sephora", "name": "Sephora", "category": "beauty"}, {"slug": "ulta", "name": "Ulta Beauty", "category": "beauty"}, {"slug": "doordash", "name": "DoorDash", "category": "food-delivery"}, {"slug": "uber-eats", "name": "Uber Eats", "category": "food-delivery"}, {"slug": "dominos", "name": "Domino's", "category": "food-delivery"}, {"slug": "best-buy", "name": "Best Buy", "category": "electronics"}, {"slug": "ebay", "name": "eBay", "category": "electronics"}, {"slug": "target", "name": "Target", "category": "general"}, {"slug": "walmart", "name": "Walmart", "category": "general"}, {"slug": "temu", "name": "Temu", "category": "general"}, {"slug": "macys", "name": "Macy's", "category": "department-stores"}, {"slug": "kohls", "name": "Kohl's", "category": "department-stores"}, {"slug": "chewy", "name": "Chewy", "category": "pets"}, {"slug": "wayfair", "name": "Wayfair", "category": "home-garden"}, {"slug": "home-depot", "name": "The Home Depot", "category": "home-garden"}];
   var params = new URLSearchParams(location.search);
   var store = params.get("store") || "";

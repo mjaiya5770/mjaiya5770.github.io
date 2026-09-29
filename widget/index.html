@@ -3,16 +3,16 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Embed Penny&#x27;s Deals on Your Blog | CouponCove</title>
-<meta name="description" content="Free embeddable coupon widget: show CouponCove&#x27;s top verified deals for any store or category on your blog.">
-<link rel="canonical" href="https://coupon-cove.vercel.app/widget/">
-<meta property="og:title" content="Embed Penny&#x27;s Deals on Your Blog | CouponCove">
-<meta property="og:description" content="Free embeddable coupon widget: show CouponCove&#x27;s top verified deals for any store or category on your blog.">
+<title>Embed Penny&#x27;s Deals on Your Blog | Honest Penny</title>
+<meta name="description" content="Free embeddable coupon widget: show Honest Penny&#x27;s top verified deals for any store or category on your blog.">
+<link rel="canonical" href="https://honest-penny.vercel.app/widget/">
+<meta property="og:title" content="Embed Penny&#x27;s Deals on Your Blog | Honest Penny">
+<meta property="og:description" content="Free embeddable coupon widget: show Honest Penny&#x27;s top verified deals for any store or category on your blog.">
 <meta property="og:type" content="website">
-<meta property="og:image" content="https://coupon-cove.vercel.app/assets/logo.webp">
-<meta property="og:image:alt" content="Penny the piggy bank holding a golden coupon - CouponCove">
+<meta property="og:image" content="https://honest-penny.vercel.app/assets/logo.webp">
+<meta property="og:image:alt" content="Penny the piggy bank holding a golden coupon - Honest Penny">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="https://coupon-cove.vercel.app/assets/logo.webp">
+<meta name="twitter:image" content="https://honest-penny.vercel.app/assets/logo.webp">
 <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32.png">
 <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
 <link rel="manifest" href="/manifest.json">
@@ -425,6 +425,7 @@ button{
   padding:.65rem 1.2rem;
   font-weight:700;
   font-size:.9rem;
+  font-family:inherit;
   cursor:pointer;
   transition:transform .2s ease,box-shadow .2s ease,background .2s ease,color .2s ease;
   text-decoration:none;
@@ -871,7 +872,7 @@ button{
 <body>
 <header class="site-header">
   <div class="wrap">
-    <a class="logo" href="/" aria-label="CouponCove home"><img src="/assets/logo.webp" alt="CouponCove - Penny the piggy bank"></a>
+    <a class="logo" href="/" aria-label="Honest Penny home"><img src="/assets/logo.webp" alt="Honest Penny - Penny the piggy bank"></a>
     <span class="daily-badge">Updated Daily!</span>
     <nav class="nav" aria-label="Main">
       <a href="/">Home</a>
@@ -886,7 +887,7 @@ button{
 </header>
 <!-- AD-SLOT: header leaderboard (Mediavine / AdSense TODO - paste ad code here) -->
 <main>
-<section class="section"><div class="wrap" style="max-width:760px"><h1>Put Penny on your blog!</h1><p class="sub">Embed a cute live deal box on your own site in 30 seconds. Pick a store or category, copy the snippet, paste it anywhere - every click goes through our affiliate links, so you help keep CouponCove free.</p><div style="background:#fff;border:2px solid #F7DCC9;border-radius:22px;padding:24px"><label for="w-store" style="font-weight:700">Store</label><br><select id="w-store" style="width:100%;padding:10px;border-radius:12px;margin:6px 0 14px"><option value="">-- pick a store --</option><option value="adidas">Adidas</option>
+<section class="section"><div class="wrap" style="max-width:760px"><h1>Put Penny on your blog!</h1><p class="sub">Embed a cute live deal box on your own site in 30 seconds. Pick a store or category, copy the snippet, paste it anywhere - every click goes through our affiliate links, so you help keep Honest Penny free.</p><div style="background:#fff;border:2px solid #F7DCC9;border-radius:22px;padding:24px"><label for="w-store" style="font-weight:700">Store</label><br><select id="w-store" style="width:100%;padding:10px;border-radius:12px;margin:6px 0 14px"><option value="">-- pick a store --</option><option value="adidas">Adidas</option>
 <option value="best-buy">Best Buy</option>
 <option value="chewy">Chewy</option>
 <option value="dominos">Domino&#x27;s</option>
@@ -916,7 +917,7 @@ button{
   <div class="wrap">
     <div class="footer-grid">
       <div>
-        <h4>CouponCove</h4>
+        <h4>Honest Penny</h4>
         <p><img src="/assets/icon.webp" alt="" width="48" height="48" style="border-radius:14px;margin-bottom:8px"><br>
         Every coupon is verified from the retailer's own site, and our catalog is updated daily. No expired codes, no surprises &mdash; just real savings.</p>
       </div>
@@ -943,13 +944,13 @@ button{
       </div>
     </div>
     <div class="fineprint">
-      &copy; 2026 CouponCove. We verify each coupon against the retailer's own site before listing; retailers may change or end offers at any time.
+      &copy; 2026 Honest Penny. We verify each coupon against the retailer's own site before listing; retailers may change or end offers at any time.
       <a href="/disclosure/">Affiliate disclosure</a>.
     </div>
   </div>
 </footer>
 <style>
-/* ---------- CouponCove widgets ---------- */
+/* ---------- Honest Penny widgets ---------- */
 .product-card img{width:100%;border-radius:10px;aspect-ratio:16/10;object-fit:cover;background:#eef2f7}
 .product-name{font-weight:700}
 .rail{display:flex;gap:14px;overflow-x:auto;padding:4px 2px 14px;scroll-snap-type:x mandatory}
@@ -1437,11 +1438,11 @@ if(!isSubscriber()){
   function render(){
     var q = current();
     var code = q
-      ? '<iframe src="' + BASE + q + '" width="340" height="480" style="border:0;border-radius:22px" title="CouponCove deals" loading="lazy"></iframe>'
+      ? '<iframe src="' + BASE + q + '" width="340" height="480" style="border:0;border-radius:22px" title="Honest Penny deals" loading="lazy"></iframe>'
       : "<!-- pick a store or category above -->";
     document.getElementById("w-code").value = code;
     document.getElementById("w-preview").innerHTML = q
-      ? '<iframe src="' + BASE + q + '" width="340" height="480" style="border:0;border-radius:22px" title="CouponCove deals preview" loading="lazy"></iframe>'
+      ? '<iframe src="' + BASE + q + '" width="340" height="480" style="border:0;border-radius:22px" title="Honest Penny deals preview" loading="lazy"></iframe>'
       : "<p class='sub'>Pick a store or category to preview Penny's widget.</p>";
   }
   document.getElementById("w-store").addEventListener("change", function(){

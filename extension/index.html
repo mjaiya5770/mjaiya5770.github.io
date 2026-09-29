@@ -3,16 +3,16 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Get Penny - the CouponCove Browser Extension</title>
+<title>Get Penny - the Honest Penny Browser Extension</title>
 <meta name="description" content="Install Penny the piggy bank in Chrome, Edge or Firefox: verified coupons appear while you shop. Free, no tracking.">
-<link rel="canonical" href="https://coupon-cove.vercel.app/extension/">
-<meta property="og:title" content="Get Penny - the CouponCove Browser Extension">
+<link rel="canonical" href="https://honest-penny.vercel.app/extension/">
+<meta property="og:title" content="Get Penny - the Honest Penny Browser Extension">
 <meta property="og:description" content="Install Penny the piggy bank in Chrome, Edge or Firefox: verified coupons appear while you shop. Free, no tracking.">
 <meta property="og:type" content="website">
-<meta property="og:image" content="https://coupon-cove.vercel.app/assets/logo.webp">
-<meta property="og:image:alt" content="Penny the piggy bank holding a golden coupon - CouponCove">
+<meta property="og:image" content="https://honest-penny.vercel.app/assets/logo.webp">
+<meta property="og:image:alt" content="Penny the piggy bank holding a golden coupon - Honest Penny">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="https://coupon-cove.vercel.app/assets/logo.webp">
+<meta name="twitter:image" content="https://honest-penny.vercel.app/assets/logo.webp">
 <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32.png">
 <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
 <link rel="manifest" href="/manifest.json">
@@ -425,6 +425,7 @@ button{
   padding:.65rem 1.2rem;
   font-weight:700;
   font-size:.9rem;
+  font-family:inherit;
   cursor:pointer;
   transition:transform .2s ease,box-shadow .2s ease,background .2s ease,color .2s ease;
   text-decoration:none;
@@ -871,7 +872,7 @@ button{
 <body>
 <header class="site-header">
   <div class="wrap">
-    <a class="logo" href="/" aria-label="CouponCove home"><img src="/assets/logo.webp" alt="CouponCove - Penny the piggy bank"></a>
+    <a class="logo" href="/" aria-label="Honest Penny home"><img src="/assets/logo.webp" alt="Honest Penny - Penny the piggy bank"></a>
     <span class="daily-badge">Updated Daily!</span>
     <nav class="nav" aria-label="Main">
       <a href="/">Home</a>
@@ -886,13 +887,13 @@ button{
 </header>
 <!-- AD-SLOT: header leaderboard (Mediavine / AdSense TODO - paste ad code here) -->
 <main>
-<section class="section"><div class="wrap" style="text-align:center;max-width:760px"><img src="/assets/logo.webp" alt="Penny the piggy bank holding a golden coupon" width="160" height="160" style="border-radius:36px"><h1>Take Penny everywhere! &#128055;</h1><p class="sub"><span class="updated-stamp">Version 1.0.0</span><br>Penny the piggy bank lives in your browser and sniffs out verified coupons on the stores you already shop. One click to copy a code, one click to paste it at checkout. Free forever.</p><div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px;margin:28px 0;text-align:left"><div style="background:#fff;border:2px solid #F7DCC9;border-radius:22px;padding:24px"><h3>Chrome / Edge</h3><p class="sub">Manifest V3, auto-updates its deal list daily.</p><a class="btn" href="/extension/couponcove-chrome-v1.0.0.zip">Download v1.0.0</a></div><div style="background:#fff;border:2px solid #F7DCC9;border-radius:22px;padding:24px"><h3>Firefox</h3><p class="sub">Same Penny, Firefox flavor.</p><a class="btn" href="/extension/couponcove-firefox-v1.0.0.zip">Download v1.0.0</a></div></div><h2>What Penny does</h2><div class="steps"><div class="step"><div class="n">&#128065;</div><h3>Spots your store</h3><p>Visiting Nike or Sephora? Penny slides in with the deal count - once a day, never naggy.</p></div><div class="step"><div class="n">&#128203;</div><h3>One-click copy</h3><p>The toolbar popup lists every cached coupon for the store you're on.</p></div><div class="step"><div class="n">&#127919;</div><h3>Apply helper</h3><p>Penny finds the promo-code box and pastes the code for you. She never buys anything herself.</p></div><div class="step"><div class="n">&#128058;</div><h3>Zero tracking</h3><p>No analytics, no beacons, no data leaves your browser except the daily coupon-list fetch.</p></div></div><h2>Install it</h2><div style="text-align:left;background:#FFF3DC;border-radius:22px;padding:24px"><h3>Chrome / Edge</h3><ol><li>Download the ZIP above and unzip it.</li><li>Open <code>chrome://extensions</code> and turn on <strong>Developer mode</strong>.</li><li>Click <strong>Load unpacked</strong> and pick the unzipped folder. Done!</li></ol><h3>Firefox</h3><ol><li>Download the Firefox ZIP and unzip it.</li><li>Open <code>about:debugging</code> &#8594; <strong>This Firefox</strong> &#8594; <strong>Load Temporary Add-on</strong>.</li><li>Pick the <code>manifest.json</code> inside. Note: temporary install until the add-on is signed by Mozilla.</li></ol></div><h2>Questions</h2><div class="faq-item"><h3>Is it free?</h3><p>Yes - free forever, no account needed.</p></div><div class="faq-item"><h3>Does it track me?</h3><p>No. The extension makes exactly one network request: fetching the public coupon list once a day. No analytics, no tracking pixels, nothing.</p></div><div class="faq-item"><h3>When is it on the Chrome Web Store?</h3><p>It's in the review queue - publishing needs a $5 developer account, coming soon.</p></div></div></section>
+<section class="section"><div class="wrap" style="text-align:center;max-width:760px"><img src="/assets/logo.webp" alt="Penny the piggy bank holding a golden coupon" width="160" height="160" style="border-radius:36px"><h1>Take Penny everywhere! &#128055;</h1><p class="sub"><span class="updated-stamp">Version 1.0.0</span><br>Penny the piggy bank lives in your browser and sniffs out verified coupons on the stores you already shop. One click to copy a code, one click to paste it at checkout. Free forever.</p><div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px;margin:28px 0;text-align:left"><div style="background:#fff;border:2px solid #F7DCC9;border-radius:22px;padding:24px"><h3>Chrome / Edge</h3><p class="sub">Manifest V3, auto-updates its deal list daily.</p><a class="btn" href="/extension/honestpenny-chrome-v1.0.0.zip">Download v1.0.0</a></div><div style="background:#fff;border:2px solid #F7DCC9;border-radius:22px;padding:24px"><h3>Firefox</h3><p class="sub">Same Penny, Firefox flavor.</p><a class="btn" href="/extension/honestpenny-firefox-v1.0.0.zip">Download v1.0.0</a></div><div style="background:#fff;border:2px solid #F7DCC9;border-radius:22px;padding:24px"><h3>&#128241; Install the app</h3><p class="sub">Honest Penny as a real app on your phone or computer. Opens fast, works offline, no app store needed.</p><button class="btn" id="pwa-install-btn" type="button">Install App</button><p class="sub" id="pwa-install-hint" style="margin:8px 0 0;font-size:.85rem">iPhone: tap Share &#8594; Add to Home Screen.</p></div></div><h2>What Penny does</h2><div class="steps"><div class="step"><div class="n">&#128065;</div><h3>Spots your store</h3><p>Visiting Nike or Sephora? Penny slides in with the deal count - once a day, never naggy.</p></div><div class="step"><div class="n">&#128203;</div><h3>One-click copy</h3><p>The toolbar popup lists every cached coupon for the store you're on.</p></div><div class="step"><div class="n">&#127919;</div><h3>Apply helper</h3><p>Penny finds the promo-code box and pastes the code for you. She never buys anything herself.</p></div><div class="step"><div class="n">&#128058;</div><h3>Zero tracking</h3><p>No analytics, no beacons, no data leaves your browser except the daily coupon-list fetch.</p></div></div><h2>Install it</h2><div style="text-align:left;background:#FFF3DC;border-radius:22px;padding:24px"><h3>Chrome / Edge</h3><ol><li>Download the ZIP above and unzip it.</li><li>Open <code>chrome://extensions</code> and turn on <strong>Developer mode</strong>.</li><li>Click <strong>Load unpacked</strong> and pick the unzipped folder. Done!</li></ol><h3>Firefox</h3><ol><li>Download the Firefox ZIP and unzip it.</li><li>Open <code>about:debugging</code> &#8594; <strong>This Firefox</strong> &#8594; <strong>Load Temporary Add-on</strong>.</li><li>Pick the <code>manifest.json</code> inside. Note: temporary install until the add-on is signed by Mozilla.</li></ol></div><h2>Questions</h2><div class="faq-item"><h3>Is it free?</h3><p>Yes - free forever, no account needed.</p></div><div class="faq-item"><h3>Does it track me?</h3><p>No. The extension makes exactly one network request: fetching the public coupon list once a day. No analytics, no tracking pixels, nothing.</p></div><div class="faq-item"><h3>When is it on the Chrome Web Store?</h3><p>It's in the review queue - publishing needs a $5 developer account, coming soon.</p></div></div></section>
 </main>
 <footer class="site-footer">
   <div class="wrap">
     <div class="footer-grid">
       <div>
-        <h4>CouponCove</h4>
+        <h4>Honest Penny</h4>
         <p><img src="/assets/icon.webp" alt="" width="48" height="48" style="border-radius:14px;margin-bottom:8px"><br>
         Every coupon is verified from the retailer's own site, and our catalog is updated daily. No expired codes, no surprises &mdash; just real savings.</p>
       </div>
@@ -919,13 +920,13 @@ button{
       </div>
     </div>
     <div class="fineprint">
-      &copy; 2026 CouponCove. We verify each coupon against the retailer's own site before listing; retailers may change or end offers at any time.
+      &copy; 2026 Honest Penny. We verify each coupon against the retailer's own site before listing; retailers may change or end offers at any time.
       <a href="/disclosure/">Affiliate disclosure</a>.
     </div>
   </div>
 </footer>
 <style>
-/* ---------- CouponCove widgets ---------- */
+/* ---------- Honest Penny widgets ---------- */
 .product-card img{width:100%;border-radius:10px;aspect-ratio:16/10;object-fit:cover;background:#eef2f7}
 .product-name{font-weight:700}
 .rail{display:flex;gap:14px;overflow-x:auto;padding:4px 2px 14px;scroll-snap-type:x mandatory}
@@ -1402,7 +1403,7 @@ if(!isSubscriber()){
   }
 })();
 </script>
-
+<script>(function(){var btn=document.getElementById('pwa-install-btn');var hint=document.getElementById('pwa-install-hint');var deferred=null;function showManual(){if(hint)hint.innerHTML='Your browser handles the install: look for the install icon in the address bar, or on iPhone tap Share &#8594; Add to Home Screen.';}window.addEventListener('beforeinstallprompt',function(e){e.preventDefault();deferred=e;});window.addEventListener('appinstalled',function(){deferred=null;if(btn)btn.style.display='none';if(hint)hint.textContent='Penny is installed! Find her on your home screen.';});if(btn)btn.addEventListener('click',function(){if(deferred){deferred.prompt();deferred.userChoice.then(function(){deferred=null;});}else{showManual();}});})();</script>
 <script>
 /* PWA: register service worker for offline reading (silent fail ok) */
 if("serviceWorker" in navigator){navigator.serviceWorker.register("/sw.js").catch(function(){});}

@@ -2,4 +2,4 @@ User-agent: *
 Allow: /
 Disallow: /go/
 
-Sitemap: https://coupon-cove.vercel.app/sitemap.xml
+Sitemap: https://honest-penny.vercel.app/sitemap.xml
