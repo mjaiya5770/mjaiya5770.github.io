@@ -1865,8 +1865,9 @@ var lastVisit=visits[slug];
 var n=newCount(slug,lastVisit);
 if(n>0&&lastVisit){var h=$("#store-title");if(h){var b=document.createElement("span");b.className="new-badge";b.textContent=n+" new";h.appendChild(b);}}
 views[slug]=(views[slug]||0)+1;store("cc_views",views);
-visits[slug]=new Date().toISOString().slice(0,10);store("cc_visits",visits);
-var fb=$("#store-follow-btn");if(fb){syncBell(fb);}}
+visits[slug]=new Date().toISOString().slice(0,10);store("cc_visits",visits);}
+// #store-follow-btn is painted by paintSaveBtn() below (account-backed saved stores);
+// it must NOT go through syncBell(), which expects data-follow bell buttons.
 $all(".store-tile[data-store-slug]").forEach(function(tile){var s=tile.dataset.storeSlug;
 var cnt=newCount(s,visits[s]);if(cnt>0&&visits[s]){var b=document.createElement("span");b.className="new-badge";b.textContent=cnt+" new";tile.appendChild(b);}});
 
