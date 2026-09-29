@@ -1,148 +1,5 @@
 [
   {
-    "id": "doordash-01",
-    "store": "DoorDash",
-    "store_slug": "doordash",
-    "code": null,
-    "title": "15% off your first order",
-    "description": "New DoorDash users save 15% on their first order of $15 or more (up to $10 off) through September 30, 2026. Excludes taxes, fees, tip, and alcohol.",
-    "type": "deal",
-    "verified_date": "2026-09-28",
-    "featured": true
-  },
-  {
-    "id": "doordash-02",
-    "store": "DoorDash",
-    "store_slug": "doordash",
-    "code": null,
-    "title": "30% off first grocery or retail order",
-    "description": "Part of DoorDash's Saturday Streaks football sweepstakes: 30% off your first grocery or retail order of $35+ (up to $20 off), through September 30, 2026.",
-    "type": "deal",
-    "verified_date": "2026-09-28",
-    "featured": true
-  },
-  {
-    "id": "doordash-03",
-    "store": "DoorDash",
-    "store_slug": "doordash",
-    "code": null,
-    "title": "DashPass: free 30-day trial, $0 delivery fees",
-    "description": "DashPass members get $0 delivery fees on eligible orders plus 5% back on pickup orders. New members start with a free 30-day trial.",
-    "type": "deal",
-    "verified_date": "2026-09-28",
-    "featured": false
-  },
-  {
-    "id": "uber-eats-01",
-    "store": "Uber Eats",
-    "store_slug": "uber-eats",
-    "code": null,
-    "title": "$10 off your first order of $20+",
-    "description": "New Uber Eats customers can save $10 on a first order of $20 or more. Valid September 1-30, 2026; limited redemptions.",
-    "type": "deal",
-    "verified_date": "2026-09-28",
-    "featured": true
-  },
-  {
-    "id": "uber-eats-02",
-    "store": "Uber Eats",
-    "store_slug": "uber-eats",
-    "code": null,
-    "title": "Uber One: $0 delivery fees + up to 10% off",
-    "description": "Uber One membership at $9.99/month or $96/year includes $0 delivery fees on eligible food and grocery orders, up to 10% off deliveries and pickup, and 6% Uber Cash back on eligible rides.",
-    "type": "deal",
-    "verified_date": "2026-09-28",
-    "featured": true
-  },
-  {
-    "id": "uber-eats-03",
-    "store": "Uber Eats",
-    "store_slug": "uber-eats",
-    "code": null,
-    "title": "Save up to 60% on your first 2 orders",
-    "description": "New-user bundle deal offering up to 60% off the first two Uber Eats orders, advertised in current September 2026 coupon listings.",
-    "type": "deal",
-    "verified_date": "2026-09-28",
-    "featured": false
-  },
-  {
-    "id": "dominos-01",
-    "store": "Domino's",
-    "store_slug": "dominos",
-    "code": null,
-    "title": "20% off your online order",
-    "description": "Domino's posts rotating online-only coupons at dominos.com - recent offers include 20% off regular-priced items on online orders. Availability varies by location.",
-    "type": "deal",
-    "verified_date": "2026-09-28",
-    "featured": true
-  },
-  {
-    "id": "dominos-02",
-    "store": "Domino's",
-    "store_slug": "dominos",
-    "code": null,
-    "title": "2+ large 2-topping pizzas for $12.99 each",
-    "description": "Order two or more large 2-topping pizzas at $12.99 each through current online offers at dominos.com. Participating locations only.",
-    "type": "deal",
-    "verified_date": "2026-09-28",
-    "featured": false
-  },
-  {
-    "id": "dominos-03",
-    "store": "Domino's",
-    "store_slug": "dominos",
-    "code": null,
-    "title": "Piece of the Pie Rewards: earn points toward free pizza",
-    "description": "Domino's loyalty program awards points on every order of $5 or more; points convert into free pizzas and sides. Free to join and ongoing.",
-    "type": "deal",
-    "verified_date": "2026-09-28",
-    "featured": false
-  },
-  {
-    "id": "temu-01",
-    "store": "Temu",
-    "store_slug": "temu",
-    "code": null,
-    "title": "30% off $39+ orders for new users",
-    "description": "Temu frequently runs new-customer promos like 30% off orders over $39. Check temu.com at checkout for the current offer.",
-    "type": "deal",
-    "verified_date": "2026-09-28",
-    "featured": true
-  },
-  {
-    "id": "temu-02",
-    "store": "Temu",
-    "store_slug": "temu",
-    "code": null,
-    "title": "Up to 10% off your order",
-    "description": "Temu's promo rotation regularly includes percentage-off offers. Look for the current coupon at checkout; eligibility varies by account.",
-    "type": "deal",
-    "verified_date": "2026-09-28",
-    "featured": false
-  },
-  {
-    "id": "temu-03",
-    "store": "Temu",
-    "store_slug": "temu",
-    "code": null,
-    "title": "Free shipping on almost all orders",
-    "description": "Temu offers free shipping on nearly all orders sitewide with no minimum spend on most items, plus price-adjustment refunds if a purchased item drops in price shortly after.",
-    "type": "deal",
-    "verified_date": "2026-09-28",
-    "featured": false
-  },
-  {
-    "id": "temu-04",
-    "store": "Temu",
-    "store_slug": "temu",
-    "code": null,
-    "title": "Up to 90% off Lightning Deals",
-    "description": "Temu runs rotating flash and Lightning Deal events with discounts of up to 90% across fashion, home, electronics, and more.",
-    "type": "deal",
-    "verified_date": "2026-09-28",
-    "featured": false
-  },
-  {
     "id": "nike-01",
     "store": "Nike",
     "store_slug": "nike",
@@ -150,7 +7,7 @@
     "title": "Sale: Up to 50% Off",
     "description": "Hundreds of shoes, apparel and accessories marked down up to 50%, with deepest cuts on Tech Fleece and Air Max Dn8. No code needed and free shipping for Nike Members.",
     "type": "deal",
-    "verified_date": "2026-09-28",
+    "verified_date": "2026-09-29",
     "featured": true
   },
   {
@@ -161,30 +18,8 @@
     "title": "Last Chance Clearance: Up to 50% Off",
     "description": "Nike's deep-clearance rail with end-of-season and discontinued styles priced to move, discounts already applied at list price. Stock is limited and popular sizes sell out fast.",
     "type": "deal",
-    "verified_date": "2026-09-28",
+    "verified_date": "2026-09-29",
     "featured": false
-  },
-  {
-    "id": "nike-03",
-    "store": "Nike",
-    "store_slug": "nike",
-    "code": null,
-    "title": "10% Off for Students, Military & First Responders",
-    "description": "Eligible students, military members, veterans and first responders get 10% off every order year-round after verifying their status on nike.com.",
-    "type": "deal",
-    "verified_date": "2026-09-28",
-    "featured": false
-  },
-  {
-    "id": "adidas-01",
-    "store": "Adidas",
-    "store_slug": "adidas",
-    "code": null,
-    "title": "Fall Kick Off Sale: Up to 60% Off",
-    "description": "The Fall Kick Off Sale takes up to 60% off shoes, apparel and accessories at adidas.com; watch for extra-savings promo offers during the event.",
-    "type": "deal",
-    "verified_date": "2026-09-28",
-    "featured": true
   },
   {
     "id": "adidas-02",
@@ -194,40 +29,7 @@
     "title": "Free Shipping for adiClub Members",
     "description": "adidas adiClub members get free shipping on all orders with no minimum. Membership is free to join.",
     "type": "deal",
-    "verified_date": "2026-09-28",
-    "featured": false
-  },
-  {
-    "id": "sephora-01",
-    "store": "Sephora",
-    "store_slug": "sephora",
-    "code": null,
-    "title": "Sale Section: Up to 60% Off Beauty",
-    "description": "Marked-down products across haircare, makeup, skincare, fragrance and styling tools with no promo code required. Haircare has the most deals, with makeup discounts reaching 50% on brands like Fenty Beauty and ILIA.",
-    "type": "deal",
-    "verified_date": "2026-09-28",
-    "featured": true
-  },
-  {
-    "id": "sephora-02",
-    "store": "Sephora",
-    "store_slug": "sephora",
-    "code": null,
-    "title": "Free Standard Shipping: Beauty Insider Always, Guests on $50+",
-    "description": "Beauty Insider members get free standard shipping on every order with no minimum; guest checkout gets free shipping on orders of $50 or more.",
-    "type": "deal",
-    "verified_date": "2026-09-28",
-    "featured": false
-  },
-  {
-    "id": "sephora-03",
-    "store": "Sephora",
-    "store_slug": "sephora",
-    "code": null,
-    "title": "Auto-Replenish: 5% Off Every Order, Up to 30%",
-    "description": "Schedule recurring deliveries of makeup, skincare and fragrance to save 5% automatically with free shipping; select brands offer up to 30% off on your first three orders. Beauty Insider members only.",
-    "type": "deal",
-    "verified_date": "2026-09-28",
+    "verified_date": "2026-09-29",
     "featured": false
   },
   {
@@ -238,7 +40,7 @@
     "title": "Brow Sale: Up to 50% Off",
     "description": "Up to 50% off brow products from Morphe, Tarte, Revlon, CoverGirl, Grande Cosmetics and RMS Beauty, from about $4 brow pencils to GrandeBROW serum. Several picks include a free gift with purchase; valid through October 3.",
     "type": "deal",
-    "verified_date": "2026-09-28",
+    "verified_date": "2026-09-29",
     "featured": true
   },
   {
@@ -249,62 +51,7 @@
     "title": "10% Off When You Sign Up for Text Alerts",
     "description": "Get a one-time-use 10% off code by signing up for Ulta text alerts. Note: only one coupon code can be used per order at checkout.",
     "type": "deal",
-    "verified_date": "2026-09-28",
-    "featured": false
-  },
-  {
-    "id": "shein-01",
-    "store": "Shein",
-    "store_slug": "shein",
-    "code": null,
-    "title": "20% Off Orders $50+",
-    "description": "Shein regularly posts sitewide promo events; recent offers include 20% off purchases of $50 or more. Check shein.com for today's offer.",
-    "type": "deal",
-    "verified_date": "2026-09-28",
-    "featured": true
-  },
-  {
-    "id": "shein-02",
-    "store": "Shein",
-    "store_slug": "shein",
-    "code": null,
-    "title": "15% Off Your Next Purchase",
-    "description": "Shein's promo calendar often includes percentage-off events for shoppers - see the current offer on shein.com.",
-    "type": "deal",
-    "verified_date": "2026-09-28",
-    "featured": false
-  },
-  {
-    "id": "shein-03",
-    "store": "Shein",
-    "store_slug": "shein",
-    "code": null,
-    "title": "Up to 50% Off 300K+ Top Sellers",
-    "description": "Shop over 300,000 top-selling Shein products at up to 50% off during sale events on shein.com.",
-    "type": "deal",
-    "verified_date": "2026-09-28",
-    "featured": false
-  },
-  {
-    "id": "best-buy-02",
-    "store": "Best Buy",
-    "store_slug": "best-buy",
-    "code": null,
-    "title": "30% Off or More on Member Deals",
-    "description": "Best Buy members get 30% off or more on featured member-exclusive pricing across tech and appliances, rotating through the season.",
-    "type": "deal",
-    "verified_date": "2026-09-28",
-    "featured": false
-  },
-  {
-    "id": "best-buy-03",
-    "store": "Best Buy",
-    "store_slug": "best-buy",
-    "code": null,
-    "title": "Free $5 Gift Card with Orders Over $420",
-    "description": "Spend $420 or more in one order and get a free $5 Best Buy gift card. Only a few days left on this reward offer.",
-    "type": "deal",
-    "verified_date": "2026-09-28",
+    "verified_date": "2026-09-29",
     "featured": false
   },
   {
@@ -315,7 +62,7 @@
     "title": "Circle Deal Days: Up to 40% Off",
     "description": "Target's official two-day member event runs Oct 6-7, 2026 with up to 40% off thousands of items in fashion, beauty, home, toys and tech (Circle 360 early access Oct 5). Free Target Circle membership required.",
     "type": "deal",
-    "verified_date": "2026-09-28",
+    "verified_date": "2026-09-29",
     "featured": true
   },
   {
@@ -326,7 +73,7 @@
     "title": "15% Off First Purchase for New Circle Members",
     "description": "Guests who join Target Circle between Sept 27 and Oct 5, 2026 receive 15% off their first purchase, per Target's official announcement.",
     "type": "deal",
-    "verified_date": "2026-09-28",
+    "verified_date": "2026-09-29",
     "featured": false
   },
   {
@@ -337,205 +84,7 @@
     "title": "Free Shipping on $35+ Orders",
     "description": "Most online orders of $35 or more ship free from Target, no membership needed.",
     "type": "deal",
-    "verified_date": "2026-09-28",
-    "featured": false
-  },
-  {
-    "id": "walmart-01",
-    "store": "Walmart",
-    "store_slug": "walmart",
-    "code": null,
-    "title": "New customers: $10 off $35+ pickup or delivery",
-    "description": "New Walmart customers can get $10 off orders of $35 or more via pickup or delivery across their first few eligible orders. Eligibility varies by account.",
-    "type": "deal",
-    "verified_date": "2026-09-28",
-    "featured": true
-  },
-  {
-    "id": "walmart-02",
-    "store": "Walmart",
-    "store_slug": "walmart",
-    "code": null,
-    "title": "Walmart Photo: Extra 25% Off $20+ Orders",
-    "description": "Score an extra 25% off sitewide at Walmart Photo when you spend $20 or more, plus $10 off orders of $50+ and 20% off select holiday cards.",
-    "type": "deal",
-    "verified_date": "2026-09-28",
-    "featured": false
-  },
-  {
-    "id": "walmart-03",
-    "store": "Walmart",
-    "store_slug": "walmart",
-    "code": null,
-    "title": "Free 2-Day Shipping on $35+ Orders",
-    "description": "Orders of $35 or more ship free with 2-day delivery on most items sold and shipped by Walmart.com.",
-    "type": "deal",
-    "verified_date": "2026-09-28",
-    "featured": false
-  },
-  {
-    "id": "ebay-01",
-    "store": "eBay",
-    "store_slug": "ebay",
-    "code": "FALLSTYLE15",
-    "title": "15% Off Select Handbags",
-    "description": "Official eBay coupon: 15% off eligible handbags with no minimum purchase, capped at $500 off per transaction, max two redemptions per user. Valid Sept 24-30, 2026 for US/Canada eBay users; eligible listings show the code on the item page. Confirmed live on Sept 28, 2026.",
-    "type": "code",
-    "verified_date": "2026-09-28",
-    "featured": true
-  },
-  {
-    "id": "ebay-02",
-    "store": "eBay",
-    "store_slug": "ebay",
-    "code": null,
-    "title": "20% off select items (up to $350 off)",
-    "description": "eBay runs rotating sitewide percentage-off coupons (recently 20% off select items, up to $350 off, two uses per customer). Watch for the current coupon on eligible listings.",
-    "type": "deal",
-    "verified_date": "2026-09-28",
-    "featured": false
-  },
-  {
-    "id": "ebay-03",
-    "store": "eBay",
-    "store_slug": "ebay",
-    "code": null,
-    "title": "eBay Daily Deals: Up to 60% Off",
-    "description": "Rotating daily deals across electronics, fashion and home with savings up to 60% off, free shipping on many items.",
-    "type": "deal",
-    "verified_date": "2026-09-28",
-    "featured": false
-  },
-  {
-    "id": "macys-01",
-    "store": "Macy's",
-    "store_slug": "macys",
-    "code": null,
-    "title": "Extra 30% Off Best of the Season Sale",
-    "description": "Macy's Best of the Season Sale offers an extra 30% off most sale and regular-price items (15% off beauty, fragrances, watches and select designer jewelry). Base markdowns run as high as 77%. Ends Sept 29.",
-    "type": "deal",
-    "verified_date": "2026-09-28",
-    "featured": true
-  },
-  {
-    "id": "macys-02",
-    "store": "Macy's",
-    "store_slug": "macys",
-    "code": null,
-    "title": "Up to 85% Off Fine Jewelry Sale",
-    "description": "The Best of the Season fine jewelry event takes up to 85% off rings, necklaces, bracelets and earrings across diamond, gold, gemstone and pearl styles.",
-    "type": "deal",
-    "verified_date": "2026-09-28",
-    "featured": true
-  },
-  {
-    "id": "macys-03",
-    "store": "Macy's",
-    "store_slug": "macys",
-    "code": null,
-    "title": "Free Shipping on Orders $39+ for Star Rewards",
-    "description": "Star Rewards members (free to join) get free shipping on orders over $39; non-members get free shipping on orders over $49 or pay a $10.95 flat rate.",
-    "type": "deal",
-    "verified_date": "2026-09-28",
-    "featured": false
-  },
-  {
-    "id": "kohls-01",
-    "store": "Kohl's",
-    "store_slug": "kohls",
-    "code": null,
-    "title": "Customer Appreciation Event: Extra 15-30% Off",
-    "description": "Tiered extra savings on event selections: Kohl's Card holders take an extra 30% off, Kohl's Rewards members an extra 20% off, and nonmembers an extra 15% off.",
-    "type": "deal",
-    "verified_date": "2026-09-28",
-    "featured": true
-  },
-  {
-    "id": "kohls-02",
-    "store": "Kohl's",
-    "store_slug": "kohls",
-    "code": null,
-    "title": "Redeem Kohl's Cash Sept 28 - Oct 4",
-    "description": "Shoppers who earned $10 Kohl's Cash for every $50 spent through Sept 27 can redeem it on purchases from Sept 28 through Oct 4.",
-    "type": "deal",
-    "verified_date": "2026-09-28",
-    "featured": false
-  },
-  {
-    "id": "kohls-03",
-    "store": "Kohl's",
-    "store_slug": "kohls",
-    "code": null,
-    "title": "$10 Off $50+ Toys for Rewards Members",
-    "description": "Kohl's Rewards members get $10 off a $50 toy purchase (rare savings on Disney, LEGO and more) through Oct 4 - a good window to stock the gift closet.",
-    "type": "deal",
-    "verified_date": "2026-09-28",
-    "featured": false
-  },
-  {
-    "id": "kohls-04",
-    "store": "Kohl's",
-    "store_slug": "kohls",
-    "code": null,
-    "title": "Free Shipping on Orders $49+",
-    "description": "Get free shipping on Kohl's orders of $49 or more; orders under the threshold ship from $8.95, and free in-store pickup is available on most items.",
-    "type": "deal",
-    "verified_date": "2026-09-28",
-    "featured": false
-  },
-  {
-    "id": "chewy-01",
-    "store": "Chewy",
-    "store_slug": "chewy",
-    "code": "WELCOME",
-    "title": "Free eGift card on first $49+ order for new customers",
-    "description": "New customers: enter code WELCOME at checkout on a $49+ eligible order to receive an eGift card (Chewy's terms state $20; the current site banner shows $25 \u2014 amount may vary). Limit 1 use per order, 1 order per customer. Code published on chewy.com.",
-    "type": "code",
     "verified_date": "2026-09-29",
-    "featured": true
-  },
-  {
-    "id": "chewy-02",
-    "store": "Chewy",
-    "store_slug": "chewy",
-    "code": null,
-    "title": "$5 Off First Chewy App Order",
-    "description": "Download the Chewy app, sign in or create an account, and look for the $5 off first-app-order promo at checkout.",
-    "type": "deal",
-    "verified_date": "2026-09-28",
-    "featured": false
-  },
-  {
-    "id": "chewy-03",
-    "store": "Chewy",
-    "store_slug": "chewy",
-    "code": null,
-    "title": "50% Off First Chewy Pharmacy Autoship Order (Up to $50 Off)",
-    "description": "First Chewy Pharmacy purchase with Autoship enrollment: 50% off up to $50, applied at checkout. Limit one per household. Valid through December 31, 2026, while supplies last. Published on chewy.com.",
-    "type": "deal",
-    "verified_date": "2026-09-29",
-    "featured": false
-  },
-  {
-    "id": "chewy-04",
-    "store": "Chewy",
-    "store_slug": "chewy",
-    "code": null,
-    "title": "35% Off First Autoship + 5% Off Future Orders",
-    "description": "Turn on Autoship at checkout and save 35% (up to $20) on your first delivery, then 5% off every future scheduled delivery. No code needed; pause or cancel anytime.",
-    "type": "deal",
-    "verified_date": "2026-09-28",
-    "featured": true
-  },
-  {
-    "id": "chewy-05",
-    "store": "Chewy",
-    "store_slug": "chewy",
-    "code": null,
-    "title": "Free 1-3 Day Shipping on Orders $49+",
-    "description": "Chewy automatically applies free 1-3 day shipping on orders of $49 or more; orders under that total ship for a flat $4.95.",
-    "type": "deal",
-    "verified_date": "2026-09-28",
     "featured": false
   },
   {
@@ -546,7 +95,7 @@
     "title": "Up to 70% Off Furniture & Home Deals",
     "description": "Wayfair's fall clearance takes up to 70% off furniture, decor, lighting, kitchen and outdoor items sitewide, with new deals added throughout September.",
     "type": "deal",
-    "verified_date": "2026-09-28",
+    "verified_date": "2026-09-29",
     "featured": true
   },
   {
@@ -557,7 +106,7 @@
     "title": "Free Shipping on Orders Over $35",
     "description": "Wayfair ships most orders over $35 free to your door; orders under $35 pay a flat $4.99 shipping fee.",
     "type": "deal",
-    "verified_date": "2026-09-28",
+    "verified_date": "2026-09-29",
     "featured": false
   },
   {
@@ -568,51 +117,7 @@
     "title": "App-Exclusive Savings & Deal Alerts",
     "description": "Shopping the Wayfair app unlocks app-only price drops, flash deals and early access to sale events not shown on the desktop site.",
     "type": "deal",
-    "verified_date": "2026-09-28",
-    "featured": false
-  },
-  {
-    "id": "home-depot-01",
-    "store": "The Home Depot",
-    "store_slug": "home-depot",
-    "code": null,
-    "title": "Up to 50% Off Fall Decor & Renovation",
-    "description": "Home Depot's fall event takes up to 50% off home decor, lighting, vanities and flooring to refresh rooms ahead of the holidays.",
-    "type": "deal",
-    "verified_date": "2026-09-28",
-    "featured": true
-  },
-  {
-    "id": "home-depot-02",
-    "store": "The Home Depot",
-    "store_slug": "home-depot",
-    "code": null,
-    "title": "10% Military Discount",
-    "description": "Active-duty military, veterans and their dependents get 10% off eligible purchases year-round by verifying military status in their Home Depot account.",
-    "type": "deal",
-    "verified_date": "2026-09-28",
-    "featured": false
-  },
-  {
-    "id": "home-depot-03",
-    "store": "The Home Depot",
-    "store_slug": "home-depot",
-    "code": null,
-    "title": "Up to 40% Off Tools - Special Buys",
-    "description": "Special Buy of the Day and rotating promos take up to 40% off power tools, hand tools and tool storage from brands like Ryobi, DEWALT and Milwaukee.",
-    "type": "deal",
-    "verified_date": "2026-09-28",
-    "featured": false
-  },
-  {
-    "id": "home-depot-04",
-    "store": "The Home Depot",
-    "store_slug": "home-depot",
-    "code": null,
-    "title": "Free Delivery on Orders $45+",
-    "description": "Home Depot offers free delivery on most orders over $45; orders under $45 pay standard delivery fees by item and distance.",
-    "type": "deal",
-    "verified_date": "2026-09-28",
+    "verified_date": "2026-09-29",
     "featured": false
   },
   {
@@ -633,17 +138,6 @@
     "code": "DELIVERED",
     "title": "Free same-day delivery + up to 50% off Hair Faves",
     "description": "Sephora's own Challenges page: up to 50% off Hair Faves and free same-day delivery with code DELIVERED. Terms apply.",
-    "type": "code",
-    "verified_date": "2026-09-29",
-    "featured": false
-  },
-  {
-    "id": "sephora-05",
-    "store": "Sephora",
-    "store_slug": "sephora",
-    "code": "FRAGPICKS",
-    "title": "Free fragrance sample set with $50+ online order",
-    "description": "Online only: free fragrance sample set with a $50 minimum spend using code FRAGPICKS. From Sephora's September 2026 Beauty Challenge page. Terms apply.",
     "type": "code",
     "verified_date": "2026-09-29",
     "featured": false
@@ -748,28 +242,6 @@
     "featured": false
   },
   {
-    "id": "doordash-04",
-    "store": "DoorDash",
-    "store_slug": "doordash",
-    "code": null,
-    "title": "3-month DashPass free trial for new members",
-    "description": "New members get a 3-month DashPass free trial: $0 delivery fees and reduced service fees on eligible orders. From doordash.com.",
-    "type": "deal",
-    "verified_date": "2026-09-29",
-    "featured": false
-  },
-  {
-    "id": "doordash-05",
-    "store": "DoorDash",
-    "store_slug": "doordash",
-    "code": null,
-    "title": "50% off your next order (up to $15) for new DashPass users",
-    "description": "New-to-DashPass users get 50% off the next order (max $15); annual plan members get 50% off the next 3 orders. DoorDash provides the code at signup; valid 21 days. From DoorDash's official help center.",
-    "type": "deal",
-    "verified_date": "2026-09-29",
-    "featured": false
-  },
-  {
     "id": "uber-eats-04",
     "store": "Uber Eats",
     "store_slug": "uber-eats",
@@ -798,94 +270,6 @@
     "code": null,
     "title": "No Rush Delivery: save by choosing No Rush at checkout",
     "description": "Save on your order when you select No Rush Delivery at checkout. From Uber Eats' official Savings page.",
-    "type": "deal",
-    "verified_date": "2026-09-29",
-    "featured": false
-  },
-  {
-    "id": "dominos-04",
-    "store": "Domino's",
-    "store_slug": "dominos",
-    "code": null,
-    "title": "Mix & Match: any 2 or more items for $6.99 each",
-    "description": "Choose any two or more items for $6.99 each, including the new Domino personal Detroit-style pizza. Limited-time offer on dominos.com.",
-    "type": "deal",
-    "verified_date": "2026-09-29",
-    "featured": false
-  },
-  {
-    "id": "dominos-05",
-    "store": "Domino's",
-    "store_slug": "dominos",
-    "code": null,
-    "title": "Weeklong Carryout: $7.99 each",
-    "description": "Carryout only: large 1-topping pizza, 8-piece wings or boneless chicken, or the new Domino with 3 toppings for $7.99 each. Excludes XL and Specialty pizzas. On dominos.com.",
-    "type": "deal",
-    "verified_date": "2026-09-29",
-    "featured": false
-  },
-  {
-    "id": "dominos-06",
-    "store": "Domino's",
-    "store_slug": "dominos",
-    "code": null,
-    "title": "The Perfect Combo: 2 medium pizzas + 2 bread bite orders for $19.99",
-    "description": "Two medium 1-topping pizzas plus two 16-piece bread bite orders for $19.99. Limited-time, no substitutions. On dominos.com.",
-    "type": "deal",
-    "verified_date": "2026-09-29",
-    "featured": false
-  },
-  {
-    "id": "dominos-07",
-    "store": "Domino's",
-    "store_slug": "dominos",
-    "code": null,
-    "title": "Free Domino personal pizza: upload a competitor fast-food receipt",
-    "description": "Domino's is giving away $1,000,000 in free Dominos: upload a fast-food receipt on their official promo site to get a promo code for a free Domino personal pizza.",
-    "type": "deal",
-    "verified_date": "2026-09-29",
-    "featured": false
-  },
-  {
-    "id": "best-buy-04",
-    "store": "Best Buy",
-    "store_slug": "best-buy",
-    "code": null,
-    "title": "Members save up to $246 on NFL Sunday Ticket",
-    "description": "My Best Buy Plus and Total members save up to $246 on NFL Sunday Ticket from YouTube and YouTube TV. Offer valid at least through October 28, 2026. From bestbuy.com's Member Deals page.",
-    "type": "deal",
-    "verified_date": "2026-09-29",
-    "featured": false
-  },
-  {
-    "id": "best-buy-05",
-    "store": "Best Buy",
-    "store_slug": "best-buy",
-    "code": null,
-    "title": "Top Deals: save up to $300 on select iPad",
-    "description": "Save up to $300 on select iPad models in Best Buy's Top Deals. From bestbuy.com/top-deals; prices subject to change.",
-    "type": "deal",
-    "verified_date": "2026-09-29",
-    "featured": false
-  },
-  {
-    "id": "best-buy-06",
-    "store": "Best Buy",
-    "store_slug": "best-buy",
-    "code": null,
-    "title": "Top Deals: save up to $500 on select Windows laptops",
-    "description": "Save up to $500 on select Windows laptops in Best Buy's Top Deals. From bestbuy.com/top-deals; prices subject to change.",
-    "type": "deal",
-    "verified_date": "2026-09-29",
-    "featured": false
-  },
-  {
-    "id": "best-buy-07",
-    "store": "Best Buy",
-    "store_slug": "best-buy",
-    "code": null,
-    "title": "Members earn 10x rewards with Grand Theft Auto VI pre-order",
-    "description": "My Best Buy Plus and Total members earn 10x rewards points with a Grand Theft Auto VI pre-order. Ends November 18. From bestbuy.com's Member Deals page.",
     "type": "deal",
     "verified_date": "2026-09-29",
     "featured": false
@@ -930,39 +314,6 @@
     "code": null,
     "title": "Buy 1 Get 1 50% off Favorite Day & Good & Gather snacks and candy",
     "description": "BOGO 50% off Favorite Day and Good & Gather snacks and candy. From Target's official Top Deals page.",
-    "type": "deal",
-    "verified_date": "2026-09-29",
-    "featured": false
-  },
-  {
-    "id": "walmart-04",
-    "store": "Walmart",
-    "store_slug": "walmart",
-    "code": null,
-    "title": "Rollback: Ninja 8-in-1 PossibleCooker Plus 7.5 Qt \u2014 $99 (was $119)",
-    "description": "Rollback on the Ninja 8-in-1 PossibleCooker Plus 7.5 Qt Multi-Cooker (Sage Green): $99.00, save $20.00. From Walmart's own Fall Seasonal Savings page.",
-    "type": "deal",
-    "verified_date": "2026-09-29",
-    "featured": false
-  },
-  {
-    "id": "walmart-05",
-    "store": "Walmart",
-    "store_slug": "walmart",
-    "code": null,
-    "title": "Rollback: MaryRuth's Liquid Multivitamin + Hair Growth \u2014 $26.88 (was $39.95)",
-    "description": "Rollback on MaryRuth's Liquid Multivitamin + Hair Growth with Biotin, Peach Mango, 15.22 fl oz: $26.88, save $13.07. From Walmart's own Fall Seasonal Savings page.",
-    "type": "deal",
-    "verified_date": "2026-09-29",
-    "featured": false
-  },
-  {
-    "id": "walmart-06",
-    "store": "Walmart",
-    "store_slug": "walmart",
-    "code": null,
-    "title": "Rollback: KIND Cranberry Almond Snack Bars 6-pack \u2014 $6.73 (was $7.48)",
-    "description": "Rollback on KIND Snack Bars, Cranberry Almond, Gluten Free, 1.4 oz, 6 Count: $6.73, save $0.75. From Walmart's own Fall Seasonal Savings page.",
     "type": "deal",
     "verified_date": "2026-09-29",
     "featured": false
@@ -1023,50 +374,6 @@
     "featured": false
   },
   {
-    "id": "kohls-05",
-    "store": "Kohl's",
-    "store_slug": "kohls",
-    "code": "GOSAVE40",
-    "title": "Extra 40% off with code GOSAVE40 (today only)",
-    "description": "Take an extra 40% off in store and online with code GOSAVE40. Kohl's publishes the code in its on-site promo banners. Today only.",
-    "type": "code",
-    "verified_date": "2026-09-29",
-    "featured": false
-  },
-  {
-    "id": "kohls-06",
-    "store": "Kohl's",
-    "store_slug": "kohls",
-    "code": null,
-    "title": "Earn $10 Kohl's Cash for every $50 spent (Sept 28 \u2013 Oct 4)",
-    "description": "Earn $10 Kohl's Cash for every $50 spent September 28 through October 4, 2026; redeemable October 5-18, in store and online. Excludes Sephora at Kohl's and gift cards. From kohls.com.",
-    "type": "deal",
-    "verified_date": "2026-09-29",
-    "featured": false
-  },
-  {
-    "id": "chewy-06",
-    "store": "Chewy",
-    "store_slug": "chewy",
-    "code": null,
-    "title": "50% off first Chewy Pharmacy Autoship order (up to $50 off)",
-    "description": "First Chewy Pharmacy purchase with Autoship enrollment: 50% off up to $50, applied at checkout. Limit one per household. Valid through December 31, 2026, while supplies last. From chewy.com.",
-    "type": "deal",
-    "verified_date": "2026-09-29",
-    "featured": false
-  },
-  {
-    "id": "shein-04",
-    "store": "Shein",
-    "store_slug": "shein",
-    "code": null,
-    "title": "#SHEINBigSale: up to 80% off",
-    "description": "The SHEIN Big Sale: up to 80% off with 10%-50% off sale sections and per-product markdowns, plus a rotating Flash Sale. From us.shein.com.",
-    "type": "deal",
-    "verified_date": "2026-09-29",
-    "featured": false
-  },
-  {
     "id": "wayfair-04",
     "store": "Wayfair",
     "store_slug": "wayfair",
@@ -1078,34 +385,12 @@
     "featured": false
   },
   {
-    "id": "home-depot-05",
-    "store": "The Home Depot",
-    "store_slug": "home-depot",
-    "code": null,
-    "title": "Special Buy of the Day: today-only deals",
-    "description": "Today-only deals that reset daily at 3 AM ET. From Home Depot's official Special Buy of the Day page.",
-    "type": "deal",
-    "verified_date": "2026-09-29",
-    "featured": false
-  },
-  {
     "id": "home-depot-06",
     "store": "The Home Depot",
     "store_slug": "home-depot",
     "code": null,
     "title": "LG Signature Appliances rebate: up to $3,000 back on 2+ appliance bundles",
     "description": "Save up to an extra $3,000 when you bundle 2 or more LG Signature Appliances. Purchase window September 17 \u2013 November 3, 2026; can combine with other manufacturer rebates. From Home Depot's Rebate Center.",
-    "type": "deal",
-    "verified_date": "2026-09-29",
-    "featured": false
-  },
-  {
-    "id": "home-depot-07",
-    "store": "The Home Depot",
-    "store_slug": "home-depot",
-    "code": null,
-    "title": "10% off select home decor when you sign up for emails",
-    "description": "Sign up for emails and save 10% on select home decor items. Standing offer shown site-wide on homedepot.com.",
     "type": "deal",
     "verified_date": "2026-09-29",
     "featured": false
@@ -1342,39 +627,6 @@
     "featured": false
   },
   {
-    "id": "tire-rack-05",
-    "store": "Tire Rack",
-    "store_slug": "tire-rack",
-    "code": null,
-    "title": "Free 2-Year Road Hazard Protection",
-    "description": "Every tire purchase at Tire Rack includes free 2-year road hazard protection and roadside assistance.",
-    "type": "deal",
-    "verified_date": "2026-09-29",
-    "featured": false
-  },
-  {
-    "id": "tire-rack-06",
-    "store": "Tire Rack",
-    "store_slug": "tire-rack",
-    "code": null,
-    "title": "Free Shipping on Tire Orders",
-    "description": "Free shipping to your home or a local tire shop near you on Tire Rack orders.",
-    "type": "deal",
-    "verified_date": "2026-09-29",
-    "featured": false
-  },
-  {
-    "id": "tire-rack-07",
-    "store": "Tire Rack",
-    "store_slug": "tire-rack",
-    "code": null,
-    "title": "Installation at 10,000+ Tire Shops",
-    "description": "Easy tire installation at over 10,000 local and national tire shops with expert guidance from Tire Rack's US-based support team.",
-    "type": "deal",
-    "verified_date": "2026-09-29",
-    "featured": false
-  },
-  {
     "id": "ashley-furniture-01",
     "store": "Ashley Furniture",
     "store_slug": "ashley-furniture",
@@ -1458,72 +710,6 @@
     "code": null,
     "title": "Up to $300 Ashley Cash with Mattress Purchase",
     "description": "Get up to $300 Ashley Cash with a qualifying mattress purchase at participating stores. Single-receipt purchase required; Ashley Cash can't be applied to the current mattress purchase.",
-    "type": "deal",
-    "verified_date": "2026-09-29",
-    "featured": false
-  },
-  {
-    "id": "pottery-barn-01",
-    "store": "Pottery Barn",
-    "store_slug": "pottery-barn",
-    "code": null,
-    "title": "Up to 60% Off All Sale",
-    "description": "Shop Pottery Barn's sale collection with up to 60% off across furniture and d\u00e9cor.",
-    "type": "deal",
-    "verified_date": "2026-09-29",
-    "featured": false
-  },
-  {
-    "id": "pottery-barn-02",
-    "store": "Pottery Barn",
-    "store_slug": "pottery-barn",
-    "code": null,
-    "title": "Free Shipping on 1,000s of Items",
-    "description": "Free shipping on 1,000s of Pottery Barn items sitewide.",
-    "type": "deal",
-    "verified_date": "2026-09-29",
-    "featured": false
-  },
-  {
-    "id": "pottery-barn-03",
-    "store": "Pottery Barn",
-    "store_slug": "pottery-barn",
-    "code": null,
-    "title": "In-Stock Furniture Arrives in 1\u20134 Weeks",
-    "description": "Shop in-stock furniture that arrives in 1 to 4 weeks.",
-    "type": "deal",
-    "verified_date": "2026-09-29",
-    "featured": false
-  },
-  {
-    "id": "pottery-barn-04",
-    "store": "Pottery Barn",
-    "store_slug": "pottery-barn",
-    "code": null,
-    "title": "Up to 20% Off Bedding, Bath & Bedroom Furniture",
-    "description": "Save up to 20% off bedding, bath, and bedroom furniture in Pottery Barn's sale.",
-    "type": "deal",
-    "verified_date": "2026-09-29",
-    "featured": false
-  },
-  {
-    "id": "pottery-barn-05",
-    "store": "Pottery Barn",
-    "store_slug": "pottery-barn",
-    "code": null,
-    "title": "Deals Under $50",
-    "description": "Shop Pottery Barn's deals under $50 across sale d\u00e9cor and gift categories.",
-    "type": "deal",
-    "verified_date": "2026-09-29",
-    "featured": false
-  },
-  {
-    "id": "pottery-barn-06",
-    "store": "Pottery Barn",
-    "store_slug": "pottery-barn",
-    "code": null,
-    "title": "Zero Interest Promo Financing on $750+",
-    "description": "Zero interest promo financing on furniture purchases of $750 or more. Offer terms apply.",
     "type": "deal",
     "verified_date": "2026-09-29",
     "featured": false
@@ -1727,94 +913,6 @@
     "featured": false
   },
   {
-    "id": "nordstrom-rack-02",
-    "store": "Nordstrom Rack",
-    "store_slug": "nordstrom-rack",
-    "code": null,
-    "title": "$40 Off Next Purchase with Approved Nordstrom Credit Card",
-    "description": "Get $40 off your next purchase when you apply and get approved for a Nordstrom credit card; restrictions apply.",
-    "type": "deal",
-    "verified_date": "2026-09-29",
-    "featured": false
-  },
-  {
-    "id": "cvs-01",
-    "store": "CVS",
-    "store_slug": "cvs",
-    "code": "SHOP40",
-    "title": "40% Off All CVS Photo Products",
-    "description": "Add any photo product(s) to your cart and enter promo code SHOP40 for 40% off your photo order, online and in the mobile app. Excludes additional photo book pages, 8GB Photo USB, NFL licensed products, and Erin Condren licensed planners; one discount per item.",
-    "type": "code",
-    "verified_date": "2026-09-29",
-    "featured": false
-  },
-  {
-    "id": "cvs-02",
-    "store": "CVS",
-    "store_slug": "cvs",
-    "code": "EARLYC60",
-    "title": "60% Off Premium Cards",
-    "description": "Add any premium card(s) to your cart and enter promo code EARLYC60 for 60% off each premium card, online and in the mobile app. Excludes tax, shipping, and regular photo cards; one discount per item.",
-    "type": "code",
-    "verified_date": "2026-09-29",
-    "featured": false
-  },
-  {
-    "id": "cvs-03",
-    "store": "CVS",
-    "store_slug": "cvs",
-    "code": "METALLIC5",
-    "title": "$5 16x20 Metallic Posters",
-    "description": "Add any 16x20 metallic poster(s) to your cart and enter promo code METALLIC5 to get each 16x20 metallic poster for only $5. Applies to 16x20 metallic posters only, online and in the mobile app; one discount per item.",
-    "type": "code",
-    "verified_date": "2026-09-29",
-    "featured": false
-  },
-  {
-    "id": "cvs-04",
-    "store": "CVS",
-    "store_slug": "cvs",
-    "code": "TAKE60",
-    "title": "60% Off Posters and Wall D\u00e9cor",
-    "description": "Add any poster(s) or wall decor items to your cart and enter promo code TAKE60 to get 60% off each item, online and in the mobile app. Discount valid on photo products only; one discount per item.",
-    "type": "code",
-    "verified_date": "2026-09-29",
-    "featured": false
-  },
-  {
-    "id": "cvs-05",
-    "store": "CVS",
-    "store_slug": "cvs",
-    "code": "DRINK8",
-    "title": "$8 Mugs and Can Coolers",
-    "description": "Add any 15oz. same day mug(s) or 11oz. can cooler(s) to your cart and enter promo code DRINK8 to get each for $8. Applies to all 15oz. same day mugs and 11oz. same day can coolers only, online and in the mobile app.",
-    "type": "code",
-    "verified_date": "2026-09-29",
-    "featured": false
-  },
-  {
-    "id": "cvs-06",
-    "store": "CVS",
-    "store_slug": "cvs",
-    "code": "BOARD8",
-    "title": "$8 16x20 Board Prints",
-    "description": "Add any 16x20 board print(s) to your cart and enter promo code BOARD8 to get each 16x20 board print for only $8. Applies to 16x20 board prints only, online and in the mobile app; one discount per item.",
-    "type": "code",
-    "verified_date": "2026-09-29",
-    "featured": false
-  },
-  {
-    "id": "cvs-07",
-    "store": "CVS",
-    "store_slug": "cvs",
-    "code": null,
-    "title": "$1 Coupon Per Product Review (Up to 3)",
-    "description": "Write a review of CVS Health products and get a $1 coupon for each review, up to 3 reviews, usable on your next CVS Pharmacy purchase. You must be logged in to your ExtraCare account to redeem; limit one promo code per order and $3 in coupons per household; valid one time only with exclusions.",
-    "type": "deal",
-    "verified_date": "2026-09-29",
-    "featured": false
-  },
-  {
     "id": "walgreens-01",
     "store": "Walgreens",
     "store_slug": "walgreens",
@@ -1969,72 +1067,6 @@
     "featured": false
   },
   {
-    "id": "dermstore-01",
-    "store": "Dermstore",
-    "store_slug": "dermstore",
-    "code": null,
-    "title": "Dermstore Rewards Members Sale",
-    "description": "Dermstore Rewards members unlock exclusive sale access. Join the free Dermstore Rewards program to shop member-only sale events.",
-    "type": "deal",
-    "verified_date": "2026-09-29",
-    "featured": false
-  },
-  {
-    "id": "dermstore-02",
-    "store": "Dermstore",
-    "store_slug": "dermstore",
-    "code": null,
-    "title": "Save 30\u201340% with HSA/FSA at Checkout",
-    "description": "Use pre-tax HSA or FSA dollars to save 30% to 40% on eligible skin care, devices, and more, powered by Flex at checkout.",
-    "type": "deal",
-    "verified_date": "2026-09-29",
-    "featured": false
-  },
-  {
-    "id": "dermstore-03",
-    "store": "Dermstore",
-    "store_slug": "dermstore",
-    "code": null,
-    "title": "$20 SkinCeuticals Gift on $175+ Orders",
-    "description": "Receive a $20 SkinCeuticals gift with any $175+ SkinCeuticals brand order. Gift-with-purchase offers rotate; each brand's threshold applies to that brand's products.",
-    "type": "deal",
-    "verified_date": "2026-09-29",
-    "featured": false
-  },
-  {
-    "id": "dermstore-04",
-    "store": "Dermstore",
-    "store_slug": "dermstore",
-    "code": null,
-    "title": "$15 Medik8 Gift on $100+ Orders",
-    "description": "Receive a $15 Medik8 gift with any $100+ Medik8 brand order. Gift-with-purchase offers rotate; each brand's threshold applies to that brand's products.",
-    "type": "deal",
-    "verified_date": "2026-09-29",
-    "featured": false
-  },
-  {
-    "id": "dermstore-05",
-    "store": "Dermstore",
-    "store_slug": "dermstore",
-    "code": null,
-    "title": "$18 EltaMD Gift on $100+ Orders",
-    "description": "Receive an $18 EltaMD gift with any $100+ EltaMD brand order. Gift-with-purchase offers rotate; each brand's threshold applies to that brand's products.",
-    "type": "deal",
-    "verified_date": "2026-09-29",
-    "featured": false
-  },
-  {
-    "id": "dermstore-06",
-    "store": "Dermstore",
-    "store_slug": "dermstore",
-    "code": null,
-    "title": "Free Shipping on Auto-Replenishment",
-    "description": "Have your favorite products automatically delivered and shipped free with Auto-Replenishment. Cancel anytime and control the delivery frequency from your account.",
-    "type": "deal",
-    "verified_date": "2026-09-29",
-    "featured": false
-  },
-  {
     "id": "petsmart-01",
     "store": "PetSmart",
     "store_slug": "petsmart",
@@ -2123,17 +1155,6 @@
     "featured": false
   },
   {
-    "id": "petco-01",
-    "store": "Petco",
-    "store_slug": "petco",
-    "code": null,
-    "title": "35% Off Your First Autoship Order",
-    "description": "Petco's Repeat Delivery (Autoship) program gives up to 35% off select brands on your first order (max $20 discount), free shipping on orders over $39, and 5% off subsequent orders.",
-    "type": "deal",
-    "verified_date": "2026-09-29",
-    "featured": false
-  },
-  {
     "id": "petco-02",
     "store": "Petco",
     "store_slug": "petco",
@@ -2151,83 +1172,6 @@
     "code": null,
     "title": "Autoship: Extra Discounts + Free Shipping",
     "description": "Sign up for Autoship to get extra discounts off your first order subtotal and free shipping, with no membership fees.",
-    "type": "deal",
-    "verified_date": "2026-09-29",
-    "featured": false
-  },
-  {
-    "id": "petco-04",
-    "store": "Petco",
-    "store_slug": "petco",
-    "code": null,
-    "title": "FRONTLINE Plus: Buy 1, Get 1 40% Off",
-    "description": "Buy 1, get 1 40% off FRONTLINE Plus flea & tick spot treatment for dogs (and cats) \u2014 online only. Offer applies to multiple size/breed formulas starting at $40.98.",
-    "type": "deal",
-    "verified_date": "2026-09-29",
-    "featured": false
-  },
-  {
-    "id": "petco-05",
-    "store": "Petco",
-    "store_slug": "petco",
-    "code": null,
-    "title": "Buy 2, Get 1 Free on Dog Products",
-    "description": "Petco runs Buy 2, Get 1 free deals on dog products \u2014 including bowls, collars, leashes, harnesses, and toys \u2014 throughout the year, plus clearance sales and other weekly discount opportunities.",
-    "type": "deal",
-    "verified_date": "2026-09-29",
-    "featured": false
-  },
-  {
-    "id": "dell-01",
-    "store": "Dell",
-    "store_slug": "dell",
-    "code": null,
-    "title": "2X Dell Rewards (6% back) on gaming PCs",
-    "description": "Dell Rewards members earn double the usual rate on gaming PC purchases \u2014 6% back instead of 3% \u2014 on eligible orders during the September Spotlight event.",
-    "type": "deal",
-    "verified_date": "2026-09-29",
-    "featured": false
-  },
-  {
-    "id": "dell-02",
-    "store": "Dell",
-    "store_slug": "dell",
-    "code": null,
-    "title": "$100 Dell Rewards with new Dell Pay Credit account",
-    "description": "Open a new Dell Pay Credit account, enroll in Dell Rewards, and get $100 in Dell Rewards on purchases of $799+ with 12 months special financing.",
-    "type": "deal",
-    "verified_date": "2026-09-29",
-    "featured": false
-  },
-  {
-    "id": "dell-03",
-    "store": "Dell",
-    "store_slug": "dell",
-    "code": null,
-    "title": "Free shipping, no minimum purchase",
-    "description": "Dell offers free shipping with no minimum purchase, plus no-hassle returns, on gaming PC orders.",
-    "type": "deal",
-    "verified_date": "2026-09-29",
-    "featured": false
-  },
-  {
-    "id": "dell-04",
-    "store": "Dell",
-    "store_slug": "dell",
-    "code": null,
-    "title": "Limited-time offers on Alienware gaming systems",
-    "description": "Limited-time offers on Alienware gaming laptops and desktops featuring the latest processors and graphics cards.",
-    "type": "deal",
-    "verified_date": "2026-09-29",
-    "featured": false
-  },
-  {
-    "id": "dell-05",
-    "store": "Dell",
-    "store_slug": "dell",
-    "code": null,
-    "title": "September Spotlight tech deals event",
-    "description": "Dell's seasonal event invites shoppers to refresh their tech for the new season with standout-performance deals.",
     "type": "deal",
     "verified_date": "2026-09-29",
     "featured": false
@@ -2321,50 +1265,6 @@
     "featured": false
   },
   {
-    "id": "bh-photo-04",
-    "store": "B&H Photo Video",
-    "store_slug": "bh-photo",
-    "code": null,
-    "title": "Synco Mic-D2 shotgun mic for $149 (was $249)",
-    "description": "Save $100 on the Synco Mic-D2 hypercardioid shotgun microphone, now $149 (was $249) in the Deal Zone.",
-    "type": "deal",
-    "verified_date": "2026-09-29",
-    "featured": false
-  },
-  {
-    "id": "bh-photo-05",
-    "store": "B&H Photo Video",
-    "store_slug": "bh-photo",
-    "code": null,
-    "title": "SmallRig 5630 tripod for $54.90 (was $79.90)",
-    "description": "Save $25 on the SmallRig 5630 aluminum alloy pro photo tripod with ball head, now $54.90 (was $79.90).",
-    "type": "deal",
-    "verified_date": "2026-09-29",
-    "featured": false
-  },
-  {
-    "id": "bh-photo-06",
-    "store": "B&H Photo Video",
-    "store_slug": "bh-photo",
-    "code": null,
-    "title": "Revo ST-500 stabilizer for $14.95 (was $59.95)",
-    "description": "Save $45 on the Revo ST-500 handheld video stabilizer in black/green, now $14.95 (was $59.95).",
-    "type": "deal",
-    "verified_date": "2026-09-29",
-    "featured": false
-  },
-  {
-    "id": "bh-photo-07",
-    "store": "B&H Photo Video",
-    "store_slug": "bh-photo",
-    "code": null,
-    "title": "Pelican AEGIS case for $19.95 (was $74.95)",
-    "description": "Save $55 on the Pelican AEGIS double modpak AV case system in sand, now $19.95 (was $74.95).",
-    "type": "deal",
-    "verified_date": "2026-09-29",
-    "featured": false
-  },
-  {
     "id": "staples-01",
     "store": "Staples",
     "store_slug": "staples",
@@ -2426,94 +1326,6 @@
     "code": null,
     "title": "Free pickup or free delivery on print orders $35+",
     "description": "Staples print orders include free in-store pickup or free delivery on orders over $35.",
-    "type": "deal",
-    "verified_date": "2026-09-29",
-    "featured": false
-  },
-  {
-    "id": "dicks-sporting-goods-01",
-    "store": "Dick's Sporting Goods",
-    "store_slug": "dicks-sporting-goods",
-    "code": null,
-    "title": "$20 off $100 for new email subscribers",
-    "description": "First-time email subscribers get $20 off a $100+ purchase, valid in-store and online for 7 days after signing up. Limit 1 per customer; exclusions apply.",
-    "type": "deal",
-    "verified_date": "2026-09-29",
-    "featured": false
-  },
-  {
-    "id": "dicks-sporting-goods-02",
-    "store": "Dick's Sporting Goods",
-    "store_slug": "dicks-sporting-goods",
-    "code": null,
-    "title": "Free shipping on orders $65+",
-    "description": "All orders of $65 or more ship free with standard shipping; oversize and overweight items and Hazmat products are excluded.",
-    "type": "deal",
-    "verified_date": "2026-09-29",
-    "featured": false
-  },
-  {
-    "id": "dicks-sporting-goods-03",
-    "store": "Dick's Sporting Goods",
-    "store_slug": "dicks-sporting-goods",
-    "code": null,
-    "title": "ScoreCard free shipping on orders $49+",
-    "description": "Log in with a ScoreCard account to get free standard shipping on orders of $49 or more.",
-    "type": "deal",
-    "verified_date": "2026-09-29",
-    "featured": false
-  },
-  {
-    "id": "dicks-sporting-goods-04",
-    "store": "Dick's Sporting Goods",
-    "store_slug": "dicks-sporting-goods",
-    "code": null,
-    "title": "ScoreCard rewards: 1 point per $1, $10 per 300 points",
-    "description": "ScoreCard members earn one point for every $1 spent and get a $10 reward for every 300 points.",
-    "type": "deal",
-    "verified_date": "2026-09-29",
-    "featured": false
-  },
-  {
-    "id": "dicks-sporting-goods-05",
-    "store": "Dick's Sporting Goods",
-    "store_slug": "dicks-sporting-goods",
-    "code": null,
-    "title": "Free one-hour curbside or in-store pickup",
-    "description": "Order online and pick it up curbside or in-store \u2014 most items ready within one hour, subject to availability.",
-    "type": "deal",
-    "verified_date": "2026-09-29",
-    "featured": false
-  },
-  {
-    "id": "dicks-sporting-goods-06",
-    "store": "Dick's Sporting Goods",
-    "store_slug": "dicks-sporting-goods",
-    "code": null,
-    "title": "Text alerts with exclusive signup offer",
-    "description": "Join DICK'S Text Alerts for top offers, deal and new-arrival alerts, plus an exclusive offer upon joining.",
-    "type": "deal",
-    "verified_date": "2026-09-29",
-    "featured": false
-  },
-  {
-    "id": "dicks-sporting-goods-07",
-    "store": "Dick's Sporting Goods",
-    "store_slug": "dicks-sporting-goods",
-    "code": null,
-    "title": "Clearance: last-chance sports gear deals",
-    "description": "Shop DICK'S clearance for the biggest savings on sports apparel, footwear, and gear \u2014 last-chance items.",
-    "type": "deal",
-    "verified_date": "2026-09-29",
-    "featured": false
-  },
-  {
-    "id": "pizza-hut-01",
-    "store": "Pizza Hut",
-    "store_slug": "pizza-hut",
-    "code": null,
-    "title": "Earn 10 Points Per $1 with Hut Rewards",
-    "description": "Every $1 spent on food and drinks earns 10 points in your Hut Rewards account, which you can redeem for free breadsticks, wings, desserts, and pizza. Open to US residents 18+ who register for the program.",
     "type": "deal",
     "verified_date": "2026-09-29",
     "featured": false
@@ -2739,100 +1551,12 @@
     "featured": false
   },
   {
-    "id": "dsw-01",
-    "store": "DSW",
-    "store_slug": "dsw",
-    "code": "GOLDEN",
-    "title": "Extra 10% off clearance with code GOLDEN",
-    "description": "Fall into savings: take an extra 10% off clearance shoes in stores and online with code GOLDEN at checkout.",
-    "type": "code",
-    "verified_date": "2026-09-29",
-    "featured": false
-  },
-  {
-    "id": "dsw-02",
-    "store": "DSW",
-    "store_slug": "dsw",
-    "code": null,
-    "title": "Up to 30% off select styles from top brands",
-    "description": "Save up to 30% on select styles from adidas, Nike, Steve Madden, Birkenstock, New Balance, Skechers, Timberland, Crocs and more. Prices as marked.",
-    "type": "deal",
-    "verified_date": "2026-09-29",
-    "featured": false
-  },
-  {
-    "id": "dsw-03",
-    "store": "DSW",
-    "store_slug": "dsw",
-    "code": null,
-    "title": "BOGO 50% off Fireside by Dearfoam (in stores)",
-    "description": "Buy one, get one 50% off Fireside by Dearfoam socks or accessories \u2014 in DSW stores only.",
-    "type": "deal",
-    "verified_date": "2026-09-29",
-    "featured": false
-  },
-  {
-    "id": "dsw-04",
-    "store": "DSW",
-    "store_slug": "dsw",
-    "code": null,
-    "title": "10% off for email sign-up",
-    "description": "Sign up for DSW emails and get 10% off your order. First-time subscribers only.",
-    "type": "deal",
-    "verified_date": "2026-09-29",
-    "featured": false
-  },
-  {
     "id": "zara-01",
     "store": "Zara",
     "store_slug": "zara",
     "code": null,
     "title": "Shop the Zara Sale",
     "description": "Zara\u2019s sale section is live now with special prices across women\u2019s, men\u2019s, kids\u2019 and lingerie collections. Zara does not offer promo codes \u2014 sale prices are as marked.",
-    "type": "deal",
-    "verified_date": "2026-09-29",
-    "featured": false
-  },
-  {
-    "id": "asos-01",
-    "store": "ASOS",
-    "store_slug": "asos",
-    "code": null,
-    "title": "Women\u2019s sale: 20,000+ discounted styles",
-    "description": "Shop the ASOS women\u2019s sale with over 20,000 discounted styles from adidas, Nike, Topshop, ASOS DESIGN and more.",
-    "type": "deal",
-    "verified_date": "2026-09-29",
-    "featured": false
-  },
-  {
-    "id": "asos-02",
-    "store": "ASOS",
-    "store_slug": "asos",
-    "code": "WELCOME",
-    "title": "20% off your first order with code WELCOME",
-    "description": "New customers get 20% off a first order of $50+ with code WELCOME at checkout when subscribing to ASOS updates. Ends 3am EDT December 9, 2026. Max pre-discount spend $789.55; exclusions apply.",
-    "type": "code",
-    "verified_date": "2026-09-29",
-    "featured": true
-  },
-  {
-    "id": "asos-03",
-    "store": "ASOS",
-    "store_slug": "asos",
-    "code": "WELCOMEAPP",
-    "title": "25% off in the app with code WELCOMEAPP",
-    "description": "New customers shopping in the ASOS app get 25% off a first order of $50+ with code WELCOMEAPP at checkout. Ends 3am EDT December 9, 2026. Exclusions apply.",
-    "type": "code",
-    "verified_date": "2026-09-29",
-    "featured": false
-  },
-  {
-    "id": "athleta-01",
-    "store": "Athleta",
-    "store_slug": "athleta",
-    "code": null,
-    "title": "40% off + extra 20% off first purchase with Encore card",
-    "description": "Open and use an Athleta Encore Credit Card to get 40% off plus an extra 20% off your first purchase. Subject to credit approval; terms apply.",
     "type": "deal",
     "verified_date": "2026-09-29",
     "featured": false
@@ -2871,61 +1595,6 @@
     "featured": false
   },
   {
-    "id": "pacsun-01",
-    "store": "PacSun",
-    "store_slug": "pacsun",
-    "code": null,
-    "title": "$5 Welcome Reward for joining Pacsun Rewards",
-    "description": "Sign up for free Pacsun Rewards and receive a $5 Welcome Reward, plus earn 1 point per $1, early access to exclusive drops, and double points with a gift on your birthday.",
-    "type": "deal",
-    "verified_date": "2026-09-29",
-    "featured": false
-  },
-  {
-    "id": "pacsun-02",
-    "store": "PacSun",
-    "store_slug": "pacsun",
-    "code": null,
-    "title": "Students get 10% off every order",
-    "description": "Verify your student status with UNiDAYS and save 10% on your entire Pacsun order every time you shop. Valid on select styles and brands.",
-    "type": "deal",
-    "verified_date": "2026-09-29",
-    "featured": false
-  },
-  {
-    "id": "pacsun-03",
-    "store": "PacSun",
-    "store_slug": "pacsun",
-    "code": null,
-    "title": "Free standard shipping on orders $10+",
-    "description": "Free standard U.S. shipping on Pacsun orders of $10 or more before tax. AK, HI, PR and military addresses excluded.",
-    "type": "deal",
-    "verified_date": "2026-09-29",
-    "featured": false
-  },
-  {
-    "id": "ae-01",
-    "store": "American Eagle",
-    "store_slug": "american-eagle",
-    "code": null,
-    "title": "35% off all jeans & pants in the app (30% off on site)",
-    "description": "Take 35% off all jeans and pants when you shop in the American Eagle app, or 30% off when shopping on ae.com. Men\u2019s and women\u2019s included.",
-    "type": "deal",
-    "verified_date": "2026-09-29",
-    "featured": false
-  },
-  {
-    "id": "ae-02",
-    "store": "American Eagle",
-    "store_slug": "american-eagle",
-    "code": null,
-    "title": "40% off all sweatshirts & jeans",
-    "description": "Save 40% on all sweatshirts and jeans for men and women at American Eagle, plus all tops on sale with sweatshirts from $29.",
-    "type": "deal",
-    "verified_date": "2026-09-29",
-    "featured": false
-  },
-  {
     "id": "famousfootwear-01",
     "store": "Famous Footwear",
     "store_slug": "famous-footwear",
@@ -2954,39 +1623,6 @@
     "code": null,
     "title": "Free shipping on every order",
     "description": "Zappos offers free shipping on every order of shoes, sneakers, boots and clothing \u2014 no minimum purchase.",
-    "type": "deal",
-    "verified_date": "2026-09-29",
-    "featured": false
-  },
-  {
-    "id": "bananarepublic-01",
-    "store": "Banana Republic",
-    "store_slug": "banana-republic",
-    "code": null,
-    "title": "Friends & Family Event: 40% off full-priced styles",
-    "description": "Shop the Banana Republic Friends & Family Event and take 40% off your full-priced purchase for women and men. Exclusions apply.",
-    "type": "deal",
-    "verified_date": "2026-09-29",
-    "featured": true
-  },
-  {
-    "id": "loft-01",
-    "store": "LOFT",
-    "store_slug": "loft",
-    "code": null,
-    "title": "Free shipping on orders of $99+",
-    "description": "LOFT offers free standard U.S. shipping on qualifying loft.com orders of $99 or more after discounts. No promo code needed. Excludes AK, HI and PR.",
-    "type": "deal",
-    "verified_date": "2026-09-29",
-    "featured": false
-  },
-  {
-    "id": "loft-02",
-    "store": "LOFT",
-    "store_slug": "loft",
-    "code": null,
-    "title": "Extra 10% off when you sign up for SMS texts",
-    "description": "Sign up for LOFT SMS texts and get an extra 10% off your purchase, one-time use, combinable with other offers. Exclusions apply; valid in the US.",
     "type": "deal",
     "verified_date": "2026-09-29",
     "featured": false
@@ -3157,28 +1793,6 @@
     "featured": false
   },
   {
-    "id": "converse-01",
-    "store": "Converse",
-    "store_slug": "converse",
-    "code": null,
-    "title": "15% off next purchase + $15 birthday reward with signup",
-    "description": "Sign up for Converse emails to get 15% off your next purchase plus $15 off a purchase of $75 or more during your birthday month. Exclusions apply.",
-    "type": "deal",
-    "verified_date": "2026-09-29",
-    "featured": false
-  },
-  {
-    "id": "converse-02",
-    "store": "Converse",
-    "store_slug": "converse",
-    "code": null,
-    "title": "Free shipping over $75 (or on every order with account)",
-    "description": "Converse.com orders over $75 ship free. Sign up for a free Converse.com account and get free shipping on every order.",
-    "type": "deal",
-    "verified_date": "2026-09-29",
-    "featured": false
-  },
-  {
     "id": "skechers-01",
     "store": "Skechers",
     "store_slug": "skechers",
@@ -3212,17 +1826,6 @@
     "featured": false
   },
   {
-    "id": "timberland-01",
-    "store": "Timberland",
-    "store_slug": "timberland",
-    "code": null,
-    "title": "Labor Day Sale: 30% off select styles",
-    "description": "Shop the Timberland Labor Day Sale and save 30% off select boots, shoes and clothing for men, women and kids.",
-    "type": "deal",
-    "verified_date": "2026-09-29",
-    "featured": false
-  },
-  {
     "id": "heydude-01",
     "store": "HEYDUDE",
     "store_slug": "heydude",
@@ -3251,61 +1854,6 @@
     "code": null,
     "title": "MINNEN extendable bed \u2014 20% off, $119.99",
     "description": "MINNEN extendable bed frame in white is $119.99, down from $149.99 (20% off), valid September 17 through October 12, 2026.",
-    "type": "deal",
-    "verified_date": "2026-09-29",
-    "featured": false
-  },
-  {
-    "id": "overstock-01",
-    "store": "Overstock",
-    "store_slug": "overstock",
-    "code": "PATIO20",
-    "title": "Extra 20% off select patio with code PATIO20",
-    "description": "Take an extra 20% off select patio furniture and outdoor items during the O-Days sale with code PATIO20 at checkout.",
-    "type": "code",
-    "verified_date": "2026-09-29",
-    "featured": false
-  },
-  {
-    "id": "overstock-02",
-    "store": "Overstock",
-    "store_slug": "overstock",
-    "code": null,
-    "title": "Free shipping on orders over $49.99",
-    "description": "The O-Days sale page advertises free shipping on orders over $49.99; see the site's terms for conditions and exclusions.",
-    "type": "deal",
-    "verified_date": "2026-09-29",
-    "featured": false
-  },
-  {
-    "id": "dyson-01",
-    "store": "Dyson",
-    "store_slug": "dyson",
-    "code": null,
-    "title": "Owner Rewards: exclusive 20% off savings event",
-    "description": "Registered Dyson machine owners get an exclusive 20% savings event using a one-time promotional code tied to their machine.",
-    "type": "deal",
-    "verified_date": "2026-09-29",
-    "featured": false
-  },
-  {
-    "id": "dyson-02",
-    "store": "Dyson",
-    "store_slug": "dyson",
-    "code": null,
-    "title": "Dyson Spot+Scrub Ai \u2014 $849.99 (save $350)",
-    "description": "The Dyson Spot+Scrub Ai is $849.99, down from $1,199.99 \u2014 a $350 savings on dyson.com.",
-    "type": "deal",
-    "verified_date": "2026-09-29",
-    "featured": false
-  },
-  {
-    "id": "dyson-03",
-    "store": "Dyson",
-    "store_slug": "dyson",
-    "code": null,
-    "title": "20% off select tools and accessories with a machine purchase",
-    "description": "Take 20% off select tools and accessories compatible with your machine when purchased together with a Dyson machine.",
     "type": "deal",
     "verified_date": "2026-09-29",
     "featured": false
@@ -3443,17 +1991,6 @@
     "featured": false
   },
   {
-    "id": "lenovo-01",
-    "store": "Lenovo",
-    "store_slug": "lenovo",
-    "code": "BUYMORELENOVO",
-    "title": "Spend & Save: up to $100 off with code BUYMORELENOVO",
-    "description": "Enter BUYMORELENOVO at checkout to save $15 on $500+, $25 on $750+, $40 on $1,000+, or $100 on $2,000+. Excludes clearance, servers, server accessories and Bose audio.",
-    "type": "code",
-    "verified_date": "2026-09-29",
-    "featured": false
-  },
-  {
     "id": "hp-01",
     "store": "HP",
     "store_slug": "hp",
@@ -3487,105 +2024,6 @@
     "featured": false
   },
   {
-    "id": "apple-01",
-    "store": "Apple",
-    "store_slug": "apple",
-    "code": null,
-    "title": "Apple Certified Refurbished store \u2014 save on like-new products",
-    "description": "Save on tested, certified and guaranteed refurbished Mac, iPad, iPhone, Watch, AirPods, Apple TV, HomePod and accessories \u2014 e.g. 14-inch MacBook Pro (M5) at $1,439, was $1,599 (save $160).",
-    "type": "deal",
-    "verified_date": "2026-09-29",
-    "featured": false
-  },
-  {
-    "id": "apple-02",
-    "store": "Apple",
-    "store_slug": "apple",
-    "code": null,
-    "title": "Refurbished iPhone 16 128GB (Unlocked) \u2014 $659.00",
-    "description": "Certified Refurbished iPhone 16, 128GB, Ultramarine, unlocked, for $659.00 on apple.com.",
-    "type": "deal",
-    "verified_date": "2026-09-29",
-    "featured": false
-  },
-  {
-    "id": "apple-03",
-    "store": "Apple",
-    "store_slug": "apple",
-    "code": null,
-    "title": "Refurbished iPad Pro 13-inch (M4) Wi-Fi 256GB \u2014 $1,169.00",
-    "description": "Certified Refurbished 13-inch iPad Pro with M4 chip, Wi-Fi, 256GB, Silver, for $1,169.00 on apple.com.",
-    "type": "deal",
-    "verified_date": "2026-09-29",
-    "featured": false
-  },
-  {
-    "id": "apple-04",
-    "store": "Apple",
-    "store_slug": "apple",
-    "code": null,
-    "title": "Free delivery and returns on refurbished",
-    "description": "Choose free delivery or pick up available refurbished items at an Apple Store; returns are free.",
-    "type": "deal",
-    "verified_date": "2026-09-29",
-    "featured": false
-  },
-  {
-    "id": "apple-05",
-    "store": "Apple",
-    "store_slug": "apple",
-    "code": null,
-    "title": "Apple Trade In credit toward your next purchase",
-    "description": "Get credit toward your next purchase when you trade in an eligible device through Apple Trade In.",
-    "type": "deal",
-    "verified_date": "2026-09-29",
-    "featured": false
-  },
-  {
-    "id": "carters-01",
-    "store": "Carter's",
-    "store_slug": "carters",
-    "code": "EXTRA20",
-    "title": "20% off select styles",
-    "description": "Use code EXTRA20 at carters.com for 20% off select styles. The code is shown on current product pages sitewide.",
-    "type": "code",
-    "verified_date": "2026-09-29",
-    "featured": false
-  },
-  {
-    "id": "carters-02",
-    "store": "Carter's",
-    "store_slug": "carters",
-    "code": null,
-    "title": "Clearance: up to ~80% off",
-    "description": "Carter's clearance section carried 251 items at last check with markdowns up to about 80% off (e.g., styles marked down from $42 to $8.49).",
-    "type": "deal",
-    "verified_date": "2026-09-29",
-    "featured": false
-  },
-  {
-    "id": "childrens-place-01",
-    "store": "The Children's Place",
-    "store_slug": "childrens-place",
-    "code": "PLACE25",
-    "title": "Extra 25% off (Members Event)",
-    "description": "The Children's Place members event advertises an extra 25% off with code PLACE25 on current product pages.",
-    "type": "code",
-    "verified_date": "2026-09-29",
-    "featured": false
-  },
-  {
-    "id": "childrens-place-02",
-    "store": "The Children's Place",
-    "store_slug": "childrens-place",
-    "code": null,
-    "title": "Clearance: up to ~75% off",
-    "description": "The Children's Place clearance racks show markdowns of 60-79% off final-sale styles.",
-    "type": "deal",
-    "verified_date": "2026-09-29",
-    "featured": false
-  },
-  {
     "id": "sierra-01",
     "store": "Sierra",
     "store_slug": "sierra",
@@ -3608,28 +2046,6 @@
     "featured": false
   },
   {
-    "id": "academy-sports-01",
-    "store": "Academy Sports + Outdoors",
-    "store_slug": "academy-sports",
-    "code": null,
-    "title": "Outdoors clearance: up to ~50% off",
-    "description": "Academy's outdoors clearance section carried 1,391 marked-down items at last check, with visible markdowns of roughly 33-51% off.",
-    "type": "deal",
-    "verified_date": "2026-09-29",
-    "featured": false
-  },
-  {
-    "id": "bass-pro-shops-01",
-    "store": "Bass Pro Shops",
-    "store_slug": "bass-pro-shops",
-    "code": null,
-    "title": "CLUB member offers & savings",
-    "description": "Bass Pro Shops posts rotating CLUB-member offers and savings amounts on its Club offers page; sign in to see current member pricing.",
-    "type": "deal",
-    "verified_date": "2026-09-29",
-    "featured": false
-  },
-  {
     "id": "lowes-09",
     "store": "Lowe's",
     "store_slug": "lowes",
@@ -3647,17 +2063,6 @@
     "code": null,
     "title": "STOCKHOLM 2025 loveseat \u2014 16% off, $1,249",
     "description": "STOCKHOLM 2025 loveseat is $1,249, down from $1,499 (16% off), valid September 17 through October 12, 2026.",
-    "type": "deal",
-    "verified_date": "2026-09-29",
-    "featured": false
-  },
-  {
-    "id": "dicks-sporting-goods-08",
-    "store": "DICK'S Sporting Goods",
-    "store_slug": "dicks-sporting-goods",
-    "code": null,
-    "title": "Clearance: apparel & gear $25 or less",
-    "description": "DICK'S runs an ongoing clearance section with apparel and gear priced at $25 or less, spanning shirts, shorts, pants, sweatshirts, swim, jackets, sports bras and skorts across many brands.",
     "type": "deal",
     "verified_date": "2026-09-29",
     "featured": false
@@ -3691,215 +2096,6 @@
     "code": null,
     "title": "Join Beauty Rewards free",
     "description": "Join the free Beauty Rewards program to earn points on purchases and unlock member offers and tier perks.",
-    "type": "deal",
-    "verified_date": "2026-09-29",
-    "featured": false
-  },
-  {
-    "id": "jcpenney-01",
-    "store": "JCPenney",
-    "store_slug": "jcpenney",
-    "code": "LIZDEAL",
-    "title": "Liz Claiborne Flash Sale: Extra 35% Off Select Liz Claiborne Styles",
-    "description": "Extra 35% off select Liz Claiborne apparel, shoes, accessories, fashion jewelry, bedding, bath and curtains. Or take an extra 20% off select apparel, shoes, accessories, fine jewelry, bedding, bath and curtains.",
-    "type": "code",
-    "verified_date": "2026-09-29",
-    "featured": false
-  },
-  {
-    "id": "jcpenney-02",
-    "store": "JCPenney",
-    "store_slug": "jcpenney",
-    "code": "STUDENTS",
-    "title": "Extra 30% Off with JCPenney Credit Card (20% Off Other Ways) \u2014 Code STUDENTS",
-    "description": "Extra 30% off select apparel, shoes, accessories, fine jewelry, bedding, bath and curtains when you pay with your JCPenney credit card or JCPenney Mastercard; extra 20% off with any other payment method.",
-    "type": "code",
-    "verified_date": "2026-09-29",
-    "featured": false
-  },
-  {
-    "id": "jcpenney-03",
-    "store": "JCPenney",
-    "store_slug": "jcpenney",
-    "code": "GEMSTONE",
-    "title": "Extra 35% Off Fine & Fashion Jewelry with Card \u2014 Code GEMSTONE",
-    "description": "Extra 35% off select fine and fashion jewelry with your JCPenney credit card or Mastercard; extra 30% off when you pay any other way.",
-    "type": "code",
-    "verified_date": "2026-09-29",
-    "featured": false
-  },
-  {
-    "id": "jcpenney-04",
-    "store": "JCPenney",
-    "store_slug": "jcpenney",
-    "code": "BEDFRAME",
-    "title": "30% Off $750+ Mattresses or 25% Off $750+ Furniture \u2014 Code BEDFRAME",
-    "description": "Save 30% on $750 or more of select original and regular-priced mattresses, or 25% off $750 or more of select furniture.",
-    "type": "code",
-    "verified_date": "2026-09-29",
-    "featured": false
-  },
-  {
-    "id": "jcpenney-05",
-    "store": "JCPenney",
-    "store_slug": "jcpenney",
-    "code": "WINDOW",
-    "title": "30% Off $400+ Custom Blinds & Shades \u2014 Code WINDOW",
-    "description": "Take 30% off $400 or more of select original and regular-priced custom blinds and shades.",
-    "type": "code",
-    "verified_date": "2026-09-29",
-    "featured": false
-  },
-  {
-    "id": "jcpenney-06",
-    "store": "JCPenney",
-    "store_slug": "jcpenney",
-    "code": "EYECOLOR",
-    "title": "Extra 10% Off JCPenney Beauty & Salon \u2014 Code EYECOLOR",
-    "description": "Extra 10% off select JCPenney Beauty and Salon products.",
-    "type": "code",
-    "verified_date": "2026-09-29",
-    "featured": false
-  },
-  {
-    "id": "airbnb-01",
-    "store": "Airbnb",
-    "store_slug": "airbnb",
-    "code": null,
-    "title": "Airbnb gift cards (never expire)",
-    "description": "Give travel: digital Airbnb gift cards deliver in minutes via text or email \u2014 you choose the design, message and amount, and they choose the home, experience or service. Gift credit never expires. Business gift cards are available for employees and customers (orders of $10,000 or more: contact sales).",
-    "type": "deal",
-    "verified_date": "2026-09-29",
-    "featured": false
-  },
-  {
-    "id": "airbnb-02",
-    "store": "Airbnb",
-    "store_slug": "airbnb",
-    "code": null,
-    "title": "Experience discount coupon with qualifying home booking",
-    "description": "When you book a qualifying home in a participating city, you may be offered a one-time discount coupon on an eligible Airbnb Experience ($50 USD minimum experience value; amount shown on the Experience listing page). Only one coupon per guest. Participating cities: Paris, London, Mexico City, Rome, Florence, Miami and New York. Offer period: until December 31, 2026, while supplies last; the coupon expires on the earlier of 10 days after your home stay ends and December 31, 2026. One promotional offer per booking; coupons are non-transferable.",
-    "type": "deal",
-    "verified_date": "2026-09-29",
-    "featured": false
-  },
-  {
-    "id": "amtrak-01",
-    "store": "Amtrak",
-    "store_slug": "amtrak",
-    "code": null,
-    "title": "Falling Fares Sale: at least 25% off travel nationwide when you book by Sept 30",
-    "description": "Fall sale: at least 25% off Flex fare amounts on major routes nationwide. Book September 24-30, 2026 for travel October 14-December 17, 2026. Valid routes: California Zephyr, Cardinal, City of New Orleans, Coast Starlight, Crescent, Empire Builder, Floridian, Lake Shore Limited, Silver Meteor, Southwest Chief, Sunset Limited, Texas Eagle, Northeast Regional, Downeaster, Borealis, Hiawatha, Wolverine, Heartland Flyer, Capitol Corridor, Blue Water, Pere Marquette, Carolinian, and Piedmont. Coach class only. Blackout days: November 11 and November 20-30, 2026. Changes not permitted; cancellations before departure incur a 50% fee. Not combinable with other discounts.",
-    "type": "deal",
-    "verified_date": "2026-09-29",
-    "featured": false
-  },
-  {
-    "id": "amtrak-02",
-    "store": "Amtrak",
-    "store_slug": "amtrak",
-    "code": "C507",
-    "title": "Kids ride FREE on the Auto Train with promo code C507 (book by Oct 6)",
-    "description": "Kids ride free on the Auto Train (Lorton, VA to Sanford, FL) with the purchase of one adult rail fare, in Coach and First Class private rooms (Roomettes, Bedrooms, Accessible Rooms). Promo code C507 required on amtrak.com and the app. For sale May 7-October 6, 2026; travel May 10-October 11, 2026. No blackout dates. Must book at least 3 days before departure. Not combinable with other discounts.",
-    "type": "code",
-    "verified_date": "2026-09-29",
-    "featured": false
-  },
-  {
-    "id": "amtrak-03",
-    "store": "Amtrak",
-    "store_slug": "amtrak",
-    "code": "V353",
-    "title": "California students 15% off with promo code V353",
-    "description": "Students ages 13-25 save 15% off the regular full adult rail fare on Pacific Surfliner, Capitol Corridor, and Gold Runner trains (Coach and Business class), plus associated Amtrak Connection buses except 7000-8999 series. Discount applies automatically on amtrak.com when qualifying travel is selected; enter promo code V353 on the mobile app. Blackout dates around Thanksgiving; not combinable with other discounts; not valid on Guest Rewards points bookings.",
-    "type": "code",
-    "verified_date": "2026-09-29",
-    "featured": false
-  },
-  {
-    "id": "amtrak-04",
-    "store": "Amtrak",
-    "store_slug": "amtrak",
-    "code": "V282",
-    "title": "California seniors (62+) 15% off with promo code V282",
-    "description": "Travelers ages 62 and older save 15% off the regular full adult rail fare on Pacific Surfliner, Capitol Corridor, and Gold Runner trains (Coach and Business class), plus associated Amtrak Connection buses except 7000-8999 series. Discount applies automatically on amtrak.com when qualifying travel is selected; enter promo code V282 on the mobile app. Blackout dates around Thanksgiving; not combinable with other discounts; not valid on Guest Rewards points bookings.",
-    "type": "code",
-    "verified_date": "2026-09-29",
-    "featured": false
-  },
-  {
-    "id": "amtrak-05",
-    "store": "Amtrak",
-    "store_slug": "amtrak",
-    "code": "V302",
-    "title": "Gold Runner friends & family: 50% off up to 5 companion fares with promo code V302",
-    "description": "Buy one adult (18+) rail fare on the Gold Runner and get 50% off up to five companion fares. All passengers must travel together. Discount applies automatically when booking from the offer page, or enter promo code V302 on the Amtrak app. Coach only. 1-day advance purchase required. Valid on Gold Runner and associated Amtrak Connection buses except 7000-8999 series, including Yosemite thruways. Holiday blackout dates apply. Not valid on Guest Rewards points bookings.",
-    "type": "code",
-    "verified_date": "2026-09-29",
-    "featured": false
-  },
-  {
-    "id": "amtrak-06",
-    "store": "Amtrak",
-    "store_slug": "amtrak",
-    "code": "V639",
-    "title": "Save 15% on New York travel with promo code V639",
-    "description": "Save 15% off the regular full adult rail fare on Adirondack, Empire Service, Ethan Allen Express, and Maple Leaf trains within New York State (including New York-Montreal travel). Discount applies automatically when qualifying travel is selected on amtrak.com; enter promo code V639 on the Amtrak app. Coach seating only; 1-day advance purchase required; holiday blackout dates apply. Not combinable with other discounts; not valid on Guest Rewards points bookings.",
-    "type": "code",
-    "verified_date": "2026-09-29",
-    "featured": false
-  },
-  {
-    "id": "amtrak-07",
-    "store": "Amtrak",
-    "store_slug": "amtrak",
-    "code": null,
-    "title": "Kids 2-12 ride half off, infants ride free every day",
-    "description": "Children ages 2-12 ride at 50% off the adult fare when traveling with at least one adult (18+) on the same reservation. One infant under 2 rides free per adult-fare passenger (rides on lap). Discounts apply automatically at booking with no promo code needed. Does not apply to sleeping accommodation charges.",
-    "type": "deal",
-    "verified_date": "2026-09-29",
-    "featured": false
-  },
-  {
-    "id": "amtrak-08",
-    "store": "Amtrak",
-    "store_slug": "amtrak",
-    "code": null,
-    "title": "NC state employees: 15% off Carolinian and Piedmont trains",
-    "description": "North Carolina state employees save 15% off the regular full adult rail fare on Carolinian and Piedmont trains (Coach). Exclusively available on amtrak.com via ncbytrain.org. Blackout dates: select holidays in 2026. Not combinable with other discounts; not valid on Guest Rewards points bookings.",
-    "type": "deal",
-    "verified_date": "2026-09-29",
-    "featured": false
-  },
-  {
-    "id": "amtrak-09",
-    "store": "Amtrak",
-    "store_slug": "amtrak",
-    "code": null,
-    "title": "Refer a friend to Guest Rewards: earn 500 bonus points per qualifying referral",
-    "description": "Earn 500 Amtrak Guest Rewards bonus points for each friend you refer who joins and takes a paid trip within 90 days of enrollment. Invite friends through the Refer-A-Friend link under My Promotions in your Amtrak Guest Rewards account. Bonus points do not count toward tier status. Up to 50 referral bonuses per lifetime membership.",
-    "type": "deal",
-    "verified_date": "2026-09-29",
-    "featured": false
-  },
-  {
-    "id": "blue-apron-02",
-    "store": "Blue Apron",
-    "store_slug": "blue-apron",
-    "code": null,
-    "title": "Blue Apron+ membership: free shipping on every order",
-    "description": "Blue Apron+ is a $9.99/month add-on membership that includes free shipping on every order, unlimited access to Tastemade+, and exclusive members-only perks. Autoship and Blue Apron+ can be combined for maximum savings.",
-    "type": "deal",
-    "verified_date": "2026-09-29",
-    "featured": false
-  },
-  {
-    "id": "blue-apron-03",
-    "store": "Blue Apron",
-    "store_slug": "blue-apron",
-    "code": null,
-    "title": "Subscribe & Save: 5% off every item",
-    "description": "Subscribe & Save is Blue Apron's recurring autoship delivery plan. It is free to join and saves 5% on every item ordered, with skip, pause, or cancel flexibility from your account.",
     "type": "deal",
     "verified_date": "2026-09-29",
     "featured": false
@@ -3960,34 +2156,12 @@
     "featured": false
   },
   {
-    "id": "carnival-05",
-    "store": "Carnival",
-    "store_slug": "carnival",
-    "code": null,
-    "title": "September Savings Sale: select sailings through April 2028 (book by Sept 30)",
-    "description": "Great rates on select sailings through April 2028 in cabin-assignment categories. New bookings made September 1-30, 2026 (request rate code PB4). Refundable deposit subject to cancellation penalties. Not combinable with other discounts or promotions.",
-    "type": "deal",
-    "verified_date": "2026-09-29",
-    "featured": false
-  },
-  {
     "id": "carnival-07",
     "store": "Carnival",
     "store_slug": "carnival",
     "code": null,
     "title": "Casino Tournament Access: tournament seat + drinks on us on select sailings",
     "description": "Casino tournament seat for up to 2 people plus Drinks On Us while playing in the casino for you and a companion, on select sailings. Terms apply. Offer ends November 21, 2027.",
-    "type": "deal",
-    "verified_date": "2026-09-29",
-    "featured": false
-  },
-  {
-    "id": "carnival-08",
-    "store": "Carnival",
-    "store_slug": "carnival",
-    "code": null,
-    "title": "FUN SELECT Early Saver: price protection on your cruise fare (rate code PNS)",
-    "description": "FUN SELECT Early Saver fare with price protection on your total cruise price (request rate code PNS). Guest may select stateroom with minimum category 4A purchase; room upgrades automatically assigned at booking in like-to-like categories. Not combinable with group rates, membership programs, or select promotional fares. Standing fare program listed in Carnival's specials terms.",
     "type": "deal",
     "verified_date": "2026-09-29",
     "featured": false
@@ -4054,17 +2228,6 @@
     "code": null,
     "title": "Last-minute hotel deals",
     "description": "Check Expedia for member-only last-minute hotel deals to suit your budget. Browse the site and book available options; look for results marked 'Free cancellation' where flexible booking matters.",
-    "type": "deal",
-    "verified_date": "2026-09-29",
-    "featured": false
-  },
-  {
-    "id": "expedia-09",
-    "store": "Expedia",
-    "store_slug": "expedia",
-    "code": null,
-    "title": "One Key Card: $250 OneKeyCash welcome bonus",
-    "description": "The no-annual-fee One Key Card earns $250 in OneKeyCash after spending $1,000 on purchases in the first 3 months, up to 9% in OneKeyCash on Expedia bookings, 3% at gas stations, grocery stores and dining, and 1.5% on other purchases. Cardholders get automatic One Key Silver tier. OneKeyCash is not redeemable for cash.",
     "type": "deal",
     "verified_date": "2026-09-29",
     "featured": false
@@ -4147,17 +2310,6 @@
     "featured": false
   },
   {
-    "id": "hotels-com-02",
-    "store": "Hotels.com",
-    "store_slug": "hotels-com",
-    "code": null,
-    "title": "One Key rewards: 2% OneKeyCash on eligible bookings",
-    "description": "One Key is the free travel rewards program across Expedia Group brands: members receive 2% in OneKeyCash for every dollar spent on eligible hotels, vacation rentals and car rentals (more on eligible VIP Access stays as you move up the tiers). OneKeyCash is simple: $1 in OneKeyCash gives you a $1 discount on eligible travel.",
-    "type": "deal",
-    "verified_date": "2026-09-29",
-    "featured": false
-  },
-  {
     "id": "hotels-com-03",
     "store": "Hotels.com",
     "store_slug": "hotels-com",
@@ -4186,17 +2338,6 @@
     "code": null,
     "title": "Last-minute hotel deals",
     "description": "Last-minute hotel deals hub with discounted rates on upcoming stays. The spontaneous city breaks page advertises 20% off last-minute getaways; per its terms, offers are valid for stay dates within the next 14 days on participating properties, subject to availability.",
-    "type": "deal",
-    "verified_date": "2026-09-29",
-    "featured": false
-  },
-  {
-    "id": "hotels-com-06",
-    "store": "Hotels.com",
-    "store_slug": "hotels-com",
-    "code": null,
-    "title": "One Key Cards: $250 OneKeyCash welcome bonus",
-    "description": "The One Key Card earns $250 in OneKeyCash after spending $1,000 on purchases in the first 3 months, with up to 9% in OneKeyCash on Hotels.com and Expedia bookings and automatic One Key Silver tier. The One Key+ Card adds a $100 annual OneKeyCash anniversary bonus and automatic Gold tier. OneKeyCash is not redeemable for cash.",
     "type": "deal",
     "verified_date": "2026-09-29",
     "featured": false
@@ -4472,17 +2613,6 @@
     "code": null,
     "title": "Rapid Rewards Shopping: earn points at 1,100+ online stores",
     "description": "Earn Rapid Rewards points shopping at 1,100+ online stores through Rapid Rewards Shopping. Earn rates vary by retailer. Standing program listed on southwest.com.",
-    "type": "deal",
-    "verified_date": "2026-09-29",
-    "featured": false
-  },
-  {
-    "id": "uber-eats-07",
-    "store": "Uber Eats",
-    "store_slug": "uber-eats",
-    "code": null,
-    "title": "Uber One for Students: $4.99/month or $48/year",
-    "description": "Eligible students get the full Uber One plan at roughly half price: $4.99 a month or $48 annually. Includes $0 Delivery Fee plus up to 10% off eligible orders that meet the merchant's minimum, and 6% back in Uber One credits on eligible rides. Must be 18 or older and verify student status through SheerID with a school email. Subscriptions renew automatically and can be canceled anytime in the app.",
     "type": "deal",
     "verified_date": "2026-09-29",
     "featured": false

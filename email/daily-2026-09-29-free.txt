@@ -1,0 +1,57 @@
+HONEST PENNY DAILY - September 29, 2026
+Today's verified deals.
+
+== NEWLY VERIFIED DEALS ==
+1. DoorDash - 15% off your first order
+  New DoorDash users save 15% on their first order of $15 or more (up to $10 off) through September 30, 2026. Excludes taxes, fees, tip, and alcohol.
+  Deal: https://honest-penny.vercel.app/go/doordash-01/
+
+2. DoorDash - 30% off first grocery or retail order
+  Part of DoorDash's Saturday Streaks football sweepstakes: 30% off your first grocery or retail order of $35+ (up to $20 off), through September 30, 2026.
+  Deal: https://honest-penny.vercel.app/go/doordash-02/
+
+3. DoorDash - DashPass: free 30-day trial, $0 delivery fees
+  DashPass members get $0 delivery fees on eligible orders plus 5% back on pickup orders. New members start with a free 30-day trial.
+  Deal: https://honest-penny.vercel.app/go/doordash-03/
+
+4. Uber Eats - $10 off your first order of $20+
+  New Uber Eats customers can save $10 on a first order of $20 or more. Valid September 1-30, 2026; limited redemptions.
+  Deal: https://honest-penny.vercel.app/go/uber-eats-01/
+
+5. Uber Eats - Uber One: $0 delivery fees + up to 10% off
+  Uber One membership at $9.99/month or $96/year includes $0 delivery fees on eligible food and grocery orders, up to 10% off deliveries and pickup, and 6% Uber Cash back on eligible rides.
+  Deal: https://honest-penny.vercel.app/go/uber-eats-02/
+
+== ENDING SOON ==
+6. Ulta Beauty - Brow Sale: Up to 50% Off
+  Up to 50% off brow products from Morphe, Tarte, Revlon, CoverGirl, Grande Cosmetics and RMS Beauty, from about $4 brow pencils to GrandeBROW serum. Several picks include a free gift with purchase; valid through October 3.
+  Deal: https://honest-penny.vercel.app/go/ulta-02/
+
+7. Shein - 20% Off Orders $50+
+  Shein regularly posts sitewide promo events; recent offers include 20% off purchases of $50 or more. Check shein.com for today's offer.
+  Deal: https://honest-penny.vercel.app/go/shein-01/
+
+8. Shein - 15% Off Your Next Purchase
+  Shein's promo calendar often includes percentage-off events for shoppers - see the current offer on shein.com.
+  Deal: https://honest-penny.vercel.app/go/shein-02/
+
+9. Best Buy - Free $5 Gift Card with Orders Over $420
+  Spend $420 or more in one order and get a free $5 Best Buy gift card. Only a few days left on this reward offer.
+  Deal: https://honest-penny.vercel.app/go/best-buy-03/
+
+10. Target - 15% Off First Purchase for New Circle Members
+  Guests who join Target Circle between Sept 27 and Oct 5, 2026 receive 15% off their first purchase, per Target's official announcement.
+  Deal: https://honest-penny.vercel.app/go/target-02/
+
+== FEATURED ==
+11. Domino's - 20% off your online order
+  Domino's posts rotating online-only coupons at dominos.com - recent offers include 20% off regular-priced items on online orders. Availability varies by location.
+  Deal: https://honest-penny.vercel.app/go/dominos-01/
+
+12. Temu - 30% off $39+ orders for new users
+  Temu frequently runs new-customer promos like 30% off orders over $39. Check temu.com at checkout for the current offer.
+  Deal: https://honest-penny.vercel.app/go/temu-01/
+
+--
+Unsubscribe: {{UNSUBSCRIBE_URL}}
+{{MAILING_ADDRESS}}
