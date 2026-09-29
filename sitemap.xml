@@ -2,6 +2,8 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url><loc>https://honest-penny.vercel.app/</loc><lastmod>2026-09-29</lastmod></url>
   <url><loc>https://honest-penny.vercel.app/about/index.html</loc><lastmod>2026-09-29</lastmod></url>
+  <url><loc>https://honest-penny.vercel.app/account/</loc><lastmod>2026-09-29</lastmod></url>
+  <url><loc>https://honest-penny.vercel.app/account/index.html</loc><lastmod>2026-09-29</lastmod></url>
   <url><loc>https://honest-penny.vercel.app/admin/</loc><lastmod>2026-09-29</lastmod></url>
   <url><loc>https://honest-penny.vercel.app/categories/beauty/index.html</loc><lastmod>2026-09-29</lastmod></url>
   <url><loc>https://honest-penny.vercel.app/categories/department-stores/index.html</loc><lastmod>2026-09-29</lastmod></url>
@@ -18,6 +20,8 @@
   <url><loc>https://honest-penny.vercel.app/extension/</loc><lastmod>2026-09-29</lastmod></url>
   <url><loc>https://honest-penny.vercel.app/extension/index.html</loc><lastmod>2026-09-29</lastmod></url>
   <url><loc>https://honest-penny.vercel.app/index.html</loc><lastmod>2026-09-29</lastmod></url>
+  <url><loc>https://honest-penny.vercel.app/login/</loc><lastmod>2026-09-29</lastmod></url>
+  <url><loc>https://honest-penny.vercel.app/login/index.html</loc><lastmod>2026-09-29</lastmod></url>
   <url><loc>https://honest-penny.vercel.app/merchants/</loc><lastmod>2026-09-29</lastmod></url>
   <url><loc>https://honest-penny.vercel.app/merchants/index.html</loc><lastmod>2026-09-29</lastmod></url>
   <url><loc>https://honest-penny.vercel.app/privacy/</loc><lastmod>2026-09-29</lastmod></url>
