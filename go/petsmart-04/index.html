@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Redirecting to PetSmart - Honest Penny</title>
+<meta name="robots" content="noindex">
+</head>
+<body>
+<p>Taking you to PetSmart&hellip; <a id="manual" href="https://services.petsmart.com/grooming/290" rel="nofollow sponsored noopener">click here if you are not redirected</a>.</p>
+<script>
+(function(){
+  // CLICK-TRACKING HOOK: swap console.log for a fetch() to your analytics
+  // endpoint when ready. Payload includes coupon id + timestamp.
+  console.log("coupon_click", { coupon_id: "petsmart-04", ts: Date.now() });
+  window.location.replace("https://services.petsmart.com/grooming/290");
+})();
+</script>
+<noscript><meta http-equiv="refresh" content="0;url=https://services.petsmart.com/grooming/290"></noscript>
+</body>
+</html>

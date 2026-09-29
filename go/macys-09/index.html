@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Redirecting to Macy’s - Honest Penny</title>
+<meta name="robots" content="noindex">
+</head>
+<body>
+<p>Taking you to Macy’s&hellip; <a id="manual" href="https://www.macys.com/shop/sale?id=3536" rel="nofollow sponsored noopener">click here if you are not redirected</a>.</p>
+<script>
+(function(){
+  // CLICK-TRACKING HOOK: swap console.log for a fetch() to your analytics
+  // endpoint when ready. Payload includes coupon id + timestamp.
+  console.log("coupon_click", { coupon_id: "macys-09", ts: Date.now() });
+  window.location.replace("https://www.macys.com/shop/sale?id=3536");
+})();
+</script>
+<noscript><meta http-equiv="refresh" content="0;url=https://www.macys.com/shop/sale?id=3536"></noscript>
+</body>
+</html>
