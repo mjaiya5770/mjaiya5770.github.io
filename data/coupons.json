@@ -275,17 +275,6 @@
     "featured": false
   },
   {
-    "id": "ebay-04",
-    "store": "eBay",
-    "store_slug": "ebay",
-    "code": "FIVEOFF",
-    "title": "5% off eligible items with code FIVEOFF (up to $50 off, no minimum)",
-    "description": "Code FIVEOFF takes 5% off eligible items with no minimum (max $50 off), up to ten redemptions per user, on ebay.com US. Valid through 11:59 PM PT September 30, 2026. From eBay's own coupon terms page.",
-    "type": "code",
-    "verified_date": "2026-09-29",
-    "featured": false
-  },
-  {
     "id": "target-04",
     "store": "Target",
     "store_slug": "target",
@@ -1661,28 +1650,6 @@
     "featured": false
   },
   {
-    "id": "underarmour-02",
-    "store": "Under Armour",
-    "store_slug": "under-armour",
-    "code": null,
-    "title": "Spend $75+, get 500 bonus points",
-    "description": "Armour Access members who spend $75 or more earn 500 bonus points. Ends September 30, 2026.",
-    "type": "deal",
-    "verified_date": "2026-09-29",
-    "featured": false
-  },
-  {
-    "id": "underarmour-03",
-    "store": "Under Armour",
-    "store_slug": "under-armour",
-    "code": null,
-    "title": "2X points on Icon Fleece",
-    "description": "Armour Access members score double points on Icon Fleece purchases. Ends September 30, 2026.",
-    "type": "deal",
-    "verified_date": "2026-09-29",
-    "featured": false
-  },
-  {
     "id": "stevemadden-01",
     "store": "Steve Madden",
     "store_slug": "steve-madden",
@@ -2068,17 +2035,6 @@
     "featured": false
   },
   {
-    "id": "petsmart-09",
-    "store": "PetSmart",
-    "store_slug": "petsmart",
-    "code": "SAVE20",
-    "title": "Extra 20% off thousands of items online",
-    "description": "Use code SAVE20 at petsmart.com for an extra 20% off thousands of online items. Ends September 29, 2026.",
-    "type": "code",
-    "verified_date": "2026-09-29",
-    "featured": true
-  },
-  {
     "id": "sally-beauty-05",
     "store": "Sally Beauty",
     "store_slug": "sally-beauty",
@@ -2107,50 +2063,6 @@
     "code": null,
     "title": "No subscription needed: order meals a la carte",
     "description": "Blue Apron now offers fully a la carte ordering with no subscription required: order what you want, when you want, with no recurring commitment. Standard shipping fees apply to each non-member order.",
-    "type": "deal",
-    "verified_date": "2026-09-29",
-    "featured": false
-  },
-  {
-    "id": "carnival-01",
-    "store": "Carnival",
-    "store_slug": "carnival",
-    "code": null,
-    "title": "More Time, More Perks Sale Grand Finale: up to 40% off + 50% off deposits (book by Sept 30)",
-    "description": "Up to 40% off cruise rates plus 50% off deposits, room upgrade from $1, up to $50 onboard credit per stateroom, and final payment due just 30 days before sailing. New bookings made September 22-30, 2026 (request rate code O7O) on select sailings through May 2027. Not combinable with other discounts or promotions. Excludes Carnival Australia.",
-    "type": "deal",
-    "verified_date": "2026-09-29",
-    "featured": false
-  },
-  {
-    "id": "carnival-02",
-    "store": "Carnival",
-    "store_slug": "carnival",
-    "code": null,
-    "title": "Free 3rd & 4th Guest Sale: extra guests cruise free (book by Sept 30)",
-    "description": "3rd and 4th guests sail free (cruise fare only; guests responsible for taxes, fees, and deposits) in cabins of 3+ on select sailings through May 2027. Reduced $49 per person deposits and up to $250 onboard credit per stateroom. New bookings made September 22-30, 2026 (request rate code GH3). Not combinable with other discounts or promotions.",
-    "type": "deal",
-    "verified_date": "2026-09-29",
-    "featured": false
-  },
-  {
-    "id": "carnival-03",
-    "store": "Carnival",
-    "store_slug": "carnival",
-    "code": null,
-    "title": "48 Hours Only: Low Deposits Early Saver from $25 per person (book Sept 29-30)",
-    "description": "Low deposits Early Saver fare: $25 per person deposit on 2-9 day sailings (excluding Alaska, Europe, and Tropicale), with Early Saver price protection on your total cruise price. New bookings made September 29-30, 2026 (request rate code PEM) on sailings through April 2029 where Early Saver is available. Deposit non-refundable. Guest may select stateroom.",
-    "type": "deal",
-    "verified_date": "2026-09-29",
-    "featured": false
-  },
-  {
-    "id": "carnival-04",
-    "store": "Carnival",
-    "store_slug": "carnival",
-    "code": null,
-    "title": "Fall Limited-Time Savings on select sailings through Spring 2027 (book by Sept 30)",
-    "description": "Limited-time fall savings on select sailings through Spring 2027 in guarantee categories (Interior, Ocean View, Balcony; stateroom assigned later). New bookings made September 28-30, 2026 (request rate code P2P). Non-refundable deposit. Not combinable with other discounts or promotions.",
     "type": "deal",
     "verified_date": "2026-09-29",
     "featured": false
