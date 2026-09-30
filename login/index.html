@@ -1736,7 +1736,7 @@ if(di)di.focus({preventScroll:true});});
 </script>
 <!-- AD-SLOT: header leaderboard (Mediavine / AdSense TODO - paste ad code here) -->
 <main>
-<section class="hero"><div class="wrap"><h1>Log in or create your account</h1><p>Just your email and a password — no username needed.</p></div></section><section class="section"><div class="wrap"><div class="step" style="max-width:440px;margin:0 auto;"><h2>Create account</h2><form id="signup-form"><label for="su-email"><strong>Email address</strong></label><input id="su-email" type="email" required autocomplete="email" placeholder="you@example.com" class="hp-input"><label for="su-pass"><strong>Password</strong></label><input id="su-pass" type="password" required minlength="8" autocomplete="new-password" placeholder="At least 8 characters" class="hp-input"><label class="store-pick"><input type="checkbox" id="su-news" checked> Email me deal newsletters</label><p class="sub">Pro members get the early 6am drop; the free newsletter lands at noon.</p><p><button class="btn" type="submit">Create account</button></p><p class="sub" id="su-note" role="status"></p></form></div><div class="step" style="max-width:440px;margin:2rem auto 0;"><h2>Log in</h2><form id="login-form"><label for="li-email"><strong>Email address</strong></label><input id="li-email" type="email" required autocomplete="email" placeholder="you@example.com" class="hp-input"><label for="li-pass"><strong>Password</strong></label><input id="li-pass" type="password" required autocomplete="current-password" placeholder="Your password" class="hp-input"><p><button class="btn" type="submit">Log in</button></p><p class="sub" id="li-note" role="status"></p></form></div><div class="step" style="max-width:440px;margin:2rem auto 0;"><h2>No password? No problem</h2><form id="magic-form"><p class='sub'>We&apos;ll email you a magic login link instead.</p><label for="magic-email"><strong>Email address</strong></label><input id="magic-email" type="email" required autocomplete="email" placeholder="you@example.com" class="hp-input"><p><button class="btn btn-secondary" type="submit">Email me a login link</button></p><p class="sub" id="magic-note" role="status"></p></form></div></div></section>
+<section class="hero"><div class="wrap"><h1>Log in or create your account</h1><p>Just your email and a password — no username needed.</p></div></section><section class="section"><div class="wrap"><div class="step" style="max-width:440px;margin:0 auto;"><h2>Create account</h2><form id="signup-form"><label for="su-email"><strong>Email address</strong></label><input id="su-email" type="email" required autocomplete="email" placeholder="you@example.com" class="hp-input"><label for="su-pass"><strong>Password</strong></label><input id="su-pass" type="password" required minlength="8" autocomplete="new-password" placeholder="At least 8 characters" class="hp-input"><label class="store-pick"><input type="checkbox" id="su-news" checked> Email me deal newsletters</label><p class="sub">Pro members get the early 6am drop; the free newsletter lands at noon.</p><p><button class="btn" type="submit">Create account</button></p><p class="sub" id="su-note" role="status"></p><div id="su-claim" hidden><label for="su-code"><strong>Confirmation code</strong></label><input id="su-code" type="text" inputmode="text" autocomplete="one-time-code" placeholder="8-character code" class="hp-input" style="text-transform:uppercase"><p class='sub'>We emailed a confirmation code to prove you own this address.</p><p><button class="btn btn-secondary" type="button" id="su-verify">Verify &amp; set password</button></p></div></form></div><div class="step" style="max-width:440px;margin:2rem auto 0;"><h2>Log in</h2><form id="login-form"><label for="li-email"><strong>Email address</strong></label><input id="li-email" type="email" required autocomplete="email" placeholder="you@example.com" class="hp-input"><label for="li-pass"><strong>Password</strong></label><input id="li-pass" type="password" required autocomplete="current-password" placeholder="Your password" class="hp-input"><p><button class="btn" type="submit">Log in</button></p><p class="sub" id="li-note" role="status"></p></form></div><div class="step" style="max-width:440px;margin:2rem auto 0;"><h2>No password? No problem</h2><form id="magic-form"><p class='sub'>We&apos;ll email you a magic login link instead.</p><label for="magic-email"><strong>Email address</strong></label><input id="magic-email" type="email" required autocomplete="email" placeholder="you@example.com" class="hp-input"><p><button class="btn btn-secondary" type="submit">Email me a login link</button></p><p class="sub" id="magic-note" role="status"></p></form></div></div></section>
 </main>
 <footer class="site-footer">
   <div class="wrap">
@@ -2474,9 +2474,24 @@ var news=document.getElementById("su-news").checked;
 if(!email||pw.length<8){note.textContent="Enter your email and a password of at least 8 characters.";return;}
 note.textContent="Creating your account…";
 post("/api/auth",{action:"signup",email:email,password:pw,newsletter:news}).then(function(r){
-if(r.body&&r.body.ok){goAccount();}
+if(r.body&&r.body.ok&&!r.body.claim_required){goAccount();}
+else if(r.body&&r.body.claim_required){
+note.textContent=r.body.message||"Check your email for a confirmation code.";
+document.getElementById("su-claim").hidden=false;}
 else if(r.status===409){note.textContent="That email already has an account — try logging in below.";}
 else{note.textContent=(r.body&&r.body.message)||"Could not create the account. Try again.";}})
+.catch(function(){note.textContent="Something went wrong. Please try again.";});});
+document.getElementById("su-verify").addEventListener("click",function(){
+var note=document.getElementById("su-note");
+var email=document.getElementById("su-email").value.trim();
+var pw=document.getElementById("su-pass").value;
+var news=document.getElementById("su-news").checked;
+var code=document.getElementById("su-code").value.trim();
+if(!code){note.textContent="Enter the confirmation code from your email.";return;}
+note.textContent="Verifying…";
+post("/api/auth",{action:"signup",email:email,password:pw,newsletter:news,claim_code:code}).then(function(r){
+if(r.body&&r.body.ok){goAccount();}
+else{note.textContent=(r.body&&r.body.message)||"That code didn't work. Try again.";}})
 .catch(function(){note.textContent="Something went wrong. Please try again.";});});
 document.getElementById("login-form").addEventListener("submit",function(ev){
 ev.preventDefault();

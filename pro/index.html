@@ -1736,7 +1736,7 @@ if(di)di.focus({preventScroll:true});});
 </script>
 <!-- AD-SLOT: header leaderboard (Mediavine / AdSense TODO - paste ad code here) -->
 <main>
-<section class="hero"><div class="wrap"><h1>Honest Penny Pro</h1><p>For serious savers: unlimited AI deal hunting, early-morning deal emails, and zero ads.</p></div></section><section class="section"><div class="wrap"><div class="steps"><div class="step"><div class="n">Free</div><h3>Honest Penny</h3><p>Everything you use today, free forever.</p><ul><li>All verified coupons &amp; deals</li><li>5 AI Deal Finder searches/day</li><li>Weekly newsletter</li></ul><p><a class="btn btn-secondary" href="/">Keep browsing free</a></p></div><div class="step"><div class="n">$5</div><h3>Pro</h3><p><strong>$5/month</strong> or <strong>$48/year</strong> (save 20%).</p><ul><li>Unlimited AI Deal Finder searches</li><li>Unlimited Penny AI chats</li><li>Early-morning deal emails for your chosen stores</li><li>Ad-free browsing — sponsored local placements are hidden for Pro members</li><li>Piggybank savings tracker</li><li>Cancel anytime</li></ul><p><button class="btn" data-plan="monthly">Get Penny Pro — $5/mo</button></p><p><button class="btn btn-secondary" data-plan="yearly">Go yearly — $48/yr</button></p><p class="sub" id="pro-note"></p></div></div></div></section>
+<section class="hero"><div class="wrap"><h1>Honest Penny Pro</h1><p>For serious savers: unlimited AI deal hunting, early-morning deal emails, and zero ads.</p></div></section><section class="section"><div class="wrap"><div class="steps"><div class="step"><div class="n">Free</div><h3>Honest Penny</h3><p>Everything you use today, free forever.</p><ul><li>All verified coupons &amp; deals</li><li>5 AI Deal Finder searches/day</li><li>Weekly newsletter</li></ul><p><a class="btn btn-secondary" href="/">Keep browsing free</a></p></div><div class="step"><div class="n">$5</div><h3>Pro</h3><p><strong>$5/month</strong>. Cancel anytime.</p><ul><li>Unlimited AI Deal Finder searches</li><li>Unlimited Penny AI chats</li><li>Early-morning deal emails for your chosen stores</li><li>Ad-free browsing — sponsored local placements are hidden for Pro members</li><li>Piggybank savings tracker</li><li>Cancel anytime</li></ul><p><button class="btn" data-plan="monthly">Get Penny Pro — $5/mo</button></p><p class="sub" id="pro-note"></p></div></div></div></section>
 </main>
 <footer class="site-footer">
   <div class="wrap">
@@ -2461,7 +2461,7 @@ if(!isSubscriber()){
 document.querySelectorAll("[data-plan]").forEach(function(b){b.addEventListener("click",function(){
 var note=document.getElementById("pro-note");note.textContent="Starting secure checkout…";
 fetch("/api/billing",{method:"POST",headers:{"Content-Type":"application/json"},
-body:JSON.stringify({action:"checkout",plan:b.dataset.plan})}).then(function(r){
+body:JSON.stringify({action:"checkout"})}).then(function(r){
 if(r.status===401){window.location.href="/login/?next="+encodeURIComponent("/pro/");return null;}
 return r.json();}).then(function(j){
 if(!j)return;

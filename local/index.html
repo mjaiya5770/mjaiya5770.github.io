@@ -2482,7 +2482,8 @@ function render(items){
       navigator.clipboard.writeText(btn.dataset.code).then(function(){
         btn.textContent="Copied!";setTimeout(function(){btn.textContent="Copy";},1500);});});});
 }
-function load(){
+var isProUser=false,proChecked=false;
+function loadListings(){
   var url="/api/local?city="+encodeURIComponent(citySel.value)
     +"&category="+encodeURIComponent(catIn.value.trim())
     +"&q="+encodeURIComponent(qIn.value.trim());
@@ -2493,7 +2494,7 @@ function load(){
       var sc=localStorage.getItem("hp_city");
       if(sc&&!citySel.value){
         for(var i=0;i<citySel.options.length;i++){
-          if(citySel.options[i].value.toLowerCase()===sc.toLowerCase()){citySel.value=citySel.options[i].value;load();break;}
+          if(citySel.options[i].value.toLowerCase()===sc.toLowerCase()){citySel.value=citySel.options[i].value;loadListings();break;}
         }
       }
     }catch(e){}
@@ -2502,6 +2503,21 @@ function load(){
         var o=document.createElement("option");o.value=c;o.textContent=c;citySel.appendChild(o);});
     }
   }).catch(function(){count.textContent="Couldn't load local deals right now.";});
+}
+// Pro members browse ad-free: sponsored local listings are hidden for them.
+// Everyone else sees the same listings as before.
+function load(){
+  if(proChecked){isProUser?showProNote():loadListings();return;}
+  fetch("/api/me").then(function(r){return r.json();}).then(function(me){
+    proChecked=true;isProUser=!!(me&&me.logged_in&&me.is_pro);
+    if(isProUser){showProNote();}else{loadListings();}
+  }).catch(function(){proChecked=true;loadListings();});
+}
+function showProNote(){
+  count.textContent="Pro members browse ad-free.";
+  empty.hidden=false;
+  empty.innerHTML="<p>Sponsored local listings are hidden for Pro members. Enjoy the ad-free experience.</p>";
+  grid.innerHTML="";
 }
 var locBtn=document.getElementById("loc-btn"),locNote=document.getElementById("loc-note");
 function setCity(city){
@@ -2522,7 +2538,7 @@ try{
 locBtn.addEventListener("click",function(){
   if(!("geolocation" in navigator)){locFail("Location isn't available on this device.");return;}
   locBtn.disabled=true;locBtn.textContent="Locating…";
-  locNote.textContent="We only use your location to find deals near you — it never leaves your device.";
+  locNote.textContent="We only use your location to find deals near you — your coordinates are sent to our geocoding provider (BigDataCloud) just to look up your city. We never store or sell them; only the city name is used.";
   navigator.geolocation.getCurrentPosition(function(pos){
     var lat=pos.coords.latitude,lon=pos.coords.longitude;
     fetch("https://api.bigdatacloud.net/data/reverse-geocode-client?latitude="+lat+"&longitude="+lon+"&localityLanguage=en")
