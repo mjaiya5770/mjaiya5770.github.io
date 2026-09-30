@@ -2594,5 +2594,27 @@
     "type": "deal",
     "verified_date": "2026-09-29",
     "featured": false
+  },
+  {
+    "id": "sally-beauty-07",
+    "store": "Sally Beauty",
+    "store_slug": "sally-beauty",
+    "code": null,
+    "title": "Up To 75% Off Clearance",
+    "description": "Sally Beauty's clearance section is marked up to 75% off, per sallybeauty.com/coupons \u2014 no code needed, prices as marked.",
+    "type": "deal",
+    "verified_date": "2026-09-30",
+    "featured": false
+  },
+  {
+    "id": "dermstore-01",
+    "store": "Dermstore",
+    "store_slug": "dermstore",
+    "code": null,
+    "title": "Free Gifts With Purchase on Qualifying Brand Orders",
+    "description": "Dermstore auto-adds free gifts with qualifying brand orders (e.g. free $20 SkinCeuticals gift with any $175+ SkinCeuticals order, free $18 EltaMD gift with $100+ EltaMD order, free $38 RevitaLash gift with $85+ RevitaLash order) \u2014 no code needed.",
+    "type": "deal",
+    "verified_date": "2026-09-30",
+    "featured": false
   }
 ]
