@@ -1,0 +1,57 @@
+HONEST PENNY DAILY - October 01, 2026
+Today's verified deals.
+
+== NEWLY VERIFIED DEALS ==
+1. Nike - Sale: Up to 50% Off
+  Hundreds of shoes, apparel and accessories marked down up to 50%, with deepest cuts on Tech Fleece and Air Max Dn8. No code needed and free shipping for Nike Members.
+  Deal: https://honest-penny.vercel.app/go/nike-01/
+
+2. Nike - Last Chance Clearance: Up to 50% Off
+  Nike's deep-clearance rail with end-of-season and discontinued styles priced to move, discounts already applied at list price. Stock is limited and popular sizes sell out fast.
+  Deal: https://honest-penny.vercel.app/go/nike-02/
+
+3. Adidas - Free Shipping for adiClub Members
+  adidas adiClub members get free shipping on all orders with no minimum. Membership is free to join.
+  Deal: https://honest-penny.vercel.app/go/adidas-02/
+
+4. Ulta Beauty - Brow Sale: Up to 50% Off
+  Up to 50% off brow products from Morphe, Tarte, Revlon, CoverGirl, Grande Cosmetics and RMS Beauty, from about $4 brow pencils to GrandeBROW serum. Several picks include a free gift with purchase; valid through October 3.
+  Deal: https://honest-penny.vercel.app/go/ulta-02/
+
+5. Ulta Beauty - 10% Off When You Sign Up for Text Alerts
+  Get a one-time-use 10% off code by signing up for Ulta text alerts. Note: only one coupon code can be used per order at checkout.
+  Deal: https://honest-penny.vercel.app/go/ulta-03/
+
+== ENDING SOON ==
+6. Target - Circle Deal Days: Up to 40% Off
+  Target's official two-day member event runs Oct 6-7, 2026 with up to 40% off thousands of items in fashion, beauty, home, toys and tech (Circle 360 early access Oct 5). Free Target Circle membership required.
+  Deal: https://honest-penny.vercel.app/go/target-01/
+
+7. Target - 15% Off First Purchase for New Circle Members
+  Guests who join Target Circle between Sept 27 and Oct 5, 2026 receive 15% off their first purchase, per Target's official announcement.
+  Deal: https://honest-penny.vercel.app/go/target-02/
+
+8. Ulta Beauty - Fall Haul Sale: Up to 30% off
+  Up to 30% off makeup, hair care, skin care and body care, in store and online. Ends October 3. From ulta.com's Fall Haul page.
+  Deal: https://honest-penny.vercel.app/go/ulta-04/
+
+9. Ulta Beauty - Up to $130 off select Dyson
+  Up to $130 off select Dyson products, in store and online, through October 3. From ulta.com's Current Offers page.
+  Deal: https://honest-penny.vercel.app/go/ulta-05/
+
+10. Ulta Beauty - Buy 1 Get 1 Free: select Orebella 1.7oz fragrances
+  BOGO free on select Orebella 1.7oz fragrances, in store and online, through October 3. From ulta.com's Current Offers page.
+  Deal: https://honest-penny.vercel.app/go/ulta-06/
+
+== FEATURED ==
+11. Wayfair - Up to 70% Off Furniture & Home Deals
+  Wayfair's fall clearance takes up to 70% off furniture, decor, lighting, kitchen and outdoor items sitewide, with new deals added throughout September.
+  Deal: https://honest-penny.vercel.app/go/wayfair-01/
+
+12. Macy’s - Extra 15%–30% off select sale & clearance with code BEST
+  Use code BEST at checkout to take an extra 15% to 30% off select sale and clearance fashion and jewelry — discount varies by item as marked. Online only.
+  Code: BEST: https://honest-penny.vercel.app/go/macys-09/
+
+--
+Unsubscribe: {{UNSUBSCRIBE_URL}}
+{{MAILING_ADDRESS}}
