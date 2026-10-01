@@ -2638,5 +2638,104 @@
     "type": "deal",
     "verified_date": "2026-10-01",
     "featured": false
+  },
+  {
+    "id": "sephora-05",
+    "store": "Sephora",
+    "store_slug": "sephora",
+    "code": "SAYPOINTS",
+    "title": "Earn Bonus Points With Code SAYPOINTS (2X-4X, 5X on Sephora Collection)",
+    "description": "Earn bonus points 10/1-10/7/26: Beauty Insiders 2X, VIB 3X, Rouge 4X per dollar; all members 5X on Sephora Collection. Enter code at checkout online or mention in-store. No minimum purchase. Verified on sephora.com/beauty/beauty-offers today.",
+    "type": "code",
+    "verified_date": "2026-10-01",
+    "featured": false
+  },
+  {
+    "id": "sephora-06",
+    "store": "Sephora",
+    "store_slug": "sephora",
+    "code": null,
+    "title": "20% Off Value-Size Hair Care",
+    "description": "20% off value-size hair care products. Sephora's offers page today says 'Get more product for less through 10/4'. Auto-applied; no code needed.",
+    "type": "deal",
+    "verified_date": "2026-10-01",
+    "featured": false
+  },
+  {
+    "id": "sephora-07",
+    "store": "Sephora",
+    "store_slug": "sephora",
+    "code": null,
+    "title": "$5 Off With 250 Beauty Insider Points",
+    "description": "Redeem 250 Beauty Insider points at checkout for $5 off. Limited-time offer valid 10/1-10/14/26 at US & Canada stores, Sephora at Kohl's, sephora.com, sephora.ca, kohls.com. One cash amount per purchase; basket total must be at least $5. Cannot combine with shipping promos or seasonal savings.",
+    "type": "deal",
+    "verified_date": "2026-10-01",
+    "featured": false
+  },
+  {
+    "id": "target-13",
+    "store": "Target",
+    "store_slug": "target",
+    "code": null,
+    "title": "15% Off One Trip When You Join Target Circle Free",
+    "description": "Get 15% off one shopping trip when you join Target Circle for free. Shown on target.com top-deals page today. Ends 10/5. Exclusions apply; requires free Circle membership. No code, auto-applied.",
+    "type": "deal",
+    "verified_date": "2026-10-01",
+    "featured": false
+  },
+  {
+    "id": "target-14",
+    "store": "Target",
+    "store_slug": "target",
+    "code": null,
+    "title": "$2 Off Tide Laundry Detergent (Circle Coupon)",
+    "description": "Target Circle coupon: $2 off Tide Laundry Detergent. Shown on target.com top-deals page today marked '2 days left' (as of Oct 1). Requires free Circle membership to clip; no code.",
+    "type": "deal",
+    "verified_date": "2026-10-01",
+    "featured": false
+  },
+  {
+    "id": "target-15",
+    "store": "Target",
+    "store_slug": "target",
+    "code": null,
+    "title": "$5 Gift Card When You Buy 3 Select Oral Care Products",
+    "description": "Get a $5 Target gift card when you buy 3 select oral care products. Weekly-ad deal on target.com top-deals page today, marked Expires October 3. Exclusions apply; no code.",
+    "type": "deal",
+    "verified_date": "2026-10-01",
+    "featured": false
+  },
+  {
+    "id": "target-16",
+    "store": "Target",
+    "store_slug": "target",
+    "code": null,
+    "title": "30% Off Carter's Baby Clothing",
+    "description": "30% off Carter's Just One You, Little Planet by Carter's and more baby clothing. Weekly-ad deal on target.com top-deals page today, marked Expires October 3. Exclusions apply; no code.",
+    "type": "deal",
+    "verified_date": "2026-10-01",
+    "featured": false
+  },
+  {
+    "id": "target-17",
+    "store": "Target",
+    "store_slug": "target",
+    "code": null,
+    "title": "Up to 40% Off Floor Care + Up to 25% Off Kitchen Items",
+    "description": "Up to 40% off floor care and up to 25% off kitchen items. Weekly-ad deal on target.com top-deals page today, marked Expires October 3. Exclusions apply; no code.",
+    "type": "deal",
+    "verified_date": "2026-10-01",
+    "featured": false
+  },
+  {
+    "id": "doordash-02",
+    "store": "DoorDash",
+    "store_slug": "doordash",
+    "code": null,
+    "title": "$0 Delivery Fee on Your First Order",
+    "description": "$0 delivery fee on your first DoorDash order. Shown on doordash.com homepage hero banner and footer today. Other fees apply. No code, auto-applied for new customers on signup.",
+    "type": "deal",
+    "verified_date": "2026-10-01",
+    "featured": false
   }
 ]
