@@ -1,0 +1,67 @@
+{
+  "version": 1,
+  "updated": "2026-10-01",
+  "defaults": {},
+  "stores": {
+    "best-buy": {
+      "checkout_url": "cart|checkout"
+    },
+    "dell": {
+      "checkout_url": "cart|checkout"
+    },
+    "doordash": {
+      "checkout_url": "checkout"
+    },
+    "grubhub": {
+      "checkout_url": "checkout"
+    },
+    "hp": {
+      "checkout_url": "cart|checkout"
+    },
+    "ikea": {
+      "checkout_url": "shoppingcart|checkout"
+    },
+    "kohls": {
+      "checkout_url": "shoppingbag|checkout"
+    },
+    "lenovo": {
+      "checkout_url": "cart|checkout"
+    },
+    "macys": {
+      "checkout_url": "bag|checkout"
+    },
+    "newegg": {
+      "checkout_url": "cart|checkout"
+    },
+    "nike": {
+      "checkout_url": "cart|checkout"
+    },
+    "samsung": {
+      "checkout_url": "cart|checkout"
+    },
+    "sephora": {
+      "checkout_url": "basket|checkout"
+    },
+    "shein": {
+      "checkout_url": "cart|checkout"
+    },
+    "target": {
+      "checkout_url": "cart|checkout"
+    },
+    "temu": {
+      "checkout_url": "cart|checkout"
+    },
+    "uber-eats": {
+      "checkout_url": "checkout"
+    },
+    "ulta": {
+      "checkout_url": "basket|checkout"
+    },
+    "walmart": {
+      "checkout_url": "cart|checkout"
+    },
+    "wayfair": {
+      "checkout_url": "cart|checkout"
+    }
+  }
+}

@@ -1,0 +1,362 @@
+{
+  "academy-sports": {
+    "affiliate": "",
+    "url": "https://www.academy.com"
+  },
+  "adidas": {
+    "affiliate": "",
+    "url": "https://www.adidas.com/us"
+  },
+  "airbnb": {
+    "affiliate": "",
+    "url": "https://www.airbnb.com"
+  },
+  "american-eagle": {
+    "affiliate": "",
+    "url": "https://www.ae.com/"
+  },
+  "amtrak": {
+    "affiliate": "",
+    "url": "https://www.amtrak.com"
+  },
+  "apple": {
+    "affiliate": "",
+    "url": "https://www.apple.com"
+  },
+  "ashley-furniture": {
+    "affiliate": "",
+    "url": "https://www.ashleyfurniture.com"
+  },
+  "asos": {
+    "affiliate": "",
+    "url": "https://www.asos.com/us/"
+  },
+  "athleta": {
+    "affiliate": "",
+    "url": "https://athleta.gap.com/"
+  },
+  "autozone": {
+    "affiliate": "",
+    "url": "https://www.autozone.com"
+  },
+  "bh-photo": {
+    "affiliate": "",
+    "url": "https://www.bhphotovideo.com"
+  },
+  "banana-republic": {
+    "affiliate": "",
+    "url": "https://bananarepublic.gap.com/"
+  },
+  "bass-pro-shops": {
+    "affiliate": "",
+    "url": "https://www.basspro.com"
+  },
+  "bath-body-works": {
+    "affiliate": "",
+    "url": "https://www.bathandbodyworks.com"
+  },
+  "best-buy": {
+    "affiliate": "",
+    "url": "https://www.bestbuy.com"
+  },
+  "birkenstock": {
+    "affiliate": "",
+    "url": "https://www.birkenstock.com/us/"
+  },
+  "blue-apron": {
+    "affiliate": "",
+    "url": "https://www.blueapron.com"
+  },
+  "carnival": {
+    "affiliate": "",
+    "url": "https://www.carnival.com"
+  },
+  "carters": {
+    "affiliate": "",
+    "url": "https://www.carters.com"
+  },
+  "chewy": {
+    "affiliate": "",
+    "url": "https://www.chewy.com"
+  },
+  "converse": {
+    "affiliate": "",
+    "url": "https://www.converse.com/"
+  },
+  "cvs": {
+    "affiliate": "",
+    "url": "https://www.cvs.com"
+  },
+  "dell": {
+    "affiliate": "",
+    "url": "https://www.dell.com"
+  },
+  "dermstore": {
+    "affiliate": "",
+    "url": "https://www.dermstore.com"
+  },
+  "dicks-sporting-goods": {
+    "affiliate": "",
+    "url": "https://www.dickssportinggoods.com"
+  },
+  "dominos": {
+    "affiliate": "",
+    "url": "https://www.dominos.com"
+  },
+  "doordash": {
+    "affiliate": "",
+    "url": "https://www.doordash.com"
+  },
+  "dsw": {
+    "affiliate": "",
+    "url": "https://www.dsw.com"
+  },
+  "dyson": {
+    "affiliate": "",
+    "url": "https://www.dyson.com"
+  },
+  "ebay": {
+    "affiliate": "",
+    "url": "https://www.ebay.com"
+  },
+  "expedia": {
+    "affiliate": "",
+    "url": "https://www.expedia.com"
+  },
+  "factor": {
+    "affiliate": "",
+    "url": "https://www.factor75.com"
+  },
+  "famous-footwear": {
+    "affiliate": "",
+    "url": "https://www.famousfootwear.com/"
+  },
+  "fenty-beauty": {
+    "affiliate": "",
+    "url": "https://fentybeauty.com"
+  },
+  "finish-line": {
+    "affiliate": "",
+    "url": "https://www.finishline.com"
+  },
+  "foot-locker": {
+    "affiliate": "",
+    "url": "https://www.footlocker.com"
+  },
+  "groupon": {
+    "affiliate": "",
+    "url": "https://www.groupon.com"
+  },
+  "grubhub": {
+    "affiliate": "",
+    "url": "https://www.grubhub.com"
+  },
+  "hellofresh": {
+    "affiliate": "",
+    "url": "https://www.hellofresh.com"
+  },
+  "heydude": {
+    "affiliate": "",
+    "url": "https://www.heydude.com/"
+  },
+  "hollister": {
+    "affiliate": "",
+    "url": "https://www.hollisterco.com/"
+  },
+  "hotels-com": {
+    "affiliate": "",
+    "url": "https://www.hotels.com"
+  },
+  "hp": {
+    "affiliate": "",
+    "url": "https://www.hp.com/us-en/"
+  },
+  "ikea": {
+    "affiliate": "",
+    "url": "https://www.ikea.com"
+  },
+  "jcpenney": {
+    "affiliate": "",
+    "url": "https://www.jcpenney.com"
+  },
+  "kohls": {
+    "affiliate": "",
+    "url": "https://www.kohls.com"
+  },
+  "lenovo": {
+    "affiliate": "",
+    "url": "https://www.lenovo.com/us/en/"
+  },
+  "levis": {
+    "affiliate": "",
+    "url": "https://www.levi.com"
+  },
+  "loft": {
+    "affiliate": "",
+    "url": "https://www.loft.com/"
+  },
+  "lowes": {
+    "affiliate": "",
+    "url": "https://www.lowes.com"
+  },
+  "macys": {
+    "affiliate": "",
+    "url": "https://www.macys.com"
+  },
+  "newegg": {
+    "affiliate": "",
+    "url": "https://www.newegg.com"
+  },
+  "nike": {
+    "affiliate": "",
+    "url": "https://www.nike.com"
+  },
+  "nordstrom-rack": {
+    "affiliate": "",
+    "url": "https://www.nordstromrack.com"
+  },
+  "old-navy": {
+    "affiliate": "",
+    "url": "https://www.oldnavy.gap.com"
+  },
+  "overstock": {
+    "affiliate": "",
+    "url": "https://www.overstock.com"
+  },
+  "pacsun": {
+    "affiliate": "",
+    "url": "https://www.pacsun.com/"
+  },
+  "petco": {
+    "affiliate": "",
+    "url": "https://www.petco.com"
+  },
+  "petsmart": {
+    "affiliate": "",
+    "url": "https://www.petsmart.com"
+  },
+  "pizza-hut": {
+    "affiliate": "",
+    "url": "https://www.pizzahut.com"
+  },
+  "pottery-barn": {
+    "affiliate": "",
+    "url": "https://www.potterybarn.com"
+  },
+  "rack-room-shoes": {
+    "affiliate": "",
+    "url": "https://www.rackroomshoes.com/"
+  },
+  "royal-caribbean": {
+    "affiliate": "",
+    "url": "https://www.royalcaribbean.com"
+  },
+  "sally-beauty": {
+    "affiliate": "",
+    "url": "https://www.sallybeauty.com"
+  },
+  "samsung": {
+    "affiliate": "",
+    "url": "https://www.samsung.com/us/"
+  },
+  "sephora": {
+    "affiliate": "",
+    "url": "https://www.sephora.com"
+  },
+  "shein": {
+    "affiliate": "",
+    "url": "https://us.shein.com"
+  },
+  "shoe-carnival": {
+    "affiliate": "",
+    "url": "https://www.shoecarnival.com/"
+  },
+  "sierra": {
+    "affiliate": "",
+    "url": "https://www.sierra.com"
+  },
+  "skechers": {
+    "affiliate": "",
+    "url": "https://www.skechers.com/"
+  },
+  "southwest": {
+    "affiliate": "",
+    "url": "https://www.southwest.com"
+  },
+  "staples": {
+    "affiliate": "",
+    "url": "https://www.staples.com"
+  },
+  "steve-madden": {
+    "affiliate": "",
+    "url": "https://www.stevemadden.com/"
+  },
+  "target": {
+    "affiliate": "",
+    "url": "https://www.target.com"
+  },
+  "temu": {
+    "affiliate": "",
+    "url": "https://www.temu.com"
+  },
+  "childrens-place": {
+    "affiliate": "",
+    "url": "https://www.childrensplace.com"
+  },
+  "home-depot": {
+    "affiliate": "",
+    "url": "https://www.homedepot.com"
+  },
+  "timberland": {
+    "affiliate": "",
+    "url": "https://www.timberland.com/"
+  },
+  "tire-rack": {
+    "affiliate": "",
+    "url": "https://www.tirerack.com"
+  },
+  "uber-eats": {
+    "affiliate": "",
+    "url": "https://www.ubereats.com"
+  },
+  "ugg": {
+    "affiliate": "",
+    "url": "https://www.ugg.com/"
+  },
+  "ulta": {
+    "affiliate": "",
+    "url": "https://www.ulta.com"
+  },
+  "under-armour": {
+    "affiliate": "",
+    "url": "https://www.underarmour.com/en-us/"
+  },
+  "uniqlo": {
+    "affiliate": "",
+    "url": "https://www.uniqlo.com/us/en/"
+  },
+  "vrbo": {
+    "affiliate": "",
+    "url": "https://www.vrbo.com"
+  },
+  "walgreens": {
+    "affiliate": "",
+    "url": "https://www.walgreens.com"
+  },
+  "walmart": {
+    "affiliate": "",
+    "url": "https://www.walmart.com"
+  },
+  "wayfair": {
+    "affiliate": "",
+    "url": "https://www.wayfair.com"
+  },
+  "zappos": {
+    "affiliate": "",
+    "url": "https://www.zappos.com/"
+  },
+  "zara": {
+    "affiliate": "",
+    "url": "https://www.zara.com/us/en/"
+  }
+}
