@@ -2561,5 +2561,82 @@
     "type": "deal",
     "verified_date": "2026-09-30",
     "featured": false
+  },
+  {
+    "id": "target-07",
+    "store": "Target",
+    "store_slug": "target",
+    "code": null,
+    "title": "Up to 25% Off Select Household Essentials",
+    "description": "Up to 25% off select household essentials, shown on Target's homepage today. Online and in-store select items; exclusions apply. No code needed.",
+    "type": "deal",
+    "verified_date": "2026-10-01",
+    "featured": false
+  },
+  {
+    "id": "target-08",
+    "store": "Target",
+    "store_slug": "target",
+    "code": null,
+    "title": "BOGO 25% Off Select Air Care Items",
+    "description": "Buy one, get one 25% off select air care items. Shown on Target's homepage today; exclusions apply. No code needed.",
+    "type": "deal",
+    "verified_date": "2026-10-01",
+    "featured": false
+  },
+  {
+    "id": "target-09",
+    "store": "Target",
+    "store_slug": "target",
+    "code": null,
+    "title": "$10 Target Gift Card When You Buy 2 Swiffer Items",
+    "description": "Get a $10 Target gift card when you buy 2 Swiffer items. Shown on Target's homepage today; exclusions apply.",
+    "type": "deal",
+    "verified_date": "2026-10-01",
+    "featured": false
+  },
+  {
+    "id": "target-10",
+    "store": "Target",
+    "store_slug": "target",
+    "code": null,
+    "title": "20% Off Bonus on New Baby Gear With Car Seat Trade-In",
+    "description": "Trade in your old car seat and get a 20% off bonus on a new baby gear purchase. Event runs 9/20-10/3 per Target's homepage today; exclusions apply.",
+    "type": "deal",
+    "verified_date": "2026-10-01",
+    "featured": false
+  },
+  {
+    "id": "target-11",
+    "store": "Target",
+    "store_slug": "target",
+    "code": null,
+    "title": "BOGO 25% Off Select Skin Care Products",
+    "description": "Buy one, get one 25% off select skin care products. Shown on Target's homepage today; exclusions apply. No code needed.",
+    "type": "deal",
+    "verified_date": "2026-10-01",
+    "featured": false
+  },
+  {
+    "id": "target-12",
+    "store": "Target",
+    "store_slug": "target",
+    "code": null,
+    "title": "Up to 50% Off Home Items In Store + More Online Deals",
+    "description": "Up to 50% off home items in store plus more online deals, shown on Target's homepage today. Items vary by location; exclusions apply.",
+    "type": "deal",
+    "verified_date": "2026-10-01",
+    "featured": false
+  },
+  {
+    "id": "doordash-01",
+    "store": "DoorDash",
+    "store_slug": "doordash",
+    "code": null,
+    "title": "DashPass Free for 30 Days + $0 Delivery Fees",
+    "description": "DashPass free for 30 days for new members. Members get a $0 delivery fee on DashPass orders and 5% back on pickup orders. Shown on doordash.com homepage today.",
+    "type": "deal",
+    "verified_date": "2026-10-01",
+    "featured": false
   }
 ]
