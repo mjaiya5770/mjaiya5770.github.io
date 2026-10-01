@@ -198,17 +198,6 @@
     "featured": false
   },
   {
-    "id": "ulta-09",
-    "store": "Ulta Beauty",
-    "store_slug": "ulta",
-    "code": null,
-    "title": "Free Viktor&Rolf Flowerbomb set with large spray purchase",
-    "description": "Online only: free Flowerbomb set with a Viktor&Rolf large spray purchase on shipped orders, while quantities last. Ends October 1. From ulta.com.",
-    "type": "deal",
-    "verified_date": "2026-09-29",
-    "featured": false
-  },
-  {
     "id": "ulta-10",
     "store": "Ulta Beauty",
     "store_slug": "ulta",
@@ -1760,17 +1749,6 @@
     "featured": false
   },
   {
-    "id": "skechers-01",
-    "store": "Skechers",
-    "store_slug": "skechers",
-    "code": null,
-    "title": "Skechers Plus members save 20% off online",
-    "description": "Skechers Plus members save 20% off select regular-priced items online during the Faul Haul event. Must be logged in; discount applies at cart. Excludes sale styles. Valid September 29 \u2013 October 1, 2026.",
-    "type": "deal",
-    "verified_date": "2026-09-29",
-    "featured": true
-  },
-  {
     "id": "ugg-01",
     "store": "UGG",
     "store_slug": "ugg",
@@ -1821,17 +1799,6 @@
     "code": null,
     "title": "MINNEN extendable bed \u2014 20% off, $119.99",
     "description": "MINNEN extendable bed frame in white is $119.99, down from $149.99 (20% off), valid September 17 through October 12, 2026.",
-    "type": "deal",
-    "verified_date": "2026-09-29",
-    "featured": false
-  },
-  {
-    "id": "fenty-beauty-01",
-    "store": "Fenty Beauty",
-    "store_slug": "fenty-beauty",
-    "code": null,
-    "title": "Free mini bag on $80+ orders",
-    "description": "Get a free mini bag on orders of $80 or more, through 11:59 p.m. PT October 1, 2026, or while supplies last.",
     "type": "deal",
     "verified_date": "2026-09-29",
     "featured": false
@@ -2299,17 +2266,6 @@
     "featured": false
   },
   {
-    "id": "royal-caribbean-05",
-    "store": "Royal Caribbean",
-    "store_slug": "royal-caribbean",
-    "code": null,
-    "title": "Score More Sale: instant savings up to $800 per stateroom (book Sept 29-Oct 1)",
-    "description": "Instant savings per stateroom on sailings departing on or after September 30, 2026, booked September 29-October 1, 2026. 5 nights or less: $125 off Inside/Ocean View, $200 off Balconies, $400 off Suites. 6 nights or longer: $225 off Interior/Ocean View, $300 off Balconies, $800 off Suites. Savings shown as 'Dollars Off' at checkout. Not combinable with Crown & Anchor discounts.",
-    "type": "deal",
-    "verified_date": "2026-09-29",
-    "featured": false
-  },
-  {
     "id": "royal-caribbean-07",
     "store": "Royal Caribbean",
     "store_slug": "royal-caribbean",
@@ -2371,17 +2327,6 @@
     "code": null,
     "title": "Senior Rates: discounted fares for senior travelers",
     "description": "Discounted Senior Rates on select sailings for senior travelers. Combinable with BOGO60, Kids Sail Free, Free 3rd & 4th guests, promotional onboard credits, Next Cruise offers, instant savings, promo-code offers, Crown & Anchor discounts, and Shareholder Benefits. Capacity controlled.",
-    "type": "deal",
-    "verified_date": "2026-09-29",
-    "featured": false
-  },
-  {
-    "id": "southwest-01",
-    "store": "Southwest Airlines",
-    "store_slug": "southwest",
-    "code": null,
-    "title": "Fall fare sale: one-way fares from $59 when you book by Oct 1",
-    "description": "Fall fare sale: one-way fares as low as $59. Book September 29, 2026 (12:01 a.m. PT) through October 1, 2026 (11:59 p.m. PT). Travel October 20, 2026 through March 3, 2027 on one-way Basic fares. 21-day advance purchase required. Blackouts: continental U.S. and interisland Hawaii travel blacked out Nov 24-25, Nov 28, Nov 30, Dec 19, Dec 26, Dec 28, 2026 and Jan 2, Jan 4, Jan 18, Feb 15, 2027; international/Hawaii/Puerto Rico windows have additional blackout periods. Nonrefundable. Seats, days, and markets limited.",
     "type": "deal",
     "verified_date": "2026-09-29",
     "featured": false
