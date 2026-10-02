@@ -2737,5 +2737,27 @@
     "type": "deal",
     "verified_date": "2026-10-01",
     "featured": false
+  },
+  {
+    "id": "adidas-07",
+    "store": "Adidas",
+    "store_slug": "adidas",
+    "code": null,
+    "title": "Up to 40% Off Fall Styles",
+    "description": "Up to 40% off tons of fall styles on adidas.com, no code needed. Exclusions apply; redeemable by any US shopper online.",
+    "type": "deal",
+    "verified_date": "2026-10-02",
+    "featured": false
+  },
+  {
+    "id": "dominos-01",
+    "store": "Domino's",
+    "store_slug": "dominos",
+    "code": null,
+    "title": "Mix & Match: Any 2 for $6.99 Each",
+    "description": "Choose any two or more for $6.99 each, including the new Domino personal pizza (Detroit Style Parmesan crust). Prices and participation vary by location; no code needed.",
+    "type": "deal",
+    "verified_date": "2026-10-02",
+    "featured": true
   }
 ]
