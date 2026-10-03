@@ -33,17 +33,6 @@
     "featured": false
   },
   {
-    "id": "ulta-02",
-    "store": "Ulta Beauty",
-    "store_slug": "ulta",
-    "code": null,
-    "title": "Brow Sale: Up to 50% Off",
-    "description": "Up to 50% off brow products from Morphe, Tarte, Revlon, CoverGirl, Grande Cosmetics and RMS Beauty, from about $4 brow pencils to GrandeBROW serum. Several picks include a free gift with purchase; valid through October 3.",
-    "type": "deal",
-    "verified_date": "2026-09-29",
-    "featured": true
-  },
-  {
     "id": "ulta-03",
     "store": "Ulta Beauty",
     "store_slug": "ulta",
@@ -143,50 +132,6 @@
     "featured": false
   },
   {
-    "id": "ulta-04",
-    "store": "Ulta Beauty",
-    "store_slug": "ulta",
-    "code": null,
-    "title": "Fall Haul Sale: Up to 30% off",
-    "description": "Up to 30% off makeup, hair care, skin care and body care, in store and online. Ends October 3. From ulta.com's Fall Haul page.",
-    "type": "deal",
-    "verified_date": "2026-09-29",
-    "featured": false
-  },
-  {
-    "id": "ulta-05",
-    "store": "Ulta Beauty",
-    "store_slug": "ulta",
-    "code": null,
-    "title": "Up to $130 off select Dyson",
-    "description": "Up to $130 off select Dyson products, in store and online, through October 3. From ulta.com's Current Offers page.",
-    "type": "deal",
-    "verified_date": "2026-09-29",
-    "featured": false
-  },
-  {
-    "id": "ulta-06",
-    "store": "Ulta Beauty",
-    "store_slug": "ulta",
-    "code": null,
-    "title": "Buy 1 Get 1 Free: select Orebella 1.7oz fragrances",
-    "description": "BOGO free on select Orebella 1.7oz fragrances, in store and online, through October 3. From ulta.com's Current Offers page.",
-    "type": "deal",
-    "verified_date": "2026-09-29",
-    "featured": false
-  },
-  {
-    "id": "ulta-07",
-    "store": "Ulta Beauty",
-    "store_slug": "ulta",
-    "code": null,
-    "title": "30% off Bath & Body Works candles, hand soaps & wallflowers",
-    "description": "30% off Bath & Body Works candles, hand soaps and wallflowers, in store and online, through October 3. From ulta.com.",
-    "type": "deal",
-    "verified_date": "2026-09-29",
-    "featured": false
-  },
-  {
     "id": "ulta-08",
     "store": "Ulta Beauty",
     "store_slug": "ulta",
@@ -204,28 +149,6 @@
     "code": null,
     "title": "Free plush with Squishmallows Fragrances large spray purchase",
     "description": "Online only: free plush with a Squishmallows Fragrances large spray purchase on shipped orders, while quantities last. Ends October 17. From ulta.com.",
-    "type": "deal",
-    "verified_date": "2026-09-29",
-    "featured": false
-  },
-  {
-    "id": "ulta-11",
-    "store": "Ulta Beauty",
-    "store_slug": "ulta",
-    "code": null,
-    "title": "35% off entire Sharper Image brand (online only)",
-    "description": "35% off the entire Sharper Image brand, online only, through October 3. From ulta.com's Current Offers page.",
-    "type": "deal",
-    "verified_date": "2026-09-29",
-    "featured": false
-  },
-  {
-    "id": "ulta-12",
-    "store": "Ulta Beauty",
-    "store_slug": "ulta",
-    "code": null,
-    "title": "Free 2-piece gift with SNIF Notewrks full-size fragrance purchase",
-    "description": "Free 2-piece gift with a SNIF Notewrks full-size fragrance purchase, in store or shipped, while quantities last. Ends October 3. From ulta.com.",
     "type": "deal",
     "verified_date": "2026-09-29",
     "featured": false
@@ -897,17 +820,6 @@
     "code": null,
     "title": "$5 Off 2 Maybelline New York Cosmetics",
     "description": "Digital coupon: $5 off TWO (2) select Maybelline New York cosmetics. A myW exclusive multi-use offer valid online only.",
-    "type": "deal",
-    "verified_date": "2026-09-29",
-    "featured": false
-  },
-  {
-    "id": "walgreens-02",
-    "store": "Walgreens",
-    "store_slug": "walgreens",
-    "code": null,
-    "title": "$3 Off 2 Nature Made Products",
-    "description": "Digital coupon: $3 off any TWO (2) Nature Made products.",
     "type": "deal",
     "verified_date": "2026-09-29",
     "featured": false
@@ -2596,17 +2508,6 @@
     "featured": false
   },
   {
-    "id": "target-10",
-    "store": "Target",
-    "store_slug": "target",
-    "code": null,
-    "title": "20% Off Bonus on New Baby Gear With Car Seat Trade-In",
-    "description": "Trade in your old car seat and get a 20% off bonus on a new baby gear purchase. Event runs 9/20-10/3 per Target's homepage today; exclusions apply.",
-    "type": "deal",
-    "verified_date": "2026-10-01",
-    "featured": false
-  },
-  {
     "id": "target-11",
     "store": "Target",
     "store_slug": "target",
@@ -2690,39 +2591,6 @@
     "code": null,
     "title": "$2 Off Tide Laundry Detergent (Circle Coupon)",
     "description": "Target Circle coupon: $2 off Tide Laundry Detergent. Shown on target.com top-deals page today marked '2 days left' (as of Oct 1). Requires free Circle membership to clip; no code.",
-    "type": "deal",
-    "verified_date": "2026-10-01",
-    "featured": false
-  },
-  {
-    "id": "target-15",
-    "store": "Target",
-    "store_slug": "target",
-    "code": null,
-    "title": "$5 Gift Card When You Buy 3 Select Oral Care Products",
-    "description": "Get a $5 Target gift card when you buy 3 select oral care products. Weekly-ad deal on target.com top-deals page today, marked Expires October 3. Exclusions apply; no code.",
-    "type": "deal",
-    "verified_date": "2026-10-01",
-    "featured": false
-  },
-  {
-    "id": "target-16",
-    "store": "Target",
-    "store_slug": "target",
-    "code": null,
-    "title": "30% Off Carter's Baby Clothing",
-    "description": "30% off Carter's Just One You, Little Planet by Carter's and more baby clothing. Weekly-ad deal on target.com top-deals page today, marked Expires October 3. Exclusions apply; no code.",
-    "type": "deal",
-    "verified_date": "2026-10-01",
-    "featured": false
-  },
-  {
-    "id": "target-17",
-    "store": "Target",
-    "store_slug": "target",
-    "code": null,
-    "title": "Up to 40% Off Floor Care + Up to 25% Off Kitchen Items",
-    "description": "Up to 40% off floor care and up to 25% off kitchen items. Weekly-ad deal on target.com top-deals page today, marked Expires October 3. Exclusions apply; no code.",
     "type": "deal",
     "verified_date": "2026-10-01",
     "featured": false
