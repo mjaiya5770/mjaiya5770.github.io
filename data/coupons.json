@@ -2627,5 +2627,38 @@
     "type": "deal",
     "verified_date": "2026-10-02",
     "featured": true
+  },
+  {
+    "id": "bath-body-works-09",
+    "store": "Bath & Body Works",
+    "store_slug": "bath-body-works",
+    "code": "LITTLES",
+    "title": "Mini Must-Haves $2, $3 & $4",
+    "description": "Today only: select mini must-haves priced $2, $3, or $4 with code LITTLES at checkout. Limit up to 24 per customer.",
+    "type": "code",
+    "verified_date": "2026-10-03",
+    "featured": false
+  },
+  {
+    "id": "bath-body-works-10",
+    "store": "Bath & Body Works",
+    "store_slug": "bath-body-works",
+    "code": null,
+    "title": "3-Wick Candles $13.95",
+    "description": "All 3-wick candles priced $13.95 on bathandbodyworks.com Top Offers. No code needed.",
+    "type": "deal",
+    "verified_date": "2026-10-03",
+    "featured": false
+  },
+  {
+    "id": "best-buy-01",
+    "store": "Best Buy",
+    "store_slug": "best-buy",
+    "code": null,
+    "title": "Deal of the Day",
+    "description": "A new discounted item (or set of items) every day across electronics, appliances, and accessories. No code needed; check the Deal of the Day page daily.",
+    "type": "deal",
+    "verified_date": "2026-10-03",
+    "featured": false
   }
 ]
