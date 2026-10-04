@@ -1,0 +1,57 @@
+HONEST PENNY DAILY - October 04, 2026
+Today's verified deals.
+
+== NEWLY VERIFIED DEALS ==
+1. Adidas - Up to 40% Off Fall Styles
+  Up to 40% off tons of fall styles on adidas.com, no code needed. Exclusions apply; redeemable by any US shopper online.
+  Deal: https://honest-penny.vercel.app/go/adidas-07/
+
+2. Domino's - Mix & Match: Any 2 for $6.99 Each
+  Choose any two or more for $6.99 each, including the new Domino personal pizza (Detroit Style Parmesan crust). Prices and participation vary by location; no code needed.
+  Deal: https://honest-penny.vercel.app/go/dominos-01/
+
+3. Bath & Body Works - 3-Wick Candles $13.95
+  All 3-wick candles priced $13.95 on bathandbodyworks.com Top Offers. No code needed.
+  Deal: https://honest-penny.vercel.app/go/bath-body-works-10/
+
+4. Best Buy - Deal of the Day
+  A new discounted item (or set of items) every day across electronics, appliances, and accessories. No code needed; check the Deal of the Day page daily.
+  Deal: https://honest-penny.vercel.app/go/best-buy-01/
+
+5. eBay - 10% off select used parts & gear with code SALVAGED10
+  Use code SALVAGED10 at checkout for 10% off select used parts and gear (auto parts and more). Max $75 off per redemption, up to 4 redemptions per user. No minimum spend stated. Excludes warranties and protection plans; items from Coins & Paper Money and other excluded categories (full list on eBay). Pay by 11:59 PM Pacific on 10/14/2026; while supplies last. Valid on ebay.com, ebay.ca, cafr.ebay.ca.
+  Code: SALVAGED10: https://honest-penny.vercel.app/go/ebay-01/
+
+== ENDING SOON ==
+6. Target - Circle Deal Days: Up to 40% Off
+  Target's official two-day member event runs Oct 6-7, 2026 with up to 40% off thousands of items in fashion, beauty, home, toys and tech (Circle 360 early access Oct 5). Free Target Circle membership required.
+  Deal: https://honest-penny.vercel.app/go/target-01/
+
+7. Target - 15% Off First Purchase for New Circle Members
+  Guests who join Target Circle between Sept 27 and Oct 5, 2026 receive 15% off their first purchase, per Target's official announcement.
+  Deal: https://honest-penny.vercel.app/go/target-02/
+
+8. Target - $75 in Circle rewards with an approved Target Circle credit card
+  Get $75 in Circle rewards when approved for a Target Circle credit card. Ends October 10. Terms apply. From Target's official Top Deals page.
+  Deal: https://honest-penny.vercel.app/go/target-04/
+
+9. Walgreens - $5 Off 2 Maybelline New York Cosmetics
+  Digital coupon: $5 off TWO (2) select Maybelline New York cosmetics. A myW exclusive multi-use offer valid online only.
+  Deal: https://honest-penny.vercel.app/go/walgreens-01/
+
+10. Walgreens - $3 Off 2 L'Oréal Paris Elvive
+  Digital coupon: $3 off ANY TWO (2) L'Oréal Paris Elvive shampoo products, select varieties.
+  Deal: https://honest-penny.vercel.app/go/walgreens-03/
+
+== FEATURED ==
+11. Nike - Sale: Up to 50% Off
+  Hundreds of shoes, apparel and accessories marked down up to 50%, with deepest cuts on Tech Fleece and Air Max Dn8. No code needed and free shipping for Nike Members.
+  Deal: https://honest-penny.vercel.app/go/nike-01/
+
+12. Wayfair - Up to 70% Off Furniture & Home Deals
+  Wayfair's fall clearance takes up to 70% off furniture, decor, lighting, kitchen and outdoor items sitewide, with new deals added throughout September.
+  Deal: https://honest-penny.vercel.app/go/wayfair-01/
+
+--
+Unsubscribe: {{UNSUBSCRIBE_URL}}
+{{MAILING_ADDRESS}}
