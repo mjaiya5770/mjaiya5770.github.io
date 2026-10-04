@@ -1782,17 +1782,6 @@
     "featured": false
   },
   {
-    "id": "samsung-03",
-    "store": "Samsung",
-    "store_slug": "samsung",
-    "code": null,
-    "title": "$20 off select Galaxy devices with SMS signup",
-    "description": "Sign up for Samsung texts to receive a unique one-time code worth $20 off select Galaxy devices; September 7 through October 4, 2026.",
-    "type": "deal",
-    "verified_date": "2026-09-29",
-    "featured": false
-  },
-  {
     "id": "samsung-04",
     "store": "Samsung",
     "store_slug": "samsung",
@@ -2552,17 +2541,6 @@
     "featured": false
   },
   {
-    "id": "sephora-06",
-    "store": "Sephora",
-    "store_slug": "sephora",
-    "code": null,
-    "title": "20% Off Value-Size Hair Care",
-    "description": "20% off value-size hair care products. Sephora's offers page today says 'Get more product for less through 10/4'. Auto-applied; no code needed.",
-    "type": "deal",
-    "verified_date": "2026-10-01",
-    "featured": false
-  },
-  {
     "id": "sephora-07",
     "store": "Sephora",
     "store_slug": "sephora",
@@ -2627,17 +2605,6 @@
     "type": "deal",
     "verified_date": "2026-10-02",
     "featured": true
-  },
-  {
-    "id": "bath-body-works-09",
-    "store": "Bath & Body Works",
-    "store_slug": "bath-body-works",
-    "code": "LITTLES",
-    "title": "Mini Must-Haves $2, $3 & $4",
-    "description": "Today only: select mini must-haves priced $2, $3, or $4 with code LITTLES at checkout. Limit up to 24 per customer.",
-    "type": "code",
-    "verified_date": "2026-10-03",
-    "featured": false
   },
   {
     "id": "bath-body-works-10",
