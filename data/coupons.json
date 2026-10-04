@@ -2627,5 +2627,71 @@
     "type": "deal",
     "verified_date": "2026-10-03",
     "featured": false
+  },
+  {
+    "id": "ebay-01",
+    "store": "eBay",
+    "store_slug": "ebay",
+    "code": "SALVAGED10",
+    "title": "10% off select used parts & gear with code SALVAGED10",
+    "description": "Use code SALVAGED10 at checkout for 10% off select used parts and gear (auto parts and more). Max $75 off per redemption, up to 4 redemptions per user. No minimum spend stated. Excludes warranties and protection plans; items from Coins & Paper Money and other excluded categories (full list on eBay). Pay by 11:59 PM Pacific on 10/14/2026; while supplies last. Valid on ebay.com, ebay.ca, cafr.ebay.ca.",
+    "type": "code",
+    "verified_date": "2026-10-04",
+    "featured": true
+  },
+  {
+    "id": "kohls-01",
+    "store": "Kohl's",
+    "store_slug": "kohls",
+    "code": "TAKE20",
+    "title": "Extra 20% off qualifying purchases with code TAKE20",
+    "description": "Extra 20% off qualifying purchases in store and online with code TAKE20. Limit one per customer. Dollar-off coupons including Kohl's Cash are applied before percent-off coupons; cannot be combined with other percent-off coupons. Excludes price adjustments, Kohl's credit card account payments, taxes, shipping/handling, gift cards, Kohl's Cares cause/charitable items, Sephora at Kohl's, and other coupon-ineligible categories/brands. Eligible brands include Apt. 9, Croft & Barrow, FLX, Jumping Beans, SO, Sonoma Goods For Life, Tek Gear, The Big One, LC Lauren Conrad, Nine West, Simply Vera Vera Wang (full list at kohls.com/details). Valid 09/28-10/04/2026; ends Oct 4.",
+    "type": "code",
+    "verified_date": "2026-10-04",
+    "featured": false
+  },
+  {
+    "id": "kohls-02",
+    "store": "Kohl's",
+    "store_slug": "kohls",
+    "code": "HOME10",
+    "title": "$10 off $50 qualifying home purchase with code HOME10",
+    "description": "$10 off a minimum $50 pre-tax qualifying home purchase, one transaction, in store and online with code HOME10. Applied before percent-off coupons; can be combined with other coupons (all minimum-purchase thresholds must be met). Limit one per customer; nontransferable. Excludes price adjustments, Kohl's credit card account payments, taxes, shipping/handling, gift cards, Kohl's Cares cause/charitable items, Sephora at Kohl's, and other coupon-ineligible categories/brands. Valid 09/28-10/04/2026; ends Oct 4.",
+    "type": "code",
+    "verified_date": "2026-10-04",
+    "featured": false
+  },
+  {
+    "id": "macys-11",
+    "store": "Macy's",
+    "store_slug": "macys",
+    "code": "BUYMORE",
+    "title": "Buy More, Save More: up to 40% off fine jewelry with code BUYMORE",
+    "description": "Buy More, Save More on fine jewelry with code BUYMORE: 20% off $500+, 30% off $1,000+, or 40% off $2,000+ fine jewelry. No exclusion list shown with the offer. Banner stated \"Ends tomorrow\" on 10/04/2026, so expiry assumed 10/05/2026 (not printed as a calendar date on the page). Seen on the macys.com homepage hero banner and the fine jewelry \"Offer code BUYMORE\" filter chip.",
+    "type": "code",
+    "verified_date": "2026-10-04",
+    "featured": false
+  },
+  {
+    "id": "chewy-01",
+    "store": "Chewy",
+    "store_slug": "chewy",
+    "code": "WELCOME",
+    "title": "Free $20 e-Gift card with $49+ order for new customers with code WELCOME",
+    "description": "New Chewy customers: add $49+ of eligible items to cart and enter code WELCOME to receive a $20 e-Gift card. Limit 1 use per order, 1 order per customer. Free e-Gift card is added at checkout with the qualifying purchase and credited to the Chewy account after the order ships. A Chewy account and login are required to redeem. Brand exclusions apply; gift cards cannot be returned, refunded, or redeemed for cash. Valid while supplies last; no calendar expiration shown. NOTE: the homepage header advertises \"$25 eGift card\" but the official WELCOME offer terms state $20 \u2014 the $20 figure is the documented term.",
+    "type": "code",
+    "verified_date": "2026-10-04",
+    "featured": true
+  },
+  {
+    "id": "chewy-02",
+    "store": "Chewy",
+    "store_slug": "chewy",
+    "code": "MILKBONE",
+    "title": "Save $1 on Milk-Bone dog treats with code MILKBONE",
+    "description": "Save $1 with code MILKBONE on Milk-Bone dog treats (seen on Milk-Bone Peanut Buttery Cups 4.5-oz bag and Milk-Bone Soft & Chewy Real Beef & Filet Mignon 5.6-oz bag). No minimum spend; no expiration shown on the product promo tags.",
+    "type": "code",
+    "verified_date": "2026-10-04",
+    "featured": false
   }
 ]
