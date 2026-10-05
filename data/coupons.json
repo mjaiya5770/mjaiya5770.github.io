@@ -55,17 +55,6 @@
     "featured": true
   },
   {
-    "id": "target-02",
-    "store": "Target",
-    "store_slug": "target",
-    "code": null,
-    "title": "15% Off First Purchase for New Circle Members",
-    "description": "Guests who join Target Circle between Sept 27 and Oct 5, 2026 receive 15% off their first purchase, per Target's official announcement.",
-    "type": "deal",
-    "verified_date": "2026-09-29",
-    "featured": false
-  },
-  {
     "id": "target-03",
     "store": "Target",
     "store_slug": "target",
@@ -809,17 +798,6 @@
     "code": null,
     "title": "T-Shirts from $10, Women's Activewear from $12",
     "description": "Today's Deals page lists t-shirts from $10 and women's activewear from $12.",
-    "type": "deal",
-    "verified_date": "2026-09-29",
-    "featured": false
-  },
-  {
-    "id": "walgreens-01",
-    "store": "Walgreens",
-    "store_slug": "walgreens",
-    "code": null,
-    "title": "$5 Off 2 Maybelline New York Cosmetics",
-    "description": "Digital coupon: $5 off TWO (2) select Maybelline New York cosmetics. A myW exclusive multi-use offer valid online only.",
     "type": "deal",
     "verified_date": "2026-09-29",
     "featured": false
@@ -1771,56 +1749,12 @@
     "featured": false
   },
   {
-    "id": "samsung-02",
-    "store": "Samsung",
-    "store_slug": "samsung",
-    "code": null,
-    "title": "Galaxy device + Watch/Buds/bands bundle offer",
-    "description": "Buy an eligible Galaxy device with qualifying Watch, Buds or bands in the same transaction, September 17 through October 5, 2026.",
-    "type": "deal",
-    "verified_date": "2026-09-29",
-    "featured": false
-  },
-  {
-    "id": "samsung-04",
-    "store": "Samsung",
-    "store_slug": "samsung",
-    "code": null,
-    "title": "Up to $250 off select Galaxy Z Fold8",
-    "description": "Save up to $250 on select Galaxy Z Fold8 models, September 7 through October 5, 2026.",
-    "type": "deal",
-    "verified_date": "2026-09-29",
-    "featured": false
-  },
-  {
     "id": "samsung-05",
     "store": "Samsung",
     "store_slug": "samsung",
     "code": null,
     "title": "Up to $150 off select Galaxy Z Flip8",
     "description": "Save up to $150 on select Galaxy Z Flip8 models, September 28 through November 2, 2026.",
-    "type": "deal",
-    "verified_date": "2026-09-29",
-    "featured": false
-  },
-  {
-    "id": "samsung-06",
-    "store": "Samsung",
-    "store_slug": "samsung",
-    "code": null,
-    "title": "Up to $300 off select Galaxy Z Fold8 U",
-    "description": "Save up to $300 on select Galaxy Z Fold8 U models, September 28 through October 5, 2026.",
-    "type": "deal",
-    "verified_date": "2026-09-29",
-    "featured": false
-  },
-  {
-    "id": "samsung-07",
-    "store": "Samsung",
-    "store_slug": "samsung",
-    "code": null,
-    "title": "$150 Samsung Credit with Galaxy S26 Ultra (No Trade-In)",
-    "description": "Get $150 in Samsung Credit when you buy the Galaxy S26 Ultra with the 'No Trade-In' option, September 28 through October 5, 2026.",
     "type": "deal",
     "verified_date": "2026-09-29",
     "featured": false
@@ -2118,39 +2052,6 @@
     "code": null,
     "title": "Last-minute hotel deals",
     "description": "Last-minute hotel deals hub with discounted rates on upcoming stays. The spontaneous city breaks page advertises 20% off last-minute getaways; per its terms, offers are valid for stay dates within the next 14 days on participating properties, subject to availability.",
-    "type": "deal",
-    "verified_date": "2026-09-29",
-    "featured": false
-  },
-  {
-    "id": "royal-caribbean-01",
-    "store": "Royal Caribbean",
-    "store_slug": "royal-caribbean",
-    "code": null,
-    "title": "BOGO60: 60% off the second guest's cruise fare (book by Oct 5)",
-    "description": "60% off the cruise fare of the second guest booked in the same stateroom as the first full-fare paying guest. Applies to new individual and named group bookings at prevailing rates made September 3-October 5, 2026, on sailings departing on or after September 4, 2026. Taxes, fees, and port expenses additional. Combinable with Kids Sail Free, Free 3rd & 4th, and instant-savings sales. Capacity controlled; subject to change without notice.",
-    "type": "deal",
-    "verified_date": "2026-09-29",
-    "featured": false
-  },
-  {
-    "id": "royal-caribbean-02",
-    "store": "Royal Caribbean",
-    "store_slug": "royal-caribbean",
-    "code": null,
-    "title": "Kids Sail Free: kids 12 and under cruise free on select sailings (book by Oct 5)",
-    "description": "Kids 12 and younger sail free (cruise fare only; taxes, fees, and port expenses additional) as additional guests in the same stateroom as two full-fare guests. Applies to new bookings made September 15-October 5, 2026, on select sailings 3 nights and longer departing on or after September 16, 2026. Excludes Thanksgiving week (Nov 19-27, 2026), Christmas/New Year (Dec 17, 2026-Jan 4, 2027), spring break (Mar 5-Apr 4, 2027), summer peak (May 28-Aug 20, 2027), and select other dates.",
-    "type": "deal",
-    "verified_date": "2026-09-29",
-    "featured": false
-  },
-  {
-    "id": "royal-caribbean-03",
-    "store": "Royal Caribbean",
-    "store_slug": "royal-caribbean",
-    "code": null,
-    "title": "Free 3rd & 4th guests on select sailings (book by Oct 5)",
-    "description": "$0 cruise fare on the 3rd and 4th guests in the same stateroom (taxes, fees, and port expenses additional). Applies to new bookings made September 15-October 5, 2026, on select sailings 3 nights and longer departing September 16, 2026-August 20, 2027. Excludes Thanksgiving week, Christmas/New Year, select Navigator of the Seas and Chinese New Year sailings, spring break, and summer peak. Combinable with BOGO60 and Kids Sail Free.",
     "type": "deal",
     "verified_date": "2026-09-29",
     "featured": false
@@ -2552,17 +2453,6 @@
     "featured": false
   },
   {
-    "id": "target-13",
-    "store": "Target",
-    "store_slug": "target",
-    "code": null,
-    "title": "15% Off One Trip When You Join Target Circle Free",
-    "description": "Get 15% off one shopping trip when you join Target Circle for free. Shown on target.com top-deals page today. Ends 10/5. Exclusions apply; requires free Circle membership. No code, auto-applied.",
-    "type": "deal",
-    "verified_date": "2026-10-01",
-    "featured": false
-  },
-  {
     "id": "target-14",
     "store": "Target",
     "store_slug": "target",
@@ -2638,39 +2528,6 @@
     "type": "code",
     "verified_date": "2026-10-04",
     "featured": true
-  },
-  {
-    "id": "kohls-01",
-    "store": "Kohl's",
-    "store_slug": "kohls",
-    "code": "TAKE20",
-    "title": "Extra 20% off qualifying purchases with code TAKE20",
-    "description": "Extra 20% off qualifying purchases in store and online with code TAKE20. Limit one per customer. Dollar-off coupons including Kohl's Cash are applied before percent-off coupons; cannot be combined with other percent-off coupons. Excludes price adjustments, Kohl's credit card account payments, taxes, shipping/handling, gift cards, Kohl's Cares cause/charitable items, Sephora at Kohl's, and other coupon-ineligible categories/brands. Eligible brands include Apt. 9, Croft & Barrow, FLX, Jumping Beans, SO, Sonoma Goods For Life, Tek Gear, The Big One, LC Lauren Conrad, Nine West, Simply Vera Vera Wang (full list at kohls.com/details). Valid 09/28-10/04/2026; ends Oct 4.",
-    "type": "code",
-    "verified_date": "2026-10-04",
-    "featured": false
-  },
-  {
-    "id": "kohls-02",
-    "store": "Kohl's",
-    "store_slug": "kohls",
-    "code": "HOME10",
-    "title": "$10 off $50 qualifying home purchase with code HOME10",
-    "description": "$10 off a minimum $50 pre-tax qualifying home purchase, one transaction, in store and online with code HOME10. Applied before percent-off coupons; can be combined with other coupons (all minimum-purchase thresholds must be met). Limit one per customer; nontransferable. Excludes price adjustments, Kohl's credit card account payments, taxes, shipping/handling, gift cards, Kohl's Cares cause/charitable items, Sephora at Kohl's, and other coupon-ineligible categories/brands. Valid 09/28-10/04/2026; ends Oct 4.",
-    "type": "code",
-    "verified_date": "2026-10-04",
-    "featured": false
-  },
-  {
-    "id": "macys-11",
-    "store": "Macy's",
-    "store_slug": "macys",
-    "code": "BUYMORE",
-    "title": "Buy More, Save More: up to 40% off fine jewelry with code BUYMORE",
-    "description": "Buy More, Save More on fine jewelry with code BUYMORE: 20% off $500+, 30% off $1,000+, or 40% off $2,000+ fine jewelry. No exclusion list shown with the offer. Banner stated \"Ends tomorrow\" on 10/04/2026, so expiry assumed 10/05/2026 (not printed as a calendar date on the page). Seen on the macys.com homepage hero banner and the fine jewelry \"Offer code BUYMORE\" filter chip.",
-    "type": "code",
-    "verified_date": "2026-10-04",
-    "featured": false
   },
   {
     "id": "chewy-01",
