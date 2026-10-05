@@ -2550,5 +2550,137 @@
     "type": "code",
     "verified_date": "2026-10-04",
     "featured": false
+  },
+  {
+    "id": "walgreens-11",
+    "store": "Walgreens",
+    "store_slug": "walgreens",
+    "code": "WAG20",
+    "title": "One Day Flash Sale: Extra 20% Off Sitewide*",
+    "description": "Extra 20% off eligible items sitewide* with code WAG20. Valid 10/6-10/7/2026; orders must be placed by 10/10/26 11:59pm CT. 1 use per order, 3 uses per account. Excludes clearance, photo, gift/prepaid cards, alcohol, dairy, baby formula, contact lenses, pharmacy and other categories.",
+    "type": "code",
+    "verified_date": "2026-10-05",
+    "featured": false
+  },
+  {
+    "id": "walgreens-12",
+    "store": "Walgreens",
+    "store_slug": "walgreens",
+    "code": "SPOOKYLIP",
+    "title": "Extra $4 Off 2+ Select Maybelline Lip",
+    "description": "Extra $4 off 2+ select Maybelline lip products with code SPOOKYLIP, online only. Excludes Baby Lips. Orders by 10/31/26 11:59pm CT.",
+    "type": "code",
+    "verified_date": "2026-10-05",
+    "featured": false
+  },
+  {
+    "id": "walgreens-13",
+    "store": "Walgreens",
+    "store_slug": "walgreens",
+    "code": "NOW5",
+    "title": "Extra $5 Off $25+ Sitewide*",
+    "description": "Extra $5 off $25+ sitewide* with code NOW5. Purchase requirement met in a single transaction; 1 use per order, 3 uses per account. Orders by 10/10/26 11:59pm CT. Broad exclusions (clearance, gift cards, pharmacy, etc.).",
+    "type": "code",
+    "verified_date": "2026-10-05",
+    "featured": false
+  },
+  {
+    "id": "walgreens-14",
+    "store": "Walgreens",
+    "store_slug": "walgreens",
+    "code": "NOW10",
+    "title": "Extra $10 Off $40+ Sitewide*",
+    "description": "Extra $10 off $40+ sitewide* with code NOW10. Purchase requirement met in a single transaction; 1 use per order, 3 uses per account. Orders by 10/10/26 11:59pm CT. Broad exclusions (clearance, gift cards, pharmacy, etc.).",
+    "type": "code",
+    "verified_date": "2026-10-05",
+    "featured": false
+  },
+  {
+    "id": "walgreens-15",
+    "store": "Walgreens",
+    "store_slug": "walgreens",
+    "code": "PICKUP10",
+    "title": "Extra 10% Off Pickup Orders",
+    "description": "Extra 10% off qualifying same-day pickup orders with code PICKUP10. 1 use per order, 3 uses per account. Orders by 8/31/27 11:59pm CT. Exclusions apply.",
+    "type": "code",
+    "verified_date": "2026-10-05",
+    "featured": false
+  },
+  {
+    "id": "walgreens-16",
+    "store": "Walgreens",
+    "store_slug": "walgreens",
+    "code": "REORDER25",
+    "title": "25% Off Contact Lenses",
+    "description": "25% off contact lenses (ship-to-home orders) with code REORDER25. Valid prescription required. Not available in PR; excludes solutions and accessories. Orders by 12/31/26 11:59pm CT.",
+    "type": "code",
+    "verified_date": "2026-10-05",
+    "featured": false
+  },
+  {
+    "id": "walgreens-17",
+    "store": "Walgreens",
+    "store_slug": "walgreens",
+    "code": "DEAL20",
+    "title": "20% Off Contact Lenses",
+    "description": "20% off contact lenses (ship-to-home orders) with code DEAL20. Valid prescription required. Not available in PR; excludes solutions and accessories. Orders by 12/31/26 11:59pm CT.",
+    "type": "code",
+    "verified_date": "2026-10-05",
+    "featured": false
+  },
+  {
+    "id": "walgreens-18",
+    "store": "Walgreens",
+    "store_slug": "walgreens",
+    "code": "SAVE25",
+    "title": "25% Off Contact Lenses",
+    "description": "25% off contact lenses (ship-to-home orders) with code SAVE25. Valid prescription required. Not available in PR; excludes solutions and accessories. Orders by 12/31/26 11:59pm CT.",
+    "type": "code",
+    "verified_date": "2026-10-05",
+    "featured": false
+  },
+  {
+    "id": "walgreens-19",
+    "store": "Walgreens",
+    "store_slug": "walgreens",
+    "code": "DEAL30",
+    "title": "30% Off Contact Lenses",
+    "description": "30% off contact lenses (ship-to-home orders) with code DEAL30. 1 use per order and per account. Valid prescription required; not in PR. Orders by 12/31/26 11:59pm CT.",
+    "type": "code",
+    "verified_date": "2026-10-05",
+    "featured": false
+  },
+  {
+    "id": "walgreens-20",
+    "store": "Walgreens",
+    "store_slug": "walgreens",
+    "code": "WELCOME20",
+    "title": "Extra 20% Off $25+ for New Customers",
+    "description": "Extra 20% off $25+ sitewide* for new customers with code WELCOME20. 1 use per order and 1 use per account. Orders by 8/31/27 11:59pm CT. Broad exclusions apply.",
+    "type": "code",
+    "verified_date": "2026-10-05",
+    "featured": false
+  },
+  {
+    "id": "walgreens-21",
+    "store": "Walgreens",
+    "store_slug": "walgreens",
+    "code": "WAG10",
+    "title": "Extra 10% Off Sitewide*",
+    "description": "Extra 10% off sitewide* with code WAG10. 1 use per order, 3 uses per account. Orders by 8/31/27 11:59pm CT. Broad exclusions (clearance, gift cards, pharmacy, etc.).",
+    "type": "code",
+    "verified_date": "2026-10-05",
+    "featured": false
+  },
+  {
+    "id": "walgreens-22",
+    "store": "Walgreens",
+    "store_slug": "walgreens",
+    "code": "DELIVERY20",
+    "title": "Free 1-Hour Delivery on $20+",
+    "description": "Free 1-hour delivery on qualifying same-day delivery orders $20+ with code DELIVERY20. Applies to delivery charges only; not for shipped, pickup, photo or pharmacy orders. By 8/31/27 11:59pm CT.",
+    "type": "code",
+    "verified_date": "2026-10-05",
+    "featured": false
   }
 ]
