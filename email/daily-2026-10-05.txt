@@ -1,0 +1,57 @@
+HONEST PENNY DAILY - October 05, 2026
+Today's verified deals.
+
+== NEWLY VERIFIED DEALS ==
+1. Bath & Body Works - 3-Wick Candles $13.95
+  All 3-wick candles priced $13.95 on bathandbodyworks.com Top Offers. No code needed.
+  Deal: https://honest-penny.vercel.app/go/bath-body-works-10/
+
+2. Best Buy - Deal of the Day
+  A new discounted item (or set of items) every day across electronics, appliances, and accessories. No code needed; check the Deal of the Day page daily.
+  Deal: https://honest-penny.vercel.app/go/best-buy-01/
+
+3. eBay - 10% off select used parts & gear with code SALVAGED10
+  Use code SALVAGED10 at checkout for 10% off select used parts and gear (auto parts and more). Max $75 off per redemption, up to 4 redemptions per user. No minimum spend stated. Excludes warranties and protection plans; items from Coins & Paper Money and other excluded categories (full list on eBay). Pay by 11:59 PM Pacific on 10/14/2026; while supplies last. Valid on ebay.com, ebay.ca, cafr.ebay.ca.
+  Code: SALVAGED10: https://honest-penny.vercel.app/go/ebay-01/
+
+4. Chewy - Free $20 e-Gift card with $49+ order for new customers with code WELCOME
+  New Chewy customers: add $49+ of eligible items to cart and enter code WELCOME to receive a $20 e-Gift card. Limit 1 use per order, 1 order per customer. Free e-Gift card is added at checkout with the qualifying purchase and credited to the Chewy account after the order ships. A Chewy account and login are required to redeem. Brand exclusions apply; gift cards cannot be returned, refunded, or redeemed for cash. Valid while supplies last; no calendar expiration shown. NOTE: the homepage header advertises "$25 eGift card" but the official WELCOME offer terms state $20 — the $20 figure is the documented term.
+  Code: WELCOME: https://honest-penny.vercel.app/go/chewy-01/
+
+5. Chewy - Save $1 on Milk-Bone dog treats with code MILKBONE
+  Save $1 with code MILKBONE on Milk-Bone dog treats (seen on Milk-Bone Peanut Buttery Cups 4.5-oz bag and Milk-Bone Soft & Chewy Real Beef & Filet Mignon 5.6-oz bag). No minimum spend; no expiration shown on the product promo tags.
+  Code: MILKBONE: https://honest-penny.vercel.app/go/chewy-02/
+
+== ENDING SOON ==
+6. Target - Circle Deal Days: Up to 40% Off
+  Target's official two-day member event runs Oct 6-7, 2026 with up to 40% off thousands of items in fashion, beauty, home, toys and tech (Circle 360 early access Oct 5). Free Target Circle membership required.
+  Deal: https://honest-penny.vercel.app/go/target-01/
+
+7. Target - $75 in Circle rewards with an approved Target Circle credit card
+  Get $75 in Circle rewards when approved for a Target Circle credit card. Ends October 10. Terms apply. From Target's official Top Deals page.
+  Deal: https://honest-penny.vercel.app/go/target-04/
+
+8. IKEA - 20% Off KUSTFYR Pumpkin LED Table Decoration
+  IKEA Family price: 20% off the KUSTFYR pumpkin LED table decoration (now $7.99, regular $9.99). Price valid Sep 8, 2026 - Oct 12, 2026 or while supply lasts.
+  Deal: https://honest-penny.vercel.app/go/ikea-01/
+
+9. IKEA - 11% Off TORNVIKEN Kitchen Island
+  IKEA Family price: 11% off the TORNVIKEN kitchen island (now $399.99, regular $449.99). Price valid Sep 17, 2026 - Oct 12, 2026 or while supply lasts.
+  Deal: https://honest-penny.vercel.app/go/ikea-02/
+
+10. IKEA - 23% Off SNIGLAR Beech Crib
+  IKEA Family price: 23% off the SNIGLAR beech crib (now $99.99, regular $129.99). Price valid Sep 17, 2026 - Oct 12, 2026 or while supply lasts.
+  Deal: https://honest-penny.vercel.app/go/ikea-03/
+
+== FEATURED ==
+11. Nike - Sale: Up to 50% Off
+  Hundreds of shoes, apparel and accessories marked down up to 50%, with deepest cuts on Tech Fleece and Air Max Dn8. No code needed and free shipping for Nike Members.
+  Deal: https://honest-penny.vercel.app/go/nike-01/
+
+12. Wayfair - Up to 70% Off Furniture & Home Deals
+  Wayfair's fall clearance takes up to 70% off furniture, decor, lighting, kitchen and outdoor items sitewide, with new deals added throughout September.
+  Deal: https://honest-penny.vercel.app/go/wayfair-01/
+
+--
+Unsubscribe: {{UNSUBSCRIBE_URL}}
+{{MAILING_ADDRESS}}
