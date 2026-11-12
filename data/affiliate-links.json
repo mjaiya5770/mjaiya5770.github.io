@@ -358,5 +358,41 @@
   "zara": {
     "affiliate": "",
     "url": "https://www.zara.com/us/en/"
+  },
+  "costco": {
+    "affiliate": "",
+    "url": "https://www.costco.com"
+  },
+  "crocs": {
+    "affiliate": "",
+    "url": "https://www.crocs.com"
+  },
+  "new-balance": {
+    "affiliate": "",
+    "url": "https://www.newbalance.com"
+  },
+  "puma": {
+    "affiliate": "",
+    "url": "https://us.puma.com"
+  },
+  "hm": {
+    "affiliate": "",
+    "url": "https://www2.hm.com/en_us"
+  },
+  "nordstrom": {
+    "affiliate": "",
+    "url": "https://www.nordstrom.com"
+  },
+  "five-below": {
+    "affiliate": "",
+    "url": "https://www.fivebelow.com"
+  },
+  "steam": {
+    "affiliate": "",
+    "url": "https://store.steampowered.com"
+  },
+  "playstation-store": {
+    "affiliate": "",
+    "url": "https://store.playstation.com"
   }
 }
