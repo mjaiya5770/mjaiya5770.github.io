@@ -2,4 +2,64 @@ User-agent: *
 Allow: /
 Disallow: /go/
 
+User-agent: GPTBot
+Allow: /
+Disallow: /go/
+
+User-agent: OAI-SearchBot
+Allow: /
+Disallow: /go/
+
+User-agent: ChatGPT-User
+Allow: /
+Disallow: /go/
+
+User-agent: ClaudeBot
+Allow: /
+Disallow: /go/
+
+User-agent: Claude-Web
+Allow: /
+Disallow: /go/
+
+User-agent: anthropic-ai
+Allow: /
+Disallow: /go/
+
+User-agent: PerplexityBot
+Allow: /
+Disallow: /go/
+
+User-agent: Perplexity-User
+Allow: /
+Disallow: /go/
+
+User-agent: Google-Extended
+Allow: /
+Disallow: /go/
+
+User-agent: CCBot
+Allow: /
+Disallow: /go/
+
+User-agent: Applebot-Extended
+Allow: /
+Disallow: /go/
+
+User-agent: Meta-ExternalAgent
+Allow: /
+Disallow: /go/
+
+User-agent: cohere-ai
+Allow: /
+Disallow: /go/
+
+User-agent: DuckAssistBot
+Allow: /
+Disallow: /go/
+
+User-agent: YouBot
+Allow: /
+Disallow: /go/
+
 Sitemap: https://honest-penny.vercel.app/sitemap.xml

@@ -1,0 +1,215 @@
+# Honest Penny
+
+> Honest Penny is a free coupon and deals website. Every offer is verified against a page on the retailer's own website; the source domain and verification date are shown on every offer card. Expired offers are removed in freshness sweeps and every removal is logged publicly on the Sources page.
+
+## Key facts
+- Website: https://honest-penny.vercel.app
+- Verified offers currently listed: 247
+- Stores with live offers: 86
+- Distinct retailer source domains: 89
+- Price: free for shoppers; no account required to view offers.
+- How verification works: an offer is listed only when its code or deal terms are visible on the retailer's own promo, sale, offers or member page. The source URL and verification date are stored with the offer.
+
+## Key pages
+- [Home - today's verified coupons](https://honest-penny.vercel.app/)
+- [All stores](https://honest-penny.vercel.app/stores/)
+- [Categories](https://honest-penny.vercel.app/categories/)
+- [Sources and freshness sweep log](https://honest-penny.vercel.app/sources/)
+- [Browser extension](https://honest-penny.vercel.app/extension/)
+- [About](https://honest-penny.vercel.app/about/)
+
+## Top stores by live offers
+- [Southwest Airlines coupons](https://honest-penny.vercel.app/stores/southwest/): 13 verified offers
+- [Bath & Body Works coupons](https://honest-penny.vercel.app/stores/bath-body-works/): 9 verified offers
+- [Lowe's coupons](https://honest-penny.vercel.app/stores/lowes/): 9 verified offers
+- [Target coupons](https://honest-penny.vercel.app/stores/target/): 9 verified offers
+- [Walgreens coupons](https://honest-penny.vercel.app/stores/walgreens/): 8 verified offers
+- [Expedia coupons](https://honest-penny.vercel.app/stores/expedia/): 7 verified offers
+- [Macy's coupons](https://honest-penny.vercel.app/stores/macys/): 7 verified offers
+- [Sally Beauty coupons](https://honest-penny.vercel.app/stores/sally-beauty/): 7 verified offers
+- [Ashley Furniture coupons](https://honest-penny.vercel.app/stores/ashley-furniture/): 6 verified offers
+- [Groupon coupons](https://honest-penny.vercel.app/stores/groupon/): 6 verified offers
+- [Levi's coupons](https://honest-penny.vercel.app/stores/levis/): 6 verified offers
+- [Royal Caribbean coupons](https://honest-penny.vercel.app/stores/royal-caribbean/): 6 verified offers
+- [Adidas coupons](https://honest-penny.vercel.app/stores/adidas/): 5 verified offers
+- [AutoZone coupons](https://honest-penny.vercel.app/stores/autozone/): 5 verified offers
+- [Grubhub coupons](https://honest-penny.vercel.app/stores/grubhub/): 5 verified offers
+
+## All stores with live offers
+- ASOS (Fashion): 1 offers - https://honest-penny.vercel.app/stores/asos/
+- Adidas (Fashion): 5 offers - https://honest-penny.vercel.app/stores/adidas/
+- American Eagle (Fashion): 2 offers - https://honest-penny.vercel.app/stores/american-eagle/
+- Amtrak (Travel): 1 offers - https://honest-penny.vercel.app/stores/amtrak/
+- Apple (Electronics): 1 offers - https://honest-penny.vercel.app/stores/apple/
+- Ashley Furniture (Home & Garden): 6 offers - https://honest-penny.vercel.app/stores/ashley-furniture/
+- AutoZone (Auto): 5 offers - https://honest-penny.vercel.app/stores/autozone/
+- B&H Photo Video (Electronics): 3 offers - https://honest-penny.vercel.app/stores/bh-photo/
+- Bath & Body Works (Beauty): 9 offers - https://honest-penny.vercel.app/stores/bath-body-works/
+- Best Buy (Electronics): 1 offers - https://honest-penny.vercel.app/stores/best-buy/
+- Birkenstock (Fashion): 1 offers - https://honest-penny.vercel.app/stores/birkenstock/
+- Blue Apron (Food & Delivery): 1 offers - https://honest-penny.vercel.app/stores/blue-apron/
+- CVS (Health & Pharmacy): 2 offers - https://honest-penny.vercel.app/stores/cvs/
+- Carnival (Travel): 1 offers - https://honest-penny.vercel.app/stores/carnival/
+- Carter's (Kids & Baby): 2 offers - https://honest-penny.vercel.app/stores/carters/
+- Chewy (Pets): 2 offers - https://honest-penny.vercel.app/stores/chewy/
+- Converse (Fashion): 2 offers - https://honest-penny.vercel.app/stores/converse/
+- Costco (General): 2 offers - https://honest-penny.vercel.app/stores/costco/
+- Crocs (Fashion): 1 offers - https://honest-penny.vercel.app/stores/crocs/
+- DSW (Fashion): 2 offers - https://honest-penny.vercel.app/stores/dsw/
+- Dell (Electronics): 1 offers - https://honest-penny.vercel.app/stores/dell/
+- Dermstore (Beauty): 1 offers - https://honest-penny.vercel.app/stores/dermstore/
+- Dick's Sporting Goods (Sports & Outdoors): 1 offers - https://honest-penny.vercel.app/stores/dicks-sporting-goods/
+- Domino's (Food & Delivery): 1 offers - https://honest-penny.vercel.app/stores/dominos/
+- DoorDash (Food & Delivery): 2 offers - https://honest-penny.vercel.app/stores/doordash/
+- Dyson (Home & Garden): 1 offers - https://honest-penny.vercel.app/stores/dyson/
+- Expedia (Travel): 7 offers - https://honest-penny.vercel.app/stores/expedia/
+- Factor (Food & Delivery): 2 offers - https://honest-penny.vercel.app/stores/factor/
+- Famous Footwear (Fashion): 1 offers - https://honest-penny.vercel.app/stores/famous-footwear/
+- Fenty Beauty (Beauty): 4 offers - https://honest-penny.vercel.app/stores/fenty-beauty/
+- Finish Line (Fashion): 3 offers - https://honest-penny.vercel.app/stores/finish-line/
+- Five Below (General): 1 offers - https://honest-penny.vercel.app/stores/five-below/
+- Foot Locker (Fashion): 2 offers - https://honest-penny.vercel.app/stores/foot-locker/
+- Groupon (General): 6 offers - https://honest-penny.vercel.app/stores/groupon/
+- Grubhub (Food & Delivery): 5 offers - https://honest-penny.vercel.app/stores/grubhub/
+- H&M (Fashion): 1 offers - https://honest-penny.vercel.app/stores/hm/
+- HEYDUDE (Fashion): 1 offers - https://honest-penny.vercel.app/stores/heydude/
+- HP (Electronics): 3 offers - https://honest-penny.vercel.app/stores/hp/
+- HelloFresh (Food & Delivery): 1 offers - https://honest-penny.vercel.app/stores/hellofresh/
+- Hollister (Fashion): 2 offers - https://honest-penny.vercel.app/stores/hollister/
+- Hotels.com (Travel): 3 offers - https://honest-penny.vercel.app/stores/hotels-com/
+- IKEA (Home & Garden): 3 offers - https://honest-penny.vercel.app/stores/ikea/
+- JCPenney (Department Stores): 2 offers - https://honest-penny.vercel.app/stores/jcpenney/
+- Kohl's (Department Stores): 2 offers - https://honest-penny.vercel.app/stores/kohls/
+- Lenovo (Electronics): 1 offers - https://honest-penny.vercel.app/stores/lenovo/
+- Levi's (Fashion): 6 offers - https://honest-penny.vercel.app/stores/levis/
+- Lowe's (Home & Garden): 9 offers - https://honest-penny.vercel.app/stores/lowes/
+- Macy's (Department Stores): 7 offers - https://honest-penny.vercel.app/stores/macys/
+- New Balance (Fashion): 1 offers - https://honest-penny.vercel.app/stores/new-balance/
+- Newegg (Electronics): 5 offers - https://honest-penny.vercel.app/stores/newegg/
+- Nike (Fashion): 3 offers - https://honest-penny.vercel.app/stores/nike/
+- Nordstrom (Department Stores): 1 offers - https://honest-penny.vercel.app/stores/nordstrom/
+- Nordstrom Rack (Fashion): 2 offers - https://honest-penny.vercel.app/stores/nordstrom-rack/
+- Old Navy (Fashion): 4 offers - https://honest-penny.vercel.app/stores/old-navy/
+- PUMA (Fashion): 1 offers - https://honest-penny.vercel.app/stores/puma/
+- PacSun (Fashion): 2 offers - https://honest-penny.vercel.app/stores/pacsun/
+- PetSmart (Pets): 5 offers - https://honest-penny.vercel.app/stores/petsmart/
+- Petco (Pets): 2 offers - https://honest-penny.vercel.app/stores/petco/
+- Pizza Hut (Food & Delivery): 2 offers - https://honest-penny.vercel.app/stores/pizza-hut/
+- PlayStation Store (Electronics): 2 offers - https://honest-penny.vercel.app/stores/playstation-store/
+- Rack Room Shoes (Fashion): 3 offers - https://honest-penny.vercel.app/stores/rack-room-shoes/
+- Royal Caribbean (Travel): 6 offers - https://honest-penny.vercel.app/stores/royal-caribbean/
+- Sally Beauty (Beauty): 7 offers - https://honest-penny.vercel.app/stores/sally-beauty/
+- Samsung (Electronics): 1 offers - https://honest-penny.vercel.app/stores/samsung/
+- Sephora (Beauty): 1 offers - https://honest-penny.vercel.app/stores/sephora/
+- Shein (Fashion): 2 offers - https://honest-penny.vercel.app/stores/shein/
+- Shoe Carnival (Fashion): 4 offers - https://honest-penny.vercel.app/stores/shoe-carnival/
+- Sierra (Fashion): 2 offers - https://honest-penny.vercel.app/stores/sierra/
+- Southwest Airlines (Travel): 13 offers - https://honest-penny.vercel.app/stores/southwest/
+- Staples (Office): 5 offers - https://honest-penny.vercel.app/stores/staples/
+- Steam (Electronics): 2 offers - https://honest-penny.vercel.app/stores/steam/
+- Steve Madden (Fashion): 1 offers - https://honest-penny.vercel.app/stores/steve-madden/
+- Target (General): 9 offers - https://honest-penny.vercel.app/stores/target/
+- Temu (General): 1 offers - https://honest-penny.vercel.app/stores/temu/
+- Tire Rack (Auto): 1 offers - https://honest-penny.vercel.app/stores/tire-rack/
+- UGG (Fashion): 1 offers - https://honest-penny.vercel.app/stores/ugg/
+- Uber Eats (Food & Delivery): 4 offers - https://honest-penny.vercel.app/stores/uber-eats/
+- Ulta Beauty (Beauty): 2 offers - https://honest-penny.vercel.app/stores/ulta/
+- Under Armour (Fashion): 1 offers - https://honest-penny.vercel.app/stores/under-armour/
+- Uniqlo (Fashion): 1 offers - https://honest-penny.vercel.app/stores/uniqlo/
+- Vrbo (Travel): 5 offers - https://honest-penny.vercel.app/stores/vrbo/
+- Walgreens (Health & Pharmacy): 8 offers - https://honest-penny.vercel.app/stores/walgreens/
+- Walmart (General): 1 offers - https://honest-penny.vercel.app/stores/walmart/
+- Wayfair (Home & Garden): 4 offers - https://honest-penny.vercel.app/stores/wayfair/
+- Zappos (Fashion): 2 offers - https://honest-penny.vercel.app/stores/zappos/
+- Zara (Fashion): 1 offers - https://honest-penny.vercel.app/stores/zara/
+
+## All source domains
+- about.ubereats.com
+- adidas.com
+- ae.com
+- amtrak.com
+- apple.com
+- ashleyfurniture.com
+- asos.com
+- autozone.com
+- bathandbodyworks.com
+- bestbuy.com
+- bhphotovideo.com
+- birkenstock.com
+- blueapron.com
+- carnival.com
+- carters.com
+- chewy.com
+- converse.com
+- corporate.grubhub.com
+- costco.com
+- crocs.com
+- cvs.com
+- dell.com
+- dermstore.com
+- dickssportinggoods.com
+- dominos.com
+- doordash.com
+- dsw.com
+- dyson.com
+- expedia.com
+- factor75.com
+- famousfootwear.com
+- fentybeauty.com
+- finishline.com
+- fivebelow.com
+- footlocker.com
+- groupon.com
+- grubhub.com
+- hellofresh.com
+- heydude.com
+- hollisterco.com
+- hotels.com
+- hp.com
+- ikea.com
+- jcpenney.com
+- kohls.com
+- lenovo.com
+- levi.com
+- lowes.com
+- lp.grubhub.com
+- macys.com
+- newbalance.com
+- newegg.com
+- nike.com
+- nordstrom.com
+- nordstromrack.com
+- oldnavy.gap.com
+- pacsun.com
+- petco.com
+- petsmart.com
+- pizzahut.com
+- rackroomshoes.com
+- royalcaribbean.com
+- sallybeauty.com
+- samsung.com
+- sephora.com
+- services.petsmart.com
+- shoecarnival.com
+- sierra.com
+- southwest.com
+- staples.com
+- stevemadden.com
+- store.playstation.com
+- store.steampowered.com
+- target.com
+- temu.com
+- tirerack.com
+- ugg.com
+- ulta.com
+- underarmour.com
+- uniqlo.com
+- us.puma.com
+- us.shein.com
+- vrbo.com
+- walgreens.com
+- walmart.com
+- wayfair.com
+- www2.hm.com
+- zappos.com
+- zara.com

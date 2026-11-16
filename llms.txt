@@ -1,0 +1,36 @@
+# Honest Penny
+
+> Honest Penny is a free coupon and deals website. Every offer is verified against a page on the retailer's own website; the source domain and verification date are shown on every offer card. Expired offers are removed in freshness sweeps and every removal is logged publicly on the Sources page.
+
+## Key facts
+- Website: https://honest-penny.vercel.app
+- Verified offers currently listed: 247
+- Stores with live offers: 86
+- Distinct retailer source domains: 89
+- Price: free for shoppers; no account required to view offers.
+- How verification works: an offer is listed only when its code or deal terms are visible on the retailer's own promo, sale, offers or member page. The source URL and verification date are stored with the offer.
+
+## Key pages
+- [Home - today's verified coupons](https://honest-penny.vercel.app/)
+- [All stores](https://honest-penny.vercel.app/stores/)
+- [Categories](https://honest-penny.vercel.app/categories/)
+- [Sources and freshness sweep log](https://honest-penny.vercel.app/sources/)
+- [Browser extension](https://honest-penny.vercel.app/extension/)
+- [About](https://honest-penny.vercel.app/about/)
+
+## Top stores by live offers
+- [Southwest Airlines coupons](https://honest-penny.vercel.app/stores/southwest/): 13 verified offers
+- [Bath & Body Works coupons](https://honest-penny.vercel.app/stores/bath-body-works/): 9 verified offers
+- [Lowe's coupons](https://honest-penny.vercel.app/stores/lowes/): 9 verified offers
+- [Target coupons](https://honest-penny.vercel.app/stores/target/): 9 verified offers
+- [Walgreens coupons](https://honest-penny.vercel.app/stores/walgreens/): 8 verified offers
+- [Expedia coupons](https://honest-penny.vercel.app/stores/expedia/): 7 verified offers
+- [Macy's coupons](https://honest-penny.vercel.app/stores/macys/): 7 verified offers
+- [Sally Beauty coupons](https://honest-penny.vercel.app/stores/sally-beauty/): 7 verified offers
+- [Ashley Furniture coupons](https://honest-penny.vercel.app/stores/ashley-furniture/): 6 verified offers
+- [Groupon coupons](https://honest-penny.vercel.app/stores/groupon/): 6 verified offers
+- [Levi's coupons](https://honest-penny.vercel.app/stores/levis/): 6 verified offers
+- [Royal Caribbean coupons](https://honest-penny.vercel.app/stores/royal-caribbean/): 6 verified offers
+- [Adidas coupons](https://honest-penny.vercel.app/stores/adidas/): 5 verified offers
+- [AutoZone coupons](https://honest-penny.vercel.app/stores/autozone/): 5 verified offers
+- [Grubhub coupons](https://honest-penny.vercel.app/stores/grubhub/): 5 verified offers

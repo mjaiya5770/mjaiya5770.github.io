@@ -161,7 +161,7 @@ td .actions{white-space:nowrap}
   });
 
   function loadList(){
-    fetch("/api/admin?token=" + encodeURIComponent(token)).then(function(r){ return r.json(); })
+    fetch("/api/admin", {headers: {"Authorization": "Bearer " + token}}).then(function(r){ return r.json(); })
       .then(function(data){
         if (data.error) { status("Could not load: " + data.error, false); return; }
         stores = data.stores || [];
@@ -233,7 +233,7 @@ td .actions{white-space:nowrap}
   $("coupon-table").addEventListener("click", function(e){
     var t = e.target;
     if (t.dataset.edit) {
-      fetch("/api/admin?token=" + encodeURIComponent(token)).then(function(r){ return r.json(); })
+      fetch("/api/admin", {headers: {"Authorization": "Bearer " + token}}).then(function(r){ return r.json(); })
         .then(function(data){
           var c = (data.coupons || []).filter(function(x){ return x.id === t.dataset.edit; })[0];
           if (!c) return;
